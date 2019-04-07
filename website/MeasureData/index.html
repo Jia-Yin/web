@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="Webduino Lesson 01 - step 06">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+<head>
+  <title>Webduino Lesson 01</title>
+  <script src="https://blocklypro.webduino.io/components/jquery/dist/jquery.min.js?rev=4a356126b9573eb7bd1e9a7494737410"></script>
+  <script src="https://blocklypro.webduino.io/dist/lib/webduino-all-0.4.20.min.js?rev=4426739c00d85325cb2d3d701fa50666"></script>
+  <script src="https://blocklypro.webduino.io/dist/webduino-blockly.min.js?rev=6a9037f813da79372168951bbfeafb49"></script>
+  <script src="https://blocklypro.webduino.io/dist/lib/firebase.min.js?rev=c0bfd493efd477d098a4ae9e92b13880"></script>
+  <script src="https://blocklypro.webduino.io/dist/lib/runtime.min.js?rev=683a69503433786202911b4d9f766100"></script>
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+    <title>Webduino Lesson 01</title>
+</head>
+<body>
+    <h1>Webduino 數據上雲端</h1>
+    
+    <div id="myinput" style="">
+      <p><span class="ilabel">姓名：</span><input type="text" id="iname"></p>
+      <p><span class="ilabel">設備：</span><input type="text" id="idid"></p>
+      <p><span class="ilabel">試算表 URL：</span><input type="text" id="url" value=""></p>
+      <p><span class="ilabel">試算表 分頁：</span><input type="text" id="tab" value=""></p>
+      <p><span class="ilabel">上傳間隔(s)：</span><input type="text" id="interval" value="3"></p>
+      <p><button onclick="start()">開始</button></p>
+    </div>
+    
+    <div id="myoutput" style="display:none">
+      <p>您的姓名為 <span id='name'></span>，設備 ID <span id='did'></span>，傳送間隔 <span id='sinterval'></span> 秒</p>
+      <p>設備的亮度值為：<span id="lightvalue">尚未連線</span>
+      <p><button id="bsend" onclick="sendSwitch()">傳送資料</button></p>
+    </div>
+    
+  <script src="main.js"></script>
+</body>
+</html>
+

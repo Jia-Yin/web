@@ -1,0 +1,68 @@
+<category id="catGForm">
+  <block type="gform1">
+    <value name="url">
+      <block type="text">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="interval">
+      <block type="math_number">
+        <field name="NUM">10</field>
+      </block>
+    </value>
+    <value name="field1">
+      <block type="text">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+  </block>
+  <block type="gform2">
+    <value name="url">
+      <block type="text">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="interval">
+      <block type="math_number">
+        <field name="NUM">10</field>
+      </block>
+    </value>
+    <value name="field1">
+      <block type="text">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="field2">
+      <block type="text">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+  </block>
+  <block type="gform3">
+    <value name="url">
+      <block type="text">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="interval">
+      <block type="math_number">
+        <field name="NUM">10</field>
+      </block>
+    </value>
+    <value name="field1">
+      <block type="text">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="field2">
+      <block type="text">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="field3">
+      <block type="text">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+  </block>
+</category>

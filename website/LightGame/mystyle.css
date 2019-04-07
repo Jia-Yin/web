@@ -1,0 +1,16 @@
+h1 {
+    background: black;
+    color: white;
+    padding: 12px;
+    text-align: center;
+}
+
+#vueapp {
+    width: 800px;
+    margin: 0 auto;
+}
+
+#gscr {
+    border:1px solid #d3d3d3;
+    background-color: #f1f1f1;
+}

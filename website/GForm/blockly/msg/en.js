@@ -1,0 +1,1 @@
+MSG.catGForm = "Google Form";
