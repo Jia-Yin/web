@@ -1,0 +1,44 @@
+<!doctype>
+
+<html>
+
+<head>
+</head>
+
+<body>
+<div class="jumbotron">
+<h2>MP4 Test</h2>
+<iframe src="https://drive.google.com/file/d/16330L0wDj4cgRU0jMbFwKbAdB5GX4e0K/view?usp=sharing">Not Support</iframe>
+	<div class="row">
+		<div class="col-xs-9">
+			<video id="myVideo" width="100%" controls autoplay>
+				<source src="https://drive.google.com/file/d/16330L0wDj4cgRU0jMbFwKbAdB5GX4e0K" type="video/mp4">
+  				Your browser does not support HTML5 video.
+			</video>
+		</div>
+		<div class="col-xs-3 sidepanel">
+			<h3>Side Panel</h3>
+				<ol>
+					<li><a href="#" onclick="getCurTime()">Current</a></li>
+					<li><a href="#" onclick="setCurTime(30)">To 30 seconds</a></li>
+					<li><a href="#" onclick="setCurTime(60)">To 60 seconds</a></li>
+					<li><a href="#" onclick="setCurTime(90)">To 90 seconds</a></li>
+				</ol>
+		</div>
+	</div>
+</div>
+
+<script>
+	var vid = document.getElementById("myVideo");
+
+	function getCurTime() { 
+	    alert(vid.currentTime);
+	} 
+
+	function setCurTime(t) { 
+	    vid.currentTime=t;
+	} 
+</script> 
+</body>
+</html>
+
