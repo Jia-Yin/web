@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #f0f0f0;
+}
+
+p {
+  text-align: center;
+}
+
+h1 {
+  background: blue;
+  color: white;
+  padding: 12px;
+  text-align: center;
+}
+
+#container {
+  width: 800px;
+  display: block;
+  margin: 20px auto;
+  background: lightgoldenrodyellow;
+}

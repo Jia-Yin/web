@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://unpkg.com/konva@3.3.3/konva.min.js"></script>
+    <meta charset="utf-8" />
+    <title>Game Test</title>
+    <script src="https://bit.webduino.io/blockly/components/jquery/dist/jquery.min.js"></script>
+    <script src="https://bit.webduino.io/blockly/dist/lib/webduino-all.min.js"></script>
+    <script src="https://bit.webduino.io/blockly/dist/MessageTransport.min.js"></script>
+    <script src="https://bit.webduino.io/blockly/dist/webduino-blockly.min.js"></script>
+    <script src="https://bit.webduino.io/blockly/dist/lib/firebase.min.js"></script>
+    <script src="https://bit.webduino.io/blockly/dist/lib/runtime.min.js"></script>
+    <script src="https://bit.webduino.io/blockly/components/webduino-bit-module-button/BitButton.js"></script>
+    <script src="https://bit.webduino.io/blockly/components/webduino-bit-module-button/BitButton-blockly.js"></script>
+    <script src="https://bit.webduino.io/blockly/components/webduino-bit-module-mpu9250/BitMPU9250-blockly.js"></script>
+    <script src="https://bit.webduino.io/blockly/components/webduino-bit-module-mpu9250/BitMPU9250.js"></script>
+    <script
+      src="https://bit.webduino.io/blockly/components/webduino-bit-module-led-matrix/BitLedMatrix-blockly.js"></script>
+    <script src="https://bit.webduino.io/blockly/components/webduino-bit-module-led-matrix/BitLedMatrix.js"></script>
+  
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    <link rel="stylesheet" href="./game03.css">
+</head>
+
+<body>
+    <h1>Gravity Game</h1>
+    <p>Your mission is to shoot the ball into the red circle.</p>
+    <p>According to Newton's mechanics theorem:</p>
+    <p>Ball position at \(t = (v_xt, v_yt-\frac12gt^2)\)</p>
+    <div id="container"></div>
+    <p>
+        Use your webduino bit to adjust speed and angle, button B to shoot or reset.
+    </p>
+    <br>
+    <p>Designed by Jia-Yin Wang (Online Calculation: <a href="https://instacalc.com/52844" target="_blank">Click here</a>)</p>
+    <script src="game03.js"></script>
+    <script src="game03w.js"></script>
+</body>
+
+</html>

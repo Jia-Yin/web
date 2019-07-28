@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://unpkg.com/konva@3.3.3/konva.min.js"></script>
+    <meta charset="utf-8" />
+    <title>Game Test</title>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    <link rel="stylesheet" href="./game03.css">
+</head>
+
+<body>
+    <h1>Gravity Game</h1>
+    <p>Your mission is to shoot the ball into the red circle.</p>
+    <p>According to Newton's mechanics theorem:</p>
+    <p>Ball position at \(t = (v_xt, v_yt-\frac12gt^2)\)</p>
+    <div id="container"></div>
+    <p>
+        Speed: <button onmousedown="adjustAngleAndSpeed(0,1)" onmouseup="setAngleAndSpeed()">+</button>
+        <button onmousedown="adjustAngleAndSpeed(0,-1)" onmouseup="setAngleAndSpeed()">-</button>&nbsp;&nbsp;&nbsp;
+        Angle: <button onmousedown="adjustAngleAndSpeed(1,0)" onmouseup="setAngleAndSpeed()">+</button>
+        <button onmousedown="adjustAngleAndSpeed(-1,0)" onmouseup="setAngleAndSpeed()">-</button>&nbsp;&nbsp;&nbsp;
+        <button onmouseup="shoot()">Shoot</button>
+        <button onmouseup="reset()">Reset</button>
+    </p>
+    <br>
+    <p>Designed by Jia-Yin Wang (Online Calculation: <a href="https://instacalc.com/52844" target="_blank">Click here</a>)</p>
+    <script src="game03.js"></script>
+</body>
+
+</html>
