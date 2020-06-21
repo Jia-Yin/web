@@ -1,3 +1,5 @@
+/* chnl v1.2.0 by Vitaliy Potapov @preserve */
+
 /*!
   * vue-router v3.3.2
   * (c) 2020 Evan You
@@ -68,8 +70,6 @@ MERCHANTABLITY OR NON-INFRINGEMENT.
 See the Apache Version 2.0 License for specific language governing permissions
 and limitations under the License.
 ***************************************************************************** */
-
-/*! Split.js - v1.3.5 */
 
 /*! https://mths.be/punycode v1.4.1 by @mathias */
 
