@@ -1,0 +1,5 @@
+
+User-agent:*
+Disallow:
+
+Sitemap: https://www.jywglady.org/sdr/sdr/sitemap.xml
