@@ -3,7 +3,7 @@
   <id>https://www.jywglady.org/sdr/sdr/</id>
   <title>通訊實驗教材</title>
   <subtitle>通訊實驗教材</subtitle>
-  <updated>2021-03-28T14:59:21.985Z</updated>
+  <updated>2021-03-29T07:08:27.327Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://www.jywglady.org/sdr/sdr/atom.xml"/>
   <link rel="alternate" href="https://www.jywglady.org/sdr/sdr/"/>
@@ -65,30 +65,6 @@
     <published>2021-03-15T05:40:34.000Z</published>
   </entry>
   <entry>
-    <title type="html">傅立葉變換-04</title>
-    <id>https://www.jywglady.org/sdr/sdr/contents/FFT/Fourier-04/</id>
-    <link href="https://www.jywglady.org/sdr/sdr/contents/FFT/Fourier-04/"/>
-    <updated>2021-03-15T05:40:34.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="傅立葉變換-04"> 傅立葉變換-04</h1>
-<p>在上一個小單元中，我們可以把四個不同頻率的成份波想成四個跑者，速度分別是 0 1 2 3，那麼同時出發，經過 1 個時間單位之後，分別跑了 0 1 2 3 圈，於是又重合在一起了，這時的取樣值為 4。至於另三個取樣時間點 (1/4, 2/4, 3/4 單位時間），因為都會產生對稱的情況，所以總和都會是 0，於是就不斷得到 4 0 0 0 的重覆取樣結果。</p>
-<p>那如果要得到 0 4 0 0 的結果，也就是說，在 1/4 單位時間時，四個跑者才會重合。那麼我們不妨把時間倒回去，看看時間為 0 的時候，它們應該在哪裡？這個應該不難，直流成份波還是在原地；速度 1 的應該後退 1/4 圈（-90度）；速度 2 的應該後退 2/4 圈（-180度）；速度 3 的應該後退 3/4 圈（-270度）。</p>
-<p>那麼現在把 Cycles 的部份改成 <code>1 1:-90 1:-180 1:-270</code> 試看看。</p>
-<p align="center">
-<FourierCircular freqs="1 1 1 1" distime="true"/></p>
-<br>
-<exercise></exercise>
-<ol>
-<li>如果上面的問題想通了，那麼試著調整 Cycles 的成份，分別讓時間取樣變成 0 0 4 0 以及 0 0 0 4。</li>
-<li>現在試著調整 Cycles 的成份，讓時間取樣變成 0 0 3。</li>
-<li>現在試著調整 Cycles 的成份，讓時間取樣變成 0 0 6 0 0 0。</li>
-</ol>
-]]></content>
-    <contributor>
-      <name/>
-    </contributor>
-    <published>2021-03-15T05:40:34.000Z</published>
-  </entry>
-  <entry>
     <title type="html">傅立葉變換-03</title>
     <id>https://www.jywglady.org/sdr/sdr/contents/FFT/Fourier-03/</id>
     <link href="https://www.jywglady.org/sdr/sdr/contents/FFT/Fourier-03/"/>
@@ -107,6 +83,30 @@
 <li>第四個取樣時間點會是怎樣呢？第五個取樣的時間點？之後的取樣點呢？</li>
 <li>有什麼辦法可以讓時間的取樣值變成 <code>0 4 0 0</code> 呢？先思考一下，再看下一頁。</li>
 <li>如果你很快就想出來了，那麼怎樣讓時間的取樣值變成 <code>0 0 4 0</code>？怎樣可以變成 <code>0 0 0 4</code>？</li>
+</ol>
+]]></content>
+    <contributor>
+      <name/>
+    </contributor>
+    <published>2021-03-15T05:40:34.000Z</published>
+  </entry>
+  <entry>
+    <title type="html">傅立葉變換-04</title>
+    <id>https://www.jywglady.org/sdr/sdr/contents/FFT/Fourier-04/</id>
+    <link href="https://www.jywglady.org/sdr/sdr/contents/FFT/Fourier-04/"/>
+    <updated>2021-03-15T05:40:34.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="傅立葉變換-04"> 傅立葉變換-04</h1>
+<p>在上一個小單元中，我們可以把四個不同頻率的成份波想成四個跑者，速度分別是 0 1 2 3，那麼同時出發，經過 1 個時間單位之後，分別跑了 0 1 2 3 圈，於是又重合在一起了，這時的取樣值為 4。至於另三個取樣時間點 (1/4, 2/4, 3/4 單位時間），因為都會產生對稱的情況，所以總和都會是 0，於是就不斷得到 4 0 0 0 的重覆取樣結果。</p>
+<p>那如果要得到 0 4 0 0 的結果，也就是說，在 1/4 單位時間時，四個跑者才會重合。那麼我們不妨把時間倒回去，看看時間為 0 的時候，它們應該在哪裡？這個應該不難，直流成份波還是在原地；速度 1 的應該後退 1/4 圈（-90度）；速度 2 的應該後退 2/4 圈（-180度）；速度 3 的應該後退 3/4 圈（-270度）。</p>
+<p>那麼現在把 Cycles 的部份改成 <code>1 1:-90 1:-180 1:-270</code> 試看看。</p>
+<p align="center">
+<FourierCircular freqs="1 1 1 1" distime="true"/></p>
+<br>
+<exercise></exercise>
+<ol>
+<li>如果上面的問題想通了，那麼試著調整 Cycles 的成份，分別讓時間取樣變成 0 0 4 0 以及 0 0 0 4。</li>
+<li>現在試著調整 Cycles 的成份，讓時間取樣變成 0 0 3。</li>
+<li>現在試著調整 Cycles 的成份，讓時間取樣變成 0 0 6 0 0 0。</li>
 </ol>
 ]]></content>
     <contributor>
@@ -417,6 +417,70 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span>​</span></span><
     <published>2021-03-07T15:30:03.000Z</published>
   </entry>
   <entry>
+    <title type="html">問題參考答案</title>
+    <id>https://www.jywglady.org/sdr/sdr/contents/gnuradio/Answer/</id>
+    <link href="https://www.jywglady.org/sdr/sdr/contents/gnuradio/Answer/"/>
+    <updated>2021-03-29T07:08:08.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="問題參考答案"> 問題參考答案</h1>
+<ol>
+<li>如果不接 Throttle 的話有何影響？</li>
+</ol>
+<div><p>Answer</p>
+<p>使用 htop 觀察，可以看到，如果把 Throttle 拿掉，模擬程式幾乎耗掉系統大部份的 CPU 資源。但接上 Throttle 之後，系統所耗用的資源相對減少很多。</p>
+<p>GNU Radio 在進行系統模擬時，可以看成是資料驅動的方式，也就是說，對於一個模組來說，一旦有資料進來，就必須立刻進行處理，而處理完之後，又會發送給後面的模組。那麼在系統模擬的過程中，如果有一些元件與硬體相關，例如喇叭模組、軟體無線電發送與接收模組，當存在這些模組時，由於會牽涉到硬體，而硬體本身對於資料的處理速度有所限制，因此系統的模擬速度也會跟著做調整。</p>
+<p>在這個實驗中，除掉 Throttle 模組，由於不存在任何硬體相關的模組，因此系統會以最快的速度進行模擬，因此會耗掉系統大部份的資源。而 Throttle 模組，實際上是用來限制資料處理速度的模組，其每秒的處理速度，由其中的 Sample Rate 參數決定。加上這個模組之後，系統的模擬速度減緩很多，因此耗掉的 CPU 資源也會大幅下降。</p>
+</div>
+<ol start="2">
+<li>QT GUI Frequency Sink 是否正確反應訊號頻率？如果訊號源的抽樣率與 Frequency Sink 設定的 bandwidth 不同的話，會有何影響？</li>
+</ol>
+<div><p>Answer</p>
+<p>如果 Frequency Sink 設定的 bandwidth 與 samp_rate 相同，則可以反應出正確的訊號頻率。如果設定不同的話，會發現示波器的圖形基本上一樣，但是頻率的刻度會改變。</p>
+<p>實際上，Frequency Sink 所收到的資料內容都是一樣的，我們無法單獨由這些資料內容判定實際的頻率值。例如，在前面的抽樣模擬實驗中，當我們把轉速及抽樣速率增加同樣倍數時，圓周的抽樣點其實是一樣的，因此無法單獨由圓周的抽樣點來決定實際的轉速。要決定實際的轉速，必須加上每秒所抽樣的速率才能決定。此處 Frequency Sink 也是同樣的道理。當我們把 bandwidth 減成一半時，看到的頻率值也會變成一半。</p>
+</div>
+<ol start="3">
+<li>如果改變訊號源的頻率的話 (0~16K), Frequency Sink 的圖形會有何改變？</li>
+</ol>
+<div><p>Answer</p>
+<p>所看到的訊號頻率，會從示波器的中心點，一直向右移到最右邊的邊界。</p>
+</div>
+<ol start="4">
+<li>如果改變訊號源的頻率的話 (&gt;16K), Frequency Sink 的圖形會有何改變？為什麼有這些改變？</li>
+</ol>
+<div><p>Answer</p>
+<p>超過 16K 之後，所看到的訊號頻率，會從示波器的最右邊的邊界跳回到最左邊的邊界，接下來再往右移動。</p>
+<p>超過 16K 之後，其訊號頻率與負的頻率成份實際上是無法區分的，例如對於抽樣速率 32K 而言，20K 的頻率訊號與 -12K 的頻率訊號其實抽樣值都是一樣的。示波器會以最小的正負範圍做為判斷的標準，因此超過 16K，就會轉回到負值的部份。</p>
+</div>
+<ol start="5">
+<li>如果訊號源的頻率變成負值呢？( cos(x) vs. cos(-x) ? )</li>
+</ol>
+<div><p>Answer</p>
+<p>如果把頻率設成負值，訊號的頻率會出現在中心點左邊，當負值變大時，訊號會往左移動。</p>
+</div>
+<ol start="6">
+<li>Frequency Sink 除了訊號源的頻率之外，可否觀察到其他頻率訊號存在？請說明為何會出現雜訊之類的訊號？雜訊大小如何？</li>
+</ol>
+<div><p>Answer</p>
+<p>可以看到有許多雜訊的訊號存在。會出現這些雜訊，主要是因為 rounding error，也就是計算機在處理浮點數字時所產生的誤差。使用越多位元，可以讓雜訊變得更小。</p>
+</div>
+<ol start="7">
+<li>試著增加訊號源數量，會發生什麼狀況呢？</li>
+</ol>
+<div><p>Answer</p>
+<p>會看到更多的頻率成份，兩者之間的頻率成份也會略微增加。</p>
+</div>
+<ol start="8">
+<li>訊號源預設的輸出形式為 Consine，試著改變訊號源的輸出形式，會發生什麼狀況呢？</li>
+</ol>
+<div><p>Answer</p>
+<p>會看到示波器上面，出現許多等間隔的諧波成份。</p>
+</div>
+]]></content>
+    <contributor>
+      <name/>
+    </contributor>
+    <published>2021-03-29T07:08:08.000Z</published>
+  </entry>
+  <entry>
     <title type="html">安裝 GNU Radio</title>
     <id>https://www.jywglady.org/sdr/sdr/contents/gnuradio/Install/</id>
     <link href="https://www.jywglady.org/sdr/sdr/contents/gnuradio/Install/"/>
@@ -505,9 +569,10 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span>​</span></span><
     <title type="html">幾個小問題</title>
     <id>https://www.jywglady.org/sdr/sdr/contents/gnuradio/Questions/</id>
     <link href="https://www.jywglady.org/sdr/sdr/contents/gnuradio/Questions/"/>
-    <updated>2021-03-28T14:59:02.000Z</updated>
+    <updated>2021-03-29T07:08:08.000Z</updated>
     <content type="html"><![CDATA[<h1 id="幾個小問題"> 幾個小問題</h1>
-<p>根據上一節的模擬，回答以下幾個問題。</p>
+<p>根據上一節的模擬，回答以下幾個問題。
+(本節問題出處<sup></sup>)</p>
 <ol>
 <li>如果不接 Throttle 的話有何影響？</li>
 </ol>
@@ -535,6 +600,13 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span>​</span></span><
 <ol start="8">
 <li>訊號源預設的輸出形式為 Consine，試著改變訊號源的輸出形式，會發生什麼狀況呢？</li>
 </ol>
+<hr>
+<section>
+<ol>
+<li id="fn1"><p><a href="https://greatscottgadgets.com/sdr/2/" target="_blank" rel="noopener noreferrer">https://greatscottgadgets.com/sdr/2/</a> </p>
+</li>
+</ol>
+</section>
 ]]></content>
     <contributor>
       <name/>
@@ -700,6 +772,18 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span>​</span></span><
       <name/>
     </contributor>
     <published>2021-03-15T04:56:04.000Z</published>
+  </entry>
+  <entry>
+    <title type="html">GNU Radio Basic</title>
+    <id>https://www.jywglady.org/sdr/sdr/contents/grbasic/</id>
+    <link href="https://www.jywglady.org/sdr/sdr/contents/grbasic/"/>
+    <updated>2021-03-28T14:59:02.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="gnu-radio-basic"> GNU Radio Basic</h1>
+]]></content>
+    <contributor>
+      <name/>
+    </contributor>
+    <published>2021-03-22T07:03:06.000Z</published>
   </entry>
   <entry>
     <title type="html">前言</title>
@@ -873,6 +957,36 @@ fnum <span>=</span> <span>(</span><span>-</span>N<span>/</span><span>2</span><sp
     <published>2021-03-15T00:47:07.000Z</published>
   </entry>
   <entry>
+    <title type="html">軟體設置</title>
+    <id>https://www.jywglady.org/sdr/sdr/contents/sampling/Octave/</id>
+    <link href="https://www.jywglady.org/sdr/sdr/contents/sampling/Octave/"/>
+    <updated>2021-03-15T04:56:04.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="軟體設置"> 軟體設置</h1>
+<p>MATLAB 是矩陣式的數值運算軟體，提供許多附加的工具箱，可以運用在各種不同的領域，另外還有一個配套軟體叫 Simulink，提供視覺化的開發和模擬環境，常被用來做系統模擬。由於 MATLAB 是商業軟體，對一般同學來說比較昂貴，因此同學除了可以在學校提供的實驗教學環境使用之外，老師也推薦以下幾款很相似的自由軟體，供同學參考使用。</p>
+<p><strong>GNU Octave</strong></p>
+<p>GNU Octave 是跨平台的自由軟體，可以在 GNU/Linux, macOS, BSD, 以及 Windows 等環境使用，語法與 MATLAB 相同，相容性極高，大多數用 MATLAB 寫好的程式，幾乎不用更改就可以在 GNU Octave 上面執行。Octave 也提供了很多的擴充套件，等同於 MATLAB 的工具箱，非常方便。個人非常推薦同學可以下載使用看看。</p>
+<p><strong>FreeMat</strong></p>
+<p>FreeMat 是另一款跨平台的自由軟體，與 MATLAB 的相容性也很高，不過近幾年比較沒有看到更新的訊息，比較好的地方是提供了連接
+C/Fortran 的程式界面。如果對於運算的要求不高，也是一個可以考慮的自由軟體。</p>
+<p><strong>Scilab</strong></p>
+<p>Scilab 也是跨平台的自由軟體，使用的語法與 MATLAB 近似，雖然還是有些許的不同，但提供了一個轉換 MATLAB 程式檔的工具。Scilab 有一個搭配的圖形工具箱 Xcos，與 MATLAB 的 Simulink 相似，可以提供視覺化的開發和模擬環境。</p>
+<br>
+<p>以下實驗基本上是在 GNU Octave 上進行測試。基本上要先安裝 Octave，可在 <a href="https://www.gnu.org/software/octave/" target="_blank" rel="noopener noreferrer">官網</a> 下載軟體安裝，如果是在 Ubuntu 系統，可使用以下方式直接安裝：</p>
+<div><pre><code><span>sudo</span> <span>apt</span> <span>install</span> octave
+</code></pre>
+<div><span>1</span><br></div></div><p>Octave 有圖形介面及文字介面，一般安裝完之後，執行 octave 指令，會自動開啟圖形介面，如下圖所示：</p>
+<p><img src="./Fig/octave-gui.png" alt=""></p>
+<p>另外，根據安裝版本及設定，也有可能開啟文字介面，如下圖所示：</p>
+<p><img src="./Fig/octave-nogui.png" alt=""></p>
+<p><exercise num="1"></exercise>
+請練習安裝 Octave 軟體，並試著執行 octave，檢查安裝是否正確無誤。</p>
+]]></content>
+    <contributor>
+      <name/>
+    </contributor>
+    <published>2021-03-15T04:56:04.000Z</published>
+  </entry>
+  <entry>
     <title type="html">抽樣模擬實驗</title>
     <id>https://www.jywglady.org/sdr/sdr/contents/sampling/</id>
     <link href="https://www.jywglady.org/sdr/sdr/contents/sampling/"/>
@@ -975,48 +1089,6 @@ grid on<span>;</span>
     <published>2021-03-15T04:56:04.000Z</published>
   </entry>
   <entry>
-    <title type="html">GNU Radio Basic</title>
-    <id>https://www.jywglady.org/sdr/sdr/contents/grbasic/</id>
-    <link href="https://www.jywglady.org/sdr/sdr/contents/grbasic/"/>
-    <updated>2021-03-28T14:59:02.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="gnu-radio-basic"> GNU Radio Basic</h1>
-]]></content>
-    <contributor>
-      <name/>
-    </contributor>
-    <published>2021-03-22T07:03:06.000Z</published>
-  </entry>
-  <entry>
-    <title type="html">軟體設置</title>
-    <id>https://www.jywglady.org/sdr/sdr/contents/sampling/Octave/</id>
-    <link href="https://www.jywglady.org/sdr/sdr/contents/sampling/Octave/"/>
-    <updated>2021-03-15T04:56:04.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="軟體設置"> 軟體設置</h1>
-<p>MATLAB 是矩陣式的數值運算軟體，提供許多附加的工具箱，可以運用在各種不同的領域，另外還有一個配套軟體叫 Simulink，提供視覺化的開發和模擬環境，常被用來做系統模擬。由於 MATLAB 是商業軟體，對一般同學來說比較昂貴，因此同學除了可以在學校提供的實驗教學環境使用之外，老師也推薦以下幾款很相似的自由軟體，供同學參考使用。</p>
-<p><strong>GNU Octave</strong></p>
-<p>GNU Octave 是跨平台的自由軟體，可以在 GNU/Linux, macOS, BSD, 以及 Windows 等環境使用，語法與 MATLAB 相同，相容性極高，大多數用 MATLAB 寫好的程式，幾乎不用更改就可以在 GNU Octave 上面執行。Octave 也提供了很多的擴充套件，等同於 MATLAB 的工具箱，非常方便。個人非常推薦同學可以下載使用看看。</p>
-<p><strong>FreeMat</strong></p>
-<p>FreeMat 是另一款跨平台的自由軟體，與 MATLAB 的相容性也很高，不過近幾年比較沒有看到更新的訊息，比較好的地方是提供了連接
-C/Fortran 的程式界面。如果對於運算的要求不高，也是一個可以考慮的自由軟體。</p>
-<p><strong>Scilab</strong></p>
-<p>Scilab 也是跨平台的自由軟體，使用的語法與 MATLAB 近似，雖然還是有些許的不同，但提供了一個轉換 MATLAB 程式檔的工具。Scilab 有一個搭配的圖形工具箱 Xcos，與 MATLAB 的 Simulink 相似，可以提供視覺化的開發和模擬環境。</p>
-<br>
-<p>以下實驗基本上是在 GNU Octave 上進行測試。基本上要先安裝 Octave，可在 <a href="https://www.gnu.org/software/octave/" target="_blank" rel="noopener noreferrer">官網</a> 下載軟體安裝，如果是在 Ubuntu 系統，可使用以下方式直接安裝：</p>
-<div><pre><code><span>sudo</span> <span>apt</span> <span>install</span> octave
-</code></pre>
-<div><span>1</span><br></div></div><p>Octave 有圖形介面及文字介面，一般安裝完之後，執行 octave 指令，會自動開啟圖形介面，如下圖所示：</p>
-<p><img src="./Fig/octave-gui.png" alt=""></p>
-<p>另外，根據安裝版本及設定，也有可能開啟文字介面，如下圖所示：</p>
-<p><img src="./Fig/octave-nogui.png" alt=""></p>
-<p><exercise num="1"></exercise>
-請練習安裝 Octave 軟體，並試著執行 octave，檢查安裝是否正確無誤。</p>
-]]></content>
-    <contributor>
-      <name/>
-    </contributor>
-    <published>2021-03-15T04:56:04.000Z</published>
-  </entry>
-  <entry>
     <title type="html">信號還原</title>
     <id>https://www.jywglady.org/sdr/sdr/contents/sampling/Recovery/</id>
     <link href="https://www.jywglady.org/sdr/sdr/contents/sampling/Recovery/"/>
@@ -1056,7 +1128,7 @@ rt <span>=</span> <span>zeros</span><span>(</span><span>size</span><span>(</span
     <title type="html">抽樣頻譜</title>
     <id>https://www.jywglady.org/sdr/sdr/contents/sampling/SampleFreq/</id>
     <link href="https://www.jywglady.org/sdr/sdr/contents/sampling/SampleFreq/"/>
-    <updated>2021-03-15T04:56:04.000Z</updated>
+    <updated>2021-03-29T07:08:08.000Z</updated>
     <content type="html"><![CDATA[<h1 id="抽樣頻譜"> 抽樣頻譜</h1>
 <p>抽樣之後，頻譜會變成重覆的狀況，為了方便，我們再寫一個計算重覆頻譜的函數，取名為 myssf.m，程式碼如下：</p>
 <div><pre><code><span>function</span> y <span>=</span> <span>myssf</span><span>(</span>x<span>,</span> fs<span>)</span>
@@ -1078,8 +1150,12 @@ grid on<span>;</span>
 <p><img src="./Fig/rcosssf.png" alt="">
 升餘弦脈衝信號抽樣後的頻譜, fs=1</p>
 </div>
-<p>現在回來做數值計算。一般我們會使用數位傅立葉變換 (DFT) 來計算取樣後的頻譜，其公式如下:</p>
-<p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.83333em;vertical-align:-0.15em;"></span><span><span style="margin-right:0.07847em;">X</span><span><span><span><span style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:-0.07847em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span style="margin-right:0.03148em;">k</span></span></span></span><span>​</span></span><span><span style="height:0.15em;"><span></span></span></span></span></span></span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:3.0954490000000003em;vertical-align:-1.267113em;"></span><span><span><span><span style="height:1.8283360000000004em;"><span style="top:-1.882887em;margin-left:0em;"><span style="height:3.05em;"></span><span><span><span>n</span><span>=</span><span>0</span></span></span></span><span style="top:-3.050005em;"><span style="height:3.05em;"></span><span><span>∑</span></span></span><span style="top:-4.300005em;margin-left:0em;"><span style="height:3.05em;"></span><span><span><span style="margin-right:0.10903em;">N</span><span>−</span><span>1</span></span></span></span></span><span>​</span></span><span><span style="height:1.267113em;"><span></span></span></span></span></span><span style="margin-right:0.16666666666666666em;"></span><span><span>x</span><span><span><span><span style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>n</span></span></span></span><span>​</span></span><span><span style="height:0.15em;"><span></span></span></span></span></span></span><span style="margin-right:0.2222222222222222em;"></span><span>⋅</span><span style="margin-right:0.2222222222222222em;"></span></span><span><span style="height:1.0115599999999998em;vertical-align:0em;"></span><span><span>e</span><span><span><span><span style="height:1.0115599999999998em;"><span style="top:-3.4130000000000003em;margin-right:0.05em;"><span style="height:3em;"></span><span><span><span>−</span><span><span></span><span><span><span><span style="height:0.8550857142857142em;"><span style="top:-2.656em;"><span style="height:3em;"></span><span><span><span style="margin-right:0.10903em;">N</span></span></span></span><span style="top:-3.2255000000000003em;"><span style="height:3em;"></span><span style="border-bottom-width:0.049em;"></span></span><span style="top:-3.384em;"><span style="height:3em;"></span><span><span><span>2</span><span>πi</span></span></span></span></span><span>​</span></span><span><span style="height:0.344em;"><span></span></span></span></span></span><span></span></span><span>kn</span></span></span></span></span></span></span></span></span></span></span></span></span></p>
+<p>現在回來做數值計算。對於一個函數 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>x</span><span>(</span><span>t</span><span>)</span></span></span></span> 抽樣，可以看成把 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>x</span><span>(</span><span>t</span><span>)</span></span></span></span> 乘上 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span style="margin-right:0.03785em;">δ</span><span>(</span><span>t</span><span>)</span></span></span></span> 函數的陣列，如下式所示：</p>
+<p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1.036108em;vertical-align:-0.286108em;"></span><span><span>x</span><span><span><span><span style="height:0.3361079999999999em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span><span>sample</span></span></span></span></span></span><span>​</span></span><span><span style="height:0.286108em;"><span></span></span></span></span></span></span><span>(</span><span>t</span><span>)</span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:2.959733em;vertical-align:-1.308336em;"></span><span><span><span><span style="height:1.6513970000000002em;"><span style="top:-1.8999949999999999em;margin-left:0em;"><span style="height:3.05em;"></span><span><span><span>n</span><span>=</span><span>−</span><span>∞</span></span></span></span><span style="top:-3.050005em;"><span style="height:3.05em;"></span><span><span>∑</span></span></span><span style="top:-4.3000050000000005em;margin-left:0em;"><span style="height:3.05em;"></span><span><span><span>∞</span></span></span></span></span><span>​</span></span><span><span style="height:1.308336em;"><span></span></span></span></span></span><span style="margin-right:0.16666666666666666em;"></span><span>x</span><span>[</span><span>n</span><span style="margin-right:0.13889em;">T</span><span>]</span><span style="margin-right:0.2222222222222222em;"></span><span>⋅</span><span style="margin-right:0.2222222222222222em;"></span></span><span><span style="height:1em;vertical-align:-0.25em;"></span><span style="margin-right:0.03785em;">δ</span><span>(</span><span>t</span><span style="margin-right:0.2222222222222222em;"></span><span>−</span><span style="margin-right:0.2222222222222222em;"></span></span><span><span style="height:1em;vertical-align:-0.25em;"></span><span>n</span><span style="margin-right:0.13889em;">T</span><span>)</span></span></span></span></span></p>
+<p>其傅立葉轉換為</p>
+<p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span style="margin-right:0.07847em;">X</span><span>(</span><span style="margin-right:0.10764em;">f</span><span>)</span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:2.959733em;vertical-align:-1.308336em;"></span><span><span><span><span style="height:1.6513970000000002em;"><span style="top:-1.8999949999999999em;margin-left:0em;"><span style="height:3.05em;"></span><span><span><span>n</span><span>=</span><span>−</span><span>∞</span></span></span></span><span style="top:-3.050005em;"><span style="height:3.05em;"></span><span><span>∑</span></span></span><span style="top:-4.3000050000000005em;margin-left:0em;"><span style="height:3.05em;"></span><span><span><span>∞</span></span></span></span></span><span>​</span></span><span><span style="height:1.308336em;"><span></span></span></span></span></span><span style="margin-right:0.16666666666666666em;"></span><span><span>x</span><span><span><span><span style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>n</span></span></span></span><span>​</span></span><span><span style="height:0.15em;"><span></span></span></span></span></span></span><span style="margin-right:0.2222222222222222em;"></span><span>⋅</span><span style="margin-right:0.2222222222222222em;"></span></span><span><span style="height:0.8991079999999999em;vertical-align:0em;"></span><span><span>e</span><span><span><span><span style="height:0.8991079999999999em;"><span style="top:-3.1130000000000004em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span>i</span><span>2</span><span style="margin-right:0.03588em;">π</span><span style="margin-right:0.10764em;">f</span><span>n</span><span style="margin-right:0.13889em;">T</span></span></span></span></span></span></span></span></span></span></span></span></span></p>
+<p>一般我們會使用數位傅立葉變換 (DFT) 來計算 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span style="margin-right:0.07847em;">X</span><span>(</span><span style="margin-right:0.10764em;">f</span><span>)</span></span></span></span> 的抽樣值，其公式如下:</p>
+<p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.83333em;vertical-align:-0.15em;"></span><span><span style="margin-right:0.07847em;">X</span><span><span><span><span style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:-0.07847em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span style="margin-right:0.03148em;">k</span></span></span></span><span>​</span></span><span><span style="height:0.15em;"><span></span></span></span></span></span></span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:3.0954490000000003em;vertical-align:-1.267113em;"></span><span><span><span><span style="height:1.8283360000000004em;"><span style="top:-1.882887em;margin-left:0em;"><span style="height:3.05em;"></span><span><span><span>n</span><span>=</span><span>0</span></span></span></span><span style="top:-3.050005em;"><span style="height:3.05em;"></span><span><span>∑</span></span></span><span style="top:-4.300005em;margin-left:0em;"><span style="height:3.05em;"></span><span><span><span style="margin-right:0.10903em;">N</span><span>−</span><span>1</span></span></span></span></span><span>​</span></span><span><span style="height:1.267113em;"><span></span></span></span></span></span><span style="margin-right:0.16666666666666666em;"></span><span><span>x</span><span><span><span><span style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>n</span></span></span></span><span>​</span></span><span><span style="height:0.15em;"><span></span></span></span></span></span></span><span style="margin-right:0.2222222222222222em;"></span><span>⋅</span><span style="margin-right:0.2222222222222222em;"></span></span><span><span style="height:1.0040200000000001em;vertical-align:0em;"></span><span><span>e</span><span><span><span><span style="height:1.0040200000000001em;"><span style="top:-3.4130000000000003em;margin-right:0.05em;"><span style="height:3em;"></span><span><span><span>−</span><span>i</span><span><span></span><span><span><span><span style="height:0.8443142857142858em;"><span style="top:-2.656em;"><span style="height:3em;"></span><span><span><span style="margin-right:0.10903em;">N</span></span></span></span><span style="top:-3.2255000000000003em;"><span style="height:3em;"></span><span style="border-bottom-width:0.049em;"></span></span><span style="top:-3.384em;"><span style="height:3em;"></span><span><span><span>2</span><span style="margin-right:0.03588em;">π</span></span></span></span></span><span>​</span></span><span><span style="height:0.344em;"><span></span></span></span></span></span><span></span></span><span>kn</span></span></span></span></span></span></span></span></span></span></span></span></span></p>
 <p><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.83333em;vertical-align:-0.15em;"></span><span><span style="margin-right:0.07847em;">X</span><span><span><span><span style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:-0.07847em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span style="margin-right:0.03148em;">k</span></span></span></span><span>​</span></span><span><span style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 可以看成頻率正規化後在角頻率 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>kn</span><span>/</span><span style="margin-right:0.10903em;">N</span></span></span></span> 的大小。我們可以使用以下的程式來計算抽樣之後的頻譜。</p>
 <div><pre><code>Ts <span>=</span> <span>1</span><span>;</span>        <span>% 抽樣間隔</span>
 t2 <span>=</span> <span>-</span><span>4</span><span>:</span>Ts<span>:</span><span>4</span><span>;</span>  <span>% 抽樣時間點</span>
@@ -1198,34 +1274,6 @@ an <span>=</span> <span>int</span><span>(</span>f<span>*</span><span>cos</span><
     <published>2021-03-15T04:56:04.000Z</published>
   </entry>
   <entry>
-    <title type="html">抽樣定理</title>
-    <id>https://www.jywglady.org/sdr/sdr/contents/sampling/Theory/</id>
-    <link href="https://www.jywglady.org/sdr/sdr/contents/sampling/Theory/"/>
-    <updated>2021-03-15T04:56:04.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="抽樣定理"> 抽樣定理</h1>
-<p>抽樣定理是將類比信號轉換成數位信號很重要的一個關鍵。假設信號為 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>x</span><span>(</span><span>t</span><span>)</span></span></span></span>，其傅立葉變換為 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span style="margin-right:0.07847em;">X</span><span>(</span><span style="margin-right:0.10764em;">f</span><span>)</span></span></span></span>，則</p>
-<p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span style="margin-right:0.07847em;">X</span><span>(</span><span style="margin-right:0.10764em;">f</span><span>)</span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:2.384573em;vertical-align:-0.970281em;"></span><span><span style="margin-right:0.44445em;position:relative;top:-0.0011249999999999316em;">∫</span><span><span><span><span style="height:1.414292em;"><span style="top:-1.7880500000000001em;margin-left:-0.44445em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span>∞</span></span></span></span><span style="top:-3.8129000000000004em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>∞</span></span></span></span></span><span>​</span></span><span><span style="height:0.970281em;"><span></span></span></span></span></span></span><span style="margin-right:0.16666666666666666em;"></span><span>x</span><span>(</span><span>t</span><span>)</span><span> </span><span><span>e</span><span><span><span><span style="height:0.8991079999999999em;"><span style="top:-3.1130000000000004em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span style="margin-right:0.05724em;">j</span><span>2</span><span style="margin-right:0.03588em;">π</span><span style="margin-right:0.10764em;">f</span><span>t</span></span></span></span></span></span></span></span></span><span> </span><span>d</span><span>t</span></span></span></span></span></p>
-<p>一般我們把抽樣過程看成是原來時域函數乘上一個 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.69444em;vertical-align:0em;"></span><span style="margin-right:0.03785em;">δ</span></span></span></span> 函數陣列，假設時間軸每隔 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.68333em;vertical-align:0em;"></span><span style="margin-right:0.13889em;">T</span></span></span></span> 取一點，其抽樣值為 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>x</span><span>(</span><span>n</span><span style="margin-right:0.13889em;">T</span><span>)</span></span></span></span>，且 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span><span style="margin-right:0.07847em;">X</span><span><span><span><span style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.07847em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>s</span></span></span></span><span>​</span></span><span><span style="height:0.15em;"><span></span></span></span></span></span></span><span>(</span><span style="margin-right:0.10764em;">f</span><span>)</span></span></span></span> 為 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>x</span><span>(</span><span>t</span><span>)</span></span></span></span> 抽樣後的頻譜，則</p>
-<p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span><span style="margin-right:0.07847em;">X</span><span><span><span><span style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.07847em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>s</span></span></span></span><span>​</span></span><span><span style="height:0.15em;"><span></span></span></span></span></span></span><span>(</span><span style="margin-right:0.10764em;">f</span><span>)</span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:3.0118410000000004em;vertical-align:-1.360444em;"></span><span><span><span><span style="height:1.6513970000000002em;"><span style="top:-1.8478869999999998em;margin-left:0em;"><span style="height:3.05em;"></span><span><span><span style="margin-right:0.03148em;">k</span><span>=</span><span>−</span><span>∞</span></span></span></span><span style="top:-3.0500049999999996em;"><span style="height:3.05em;"></span><span><span>∑</span></span></span><span style="top:-4.300005em;margin-left:0em;"><span style="height:3.05em;"></span><span><span><span>∞</span></span></span></span></span><span>​</span></span><span><span style="height:1.360444em;"><span></span></span></span></span></span><span style="margin-right:0.16666666666666666em;"></span><span style="margin-right:0.07847em;">X</span><span>(</span><span style="margin-right:0.10764em;">f</span><span style="margin-right:0.2222222222222222em;"></span><span>−</span><span style="margin-right:0.2222222222222222em;"></span></span><span><span style="height:1em;vertical-align:-0.25em;"></span><span style="margin-right:0.03148em;">k</span><span><span style="margin-right:0.10764em;">f</span><span><span><span><span style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.10764em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>s</span></span></span></span><span>​</span></span><span><span style="height:0.15em;"><span></span></span></span></span></span></span><span>)</span></span></span></span></span></p>
-<p>其中 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span><span style="margin-right:0.10764em;">f</span><span><span><span><span style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.10764em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>s</span></span></span></span><span>​</span></span><span><span style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 為抽樣速度。示意圖如下：</p>
-<div>
-<p><img src="./Fig/AliasedSpectrum.png" alt="">
-抽樣之後的頻譜</p>
-</div>
-<p>註意在上圖中，原來的頻譜每隔 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span><span style="margin-right:0.10764em;">f</span><span><span><span><span style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.10764em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>s</span></span></span></span><span>​</span></span><span><span style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 會重覆一次，直觀來看，也就是抽樣後，頻率 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span style="margin-right:0.10764em;">f</span></span></span></span> 和頻率 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span style="margin-right:0.03148em;">k</span><span><span style="margin-right:0.10764em;">f</span><span><span><span><span style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.10764em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>s</span></span></span></span><span>​</span></span><span><span style="height:0.15em;"><span></span></span></span></span></span></span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span></span><span><span style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span style="margin-right:0.10764em;">f</span></span></span></span> 根本無法區分，可以看成是一樣的。如果 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span><span style="margin-right:0.10764em;">f</span><span><span><span><span style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.10764em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>s</span></span></span></span><span>​</span></span><span><span style="height:0.15em;"><span></span></span></span></span></span></span><span style="margin-right:0.2777777777777778em;"></span><span>&gt;</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:0.68333em;vertical-align:0em;"></span><span>2</span><span style="margin-right:0.05017em;">B</span></span></span></span>，也就是抽樣速度超過最大頻率的兩倍，那麽重覆的頻譜之間不會重疊；反之，則會重疊並產生干擾，如上圖所示。</p>
-<p>抽樣定理告訴我們，只要抽樣速度超過最大頻率兩倍，那麽重覆的頻譜不會重疊，我們就可以使用一個低通濾波器把原來的信號頻譜找回來，如下圖所示：</p>
-<div>
-<p><img src="./Fig/ReconstructFilter.png" alt=""></p>
-<p>使用低通濾波器取回原來的頻譜</p>
-</div>
-<p>為了進一步了解抽樣定理，以下我們將使用 MATLAB/Octave 程式來進行模擬。</p>
-]]></content>
-    <contributor>
-      <name/>
-    </contributor>
-    <published>2021-03-15T04:56:04.000Z</published>
-  </entry>
-  <entry>
     <title type="html">模擬實驗解答</title>
     <id>https://www.jywglady.org/sdr/sdr/contents/sampling/SimuAnswer/</id>
     <link href="https://www.jywglady.org/sdr/sdr/contents/sampling/SimuAnswer/"/>
@@ -1314,33 +1362,32 @@ an <span>=</span> <span>int</span><span>(</span>f<span>*</span><span>cos</span><
     <published>2021-03-15T04:56:04.000Z</published>
   </entry>
   <entry>
-    <title type="html">傅立葉變換</title>
-    <id>https://www.jywglady.org/sdr/sdr/contents/sampling/Transform/</id>
-    <link href="https://www.jywglady.org/sdr/sdr/contents/sampling/Transform/"/>
+    <title type="html">抽樣定理</title>
+    <id>https://www.jywglady.org/sdr/sdr/contents/sampling/Theory/</id>
+    <link href="https://www.jywglady.org/sdr/sdr/contents/sampling/Theory/"/>
     <updated>2021-03-15T04:56:04.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="傅立葉變換"> 傅立葉變換</h1>
-<p>根據傅立葉變換的理論，不只是 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>cos</span><span>(</span><span style="margin-right:0.03588em;">ω</span><span>t</span><span>)</span></span></span></span>，實際上，我們可以把任意的時間函數 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>x</span><span>(</span><span>t</span><span>)</span></span></span></span>，寫成 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.824664em;vertical-align:0em;"></span><span><span>e</span><span><span><span><span style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span></span></span></span> 的線性組合。</p>
-<p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>x</span><span>(</span><span>t</span><span>)</span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:2.384573em;vertical-align:-0.970281em;"></span><span><span></span><span><span><span><span style="height:1.32144em;"><span style="top:-2.314em;"><span style="height:3em;"></span><span><span>2</span><span style="margin-right:0.03588em;">π</span></span></span><span style="top:-3.23em;"><span style="height:3em;"></span><span style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span style="height:3em;"></span><span><span>1</span></span></span></span><span>​</span></span><span><span style="height:0.686em;"><span></span></span></span></span></span><span></span></span><span style="margin-right:0.16666666666666666em;"></span><span><span style="margin-right:0.44445em;position:relative;top:-0.0011249999999999316em;">∫</span><span><span><span><span style="height:1.414292em;"><span style="top:-1.7880500000000001em;margin-left:-0.44445em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span>∞</span></span></span></span><span style="top:-3.8129000000000004em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>∞</span></span></span></span><span>​</span></span><span><span style="height:0.970281em;"><span></span></span></span></span></span></span><span style="margin-right:0.16666666666666666em;"></span><span style="margin-right:0.07847em;">X</span><span>(</span><span style="margin-right:0.03588em;">ω</span><span>)</span><span> </span><span><span>e</span><span><span><span><span style="height:0.874664em;"><span style="top:-3.1130000000000004em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span><span style="margin-right:0.16666666666666666em;"></span><span>d</span><span style="margin-right:0.03588em;">ω</span></span></span></span></span></p>
-<p>其中</p>
-<p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span style="margin-right:0.07847em;">X</span><span>(</span><span style="margin-right:0.03588em;">ω</span><span>)</span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:2.384573em;vertical-align:-0.970281em;"></span><span><span style="margin-right:0.44445em;position:relative;top:-0.0011249999999999316em;">∫</span><span><span><span><span style="height:1.414292em;"><span style="top:-1.7880500000000001em;margin-left:-0.44445em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span>∞</span></span></span></span><span style="top:-3.8129000000000004em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>∞</span></span></span></span><span>​</span></span><span><span style="height:0.970281em;"><span></span></span></span></span></span></span><span style="margin-right:0.16666666666666666em;"></span><span>x</span><span>(</span><span>t</span><span>)</span><span> </span><span><span>e</span><span><span><span><span style="height:0.874664em;"><span style="top:-3.1130000000000004em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span><span style="margin-right:0.16666666666666666em;"></span><span>d</span><span>t</span></span></span></span></span></p>
-<p>也就是說，任意的時間函數，我們都可以把它看成是不同圓周上各類等速旋轉的訊號點的合成。</p>
-<p>我們這邊不談太多數學證明，而是打算用比較直觀的方式來看一下這個變換公式。</p>
-<p>如果 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>x</span><span>(</span><span>t</span><span>)</span></span></span></span> 可以看成是很多不同轉速的訊號點的合成，那麼把 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>x</span><span>(</span><span>t</span><span>)</span></span></span></span> 乘上 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.824664em;vertical-align:0em;"></span><span><span>e</span><span><span><span><span style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span></span></span></span> 會發生什麼事呢？基本上，</p>
-<p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.99248em;vertical-align:0em;"></span><span><span>e</span><span><span><span><span style="height:0.99248em;"><span style="top:-3.1130000000000004em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.05724em;">j</span><span><span style="margin-right:0.03588em;">ω</span><span><span><span><span style="height:0.8278285714285715em;"><span style="top:-2.931em;margin-right:0.07142857142857144em;"><span style="height:2.5em;"></span><span><span><span>′</span></span></span></span></span></span></span></span></span><span>t</span></span></span></span></span></span></span></span></span><span style="margin-right:0.16666666666666666em;"></span><span><span>e</span><span><span><span><span style="height:0.874664em;"><span style="top:-3.1130000000000004em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:0.99248em;vertical-align:0em;"></span><span><span>e</span><span><span><span><span style="height:0.99248em;"><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.05724em;">j</span><span>(</span><span><span style="margin-right:0.03588em;">ω</span><span><span><span><span style="height:0.8278285714285715em;"><span style="top:-2.931em;margin-right:0.07142857142857144em;"><span style="height:2.5em;"></span><span><span><span>′</span></span></span></span></span></span></span></span></span><span>−</span><span style="margin-right:0.03588em;">ω</span><span>)</span><span>t</span></span></span></span></span></span></span></span></span></span></span></span></span></p>
-<p>換句話說，每一個成份波的轉速都會減少 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.43056em;vertical-align:0em;"></span><span style="margin-right:0.03588em;">ω</span></span></span></span>，那麼如果 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.751892em;vertical-align:0em;"></span><span><span style="margin-right:0.03588em;">ω</span><span><span><span><span style="height:0.751892em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>′</span></span></span></span></span></span></span></span></span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:0.43056em;vertical-align:0em;"></span><span style="margin-right:0.03588em;">ω</span></span></span></span>，指數的部份變成 0，所以乘出來的結果就會變成常數 1；否則的話，仍然會是一個旋轉的波，只是轉速減少了 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.43056em;vertical-align:0em;"></span><span style="margin-right:0.03588em;">ω</span></span></span></span>。</p>
-<p>那如果我們把一個旋轉的波在時間上做積分會得到什麼結果呢？基本上積分是一種求和的運算，而複數的加法也可以看成是二維向量的加法。因為是一個等速旋轉的訊號，只要時間夠長，每一個方向累加的量大致上會相等，最後就會互消抵消而得到 0。換句話說，所有轉速不是 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.43056em;vertical-align:0em;"></span><span style="margin-right:0.03588em;">ω</span></span></span></span> 的成份，積分後都會消失；而轉速為 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.43056em;vertical-align:0em;"></span><span style="margin-right:0.03588em;">ω</span></span></span></span> 的訊號，因為每一項都是常數，求和之後只會越來越大，不會消失。這邊假設頻率成份是連續的，基本上必須使用頻率密度，而不是該頻率的分量值，所以求和的時候，不會變成無限大，而是得到一個可以反應出 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.43056em;vertical-align:0em;"></span><span style="margin-right:0.03588em;">ω</span></span></span></span> 轉速的訊號成份大小。那這裡只是談一些很基本的概念，詳細的推導過程和原理，可以自行查閱其他資料。</p>
-<div><p>練習</p>
-<br>
-<ol>
-<li>一個特定頻率成份（轉速）的訊號，是否可以由其他不同頻率（轉速）的訊號做線性組合（放大縮小及加減運算）而得到？為什麼？</li>
-<li>傅立葉變換可以用來找出時間訊號中每一個不同頻率的訊號成份；反過來說，如果已知每一個不同頻率的訊號成份，那麼也可以合成原來的時間訊號。請結合這個概念，以及前面所提到的內容，重新說明取樣定理的限制條件。</li>
-</ol>
+    <content type="html"><![CDATA[<h1 id="抽樣定理"> 抽樣定理</h1>
+<p>抽樣定理是將類比信號轉換成數位信號很重要的一個關鍵。假設信號為 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>x</span><span>(</span><span>t</span><span>)</span></span></span></span>，其傅立葉變換為 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span style="margin-right:0.07847em;">X</span><span>(</span><span style="margin-right:0.10764em;">f</span><span>)</span></span></span></span>，則</p>
+<p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span style="margin-right:0.07847em;">X</span><span>(</span><span style="margin-right:0.10764em;">f</span><span>)</span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:2.384573em;vertical-align:-0.970281em;"></span><span><span style="margin-right:0.44445em;position:relative;top:-0.0011249999999999316em;">∫</span><span><span><span><span style="height:1.414292em;"><span style="top:-1.7880500000000001em;margin-left:-0.44445em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span>∞</span></span></span></span><span style="top:-3.8129000000000004em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>∞</span></span></span></span></span><span>​</span></span><span><span style="height:0.970281em;"><span></span></span></span></span></span></span><span style="margin-right:0.16666666666666666em;"></span><span>x</span><span>(</span><span>t</span><span>)</span><span> </span><span><span>e</span><span><span><span><span style="height:0.8991079999999999em;"><span style="top:-3.1130000000000004em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span style="margin-right:0.05724em;">j</span><span>2</span><span style="margin-right:0.03588em;">π</span><span style="margin-right:0.10764em;">f</span><span>t</span></span></span></span></span></span></span></span></span><span> </span><span>d</span><span>t</span></span></span></span></span></p>
+<p>一般我們把抽樣過程看成是原來時域函數乘上一個 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.69444em;vertical-align:0em;"></span><span style="margin-right:0.03785em;">δ</span></span></span></span> 函數陣列，假設時間軸每隔 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.68333em;vertical-align:0em;"></span><span style="margin-right:0.13889em;">T</span></span></span></span> 取一點，其抽樣值為 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>x</span><span>(</span><span>n</span><span style="margin-right:0.13889em;">T</span><span>)</span></span></span></span>，且 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span><span style="margin-right:0.07847em;">X</span><span><span><span><span style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.07847em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>s</span></span></span></span><span>​</span></span><span><span style="height:0.15em;"><span></span></span></span></span></span></span><span>(</span><span style="margin-right:0.10764em;">f</span><span>)</span></span></span></span> 為 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>x</span><span>(</span><span>t</span><span>)</span></span></span></span> 抽樣後的頻譜，則</p>
+<p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span><span style="margin-right:0.07847em;">X</span><span><span><span><span style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.07847em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>s</span></span></span></span><span>​</span></span><span><span style="height:0.15em;"><span></span></span></span></span></span></span><span>(</span><span style="margin-right:0.10764em;">f</span><span>)</span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:3.0118410000000004em;vertical-align:-1.360444em;"></span><span><span><span><span style="height:1.6513970000000002em;"><span style="top:-1.8478869999999998em;margin-left:0em;"><span style="height:3.05em;"></span><span><span><span style="margin-right:0.03148em;">k</span><span>=</span><span>−</span><span>∞</span></span></span></span><span style="top:-3.0500049999999996em;"><span style="height:3.05em;"></span><span><span>∑</span></span></span><span style="top:-4.300005em;margin-left:0em;"><span style="height:3.05em;"></span><span><span><span>∞</span></span></span></span></span><span>​</span></span><span><span style="height:1.360444em;"><span></span></span></span></span></span><span style="margin-right:0.16666666666666666em;"></span><span style="margin-right:0.07847em;">X</span><span>(</span><span style="margin-right:0.10764em;">f</span><span style="margin-right:0.2222222222222222em;"></span><span>−</span><span style="margin-right:0.2222222222222222em;"></span></span><span><span style="height:1em;vertical-align:-0.25em;"></span><span style="margin-right:0.03148em;">k</span><span><span style="margin-right:0.10764em;">f</span><span><span><span><span style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.10764em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>s</span></span></span></span><span>​</span></span><span><span style="height:0.15em;"><span></span></span></span></span></span></span><span>)</span></span></span></span></span></p>
+<p>其中 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span><span style="margin-right:0.10764em;">f</span><span><span><span><span style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.10764em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>s</span></span></span></span><span>​</span></span><span><span style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 為抽樣速度。示意圖如下：</p>
+<div>
+<p><img src="./Fig/AliasedSpectrum.png" alt="">
+抽樣之後的頻譜</p>
 </div>
+<p>註意在上圖中，原來的頻譜每隔 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span><span style="margin-right:0.10764em;">f</span><span><span><span><span style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.10764em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>s</span></span></span></span><span>​</span></span><span><span style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 會重覆一次，直觀來看，也就是抽樣後，頻率 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span style="margin-right:0.10764em;">f</span></span></span></span> 和頻率 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span style="margin-right:0.03148em;">k</span><span><span style="margin-right:0.10764em;">f</span><span><span><span><span style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.10764em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>s</span></span></span></span><span>​</span></span><span><span style="height:0.15em;"><span></span></span></span></span></span></span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span></span><span><span style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span style="margin-right:0.10764em;">f</span></span></span></span> 根本無法區分，可以看成是一樣的。如果 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span><span style="margin-right:0.10764em;">f</span><span><span><span><span style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.10764em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>s</span></span></span></span><span>​</span></span><span><span style="height:0.15em;"><span></span></span></span></span></span></span><span style="margin-right:0.2777777777777778em;"></span><span>&gt;</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:0.68333em;vertical-align:0em;"></span><span>2</span><span style="margin-right:0.05017em;">B</span></span></span></span>，也就是抽樣速度超過最大頻率的兩倍，那麽重覆的頻譜之間不會重疊；反之，則會重疊並產生干擾，如上圖所示。</p>
+<p>抽樣定理告訴我們，只要抽樣速度超過最大頻率兩倍，那麽重覆的頻譜不會重疊，我們就可以使用一個低通濾波器把原來的信號頻譜找回來，如下圖所示：</p>
+<div>
+<p><img src="./Fig/ReconstructFilter.png" alt=""></p>
+<p>使用低通濾波器取回原來的頻譜</p>
+</div>
+<p>為了進一步了解抽樣定理，以下我們將使用 MATLAB/Octave 程式來進行模擬。</p>
 ]]></content>
     <contributor>
       <name/>
     </contributor>
-    <published>2021-03-15T00:47:07.000Z</published>
+    <published>2021-03-15T04:56:04.000Z</published>
   </entry>
   <entry>
     <title type="html">時域與頻域</title>
@@ -1429,6 +1476,35 @@ grid on<span>;</span>
       <name/>
     </contributor>
     <published>2021-03-15T04:56:04.000Z</published>
+  </entry>
+  <entry>
+    <title type="html">傅立葉變換</title>
+    <id>https://www.jywglady.org/sdr/sdr/contents/sampling/Transform/</id>
+    <link href="https://www.jywglady.org/sdr/sdr/contents/sampling/Transform/"/>
+    <updated>2021-03-15T04:56:04.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="傅立葉變換"> 傅立葉變換</h1>
+<p>根據傅立葉變換的理論，不只是 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>cos</span><span>(</span><span style="margin-right:0.03588em;">ω</span><span>t</span><span>)</span></span></span></span>，實際上，我們可以把任意的時間函數 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>x</span><span>(</span><span>t</span><span>)</span></span></span></span>，寫成 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.824664em;vertical-align:0em;"></span><span><span>e</span><span><span><span><span style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span></span></span></span> 的線性組合。</p>
+<p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>x</span><span>(</span><span>t</span><span>)</span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:2.384573em;vertical-align:-0.970281em;"></span><span><span></span><span><span><span><span style="height:1.32144em;"><span style="top:-2.314em;"><span style="height:3em;"></span><span><span>2</span><span style="margin-right:0.03588em;">π</span></span></span><span style="top:-3.23em;"><span style="height:3em;"></span><span style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span style="height:3em;"></span><span><span>1</span></span></span></span><span>​</span></span><span><span style="height:0.686em;"><span></span></span></span></span></span><span></span></span><span style="margin-right:0.16666666666666666em;"></span><span><span style="margin-right:0.44445em;position:relative;top:-0.0011249999999999316em;">∫</span><span><span><span><span style="height:1.414292em;"><span style="top:-1.7880500000000001em;margin-left:-0.44445em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span>∞</span></span></span></span><span style="top:-3.8129000000000004em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>∞</span></span></span></span><span>​</span></span><span><span style="height:0.970281em;"><span></span></span></span></span></span></span><span style="margin-right:0.16666666666666666em;"></span><span style="margin-right:0.07847em;">X</span><span>(</span><span style="margin-right:0.03588em;">ω</span><span>)</span><span> </span><span><span>e</span><span><span><span><span style="height:0.874664em;"><span style="top:-3.1130000000000004em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span><span style="margin-right:0.16666666666666666em;"></span><span>d</span><span style="margin-right:0.03588em;">ω</span></span></span></span></span></p>
+<p>其中</p>
+<p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span style="margin-right:0.07847em;">X</span><span>(</span><span style="margin-right:0.03588em;">ω</span><span>)</span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:2.384573em;vertical-align:-0.970281em;"></span><span><span style="margin-right:0.44445em;position:relative;top:-0.0011249999999999316em;">∫</span><span><span><span><span style="height:1.414292em;"><span style="top:-1.7880500000000001em;margin-left:-0.44445em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span>∞</span></span></span></span><span style="top:-3.8129000000000004em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>∞</span></span></span></span><span>​</span></span><span><span style="height:0.970281em;"><span></span></span></span></span></span></span><span style="margin-right:0.16666666666666666em;"></span><span>x</span><span>(</span><span>t</span><span>)</span><span> </span><span><span>e</span><span><span><span><span style="height:0.874664em;"><span style="top:-3.1130000000000004em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span><span style="margin-right:0.16666666666666666em;"></span><span>d</span><span>t</span></span></span></span></span></p>
+<p>也就是說，任意的時間函數，我們都可以把它看成是不同圓周上各類等速旋轉的訊號點的合成。</p>
+<p>我們這邊不談太多數學證明，而是打算用比較直觀的方式來看一下這個變換公式。</p>
+<p>如果 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>x</span><span>(</span><span>t</span><span>)</span></span></span></span> 可以看成是很多不同轉速的訊號點的合成，那麼把 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>x</span><span>(</span><span>t</span><span>)</span></span></span></span> 乘上 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.824664em;vertical-align:0em;"></span><span><span>e</span><span><span><span><span style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span></span></span></span> 會發生什麼事呢？基本上，</p>
+<p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.99248em;vertical-align:0em;"></span><span><span>e</span><span><span><span><span style="height:0.99248em;"><span style="top:-3.1130000000000004em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.05724em;">j</span><span><span style="margin-right:0.03588em;">ω</span><span><span><span><span style="height:0.8278285714285715em;"><span style="top:-2.931em;margin-right:0.07142857142857144em;"><span style="height:2.5em;"></span><span><span><span>′</span></span></span></span></span></span></span></span></span><span>t</span></span></span></span></span></span></span></span></span><span style="margin-right:0.16666666666666666em;"></span><span><span>e</span><span><span><span><span style="height:0.874664em;"><span style="top:-3.1130000000000004em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:0.99248em;vertical-align:0em;"></span><span><span>e</span><span><span><span><span style="height:0.99248em;"><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.05724em;">j</span><span>(</span><span><span style="margin-right:0.03588em;">ω</span><span><span><span><span style="height:0.8278285714285715em;"><span style="top:-2.931em;margin-right:0.07142857142857144em;"><span style="height:2.5em;"></span><span><span><span>′</span></span></span></span></span></span></span></span></span><span>−</span><span style="margin-right:0.03588em;">ω</span><span>)</span><span>t</span></span></span></span></span></span></span></span></span></span></span></span></span></p>
+<p>換句話說，每一個成份波的轉速都會減少 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.43056em;vertical-align:0em;"></span><span style="margin-right:0.03588em;">ω</span></span></span></span>，那麼如果 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.751892em;vertical-align:0em;"></span><span><span style="margin-right:0.03588em;">ω</span><span><span><span><span style="height:0.751892em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>′</span></span></span></span></span></span></span></span></span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:0.43056em;vertical-align:0em;"></span><span style="margin-right:0.03588em;">ω</span></span></span></span>，指數的部份變成 0，所以乘出來的結果就會變成常數 1；否則的話，仍然會是一個旋轉的波，只是轉速減少了 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.43056em;vertical-align:0em;"></span><span style="margin-right:0.03588em;">ω</span></span></span></span>。</p>
+<p>那如果我們把一個旋轉的波在時間上做積分會得到什麼結果呢？基本上積分是一種求和的運算，而複數的加法也可以看成是二維向量的加法。因為是一個等速旋轉的訊號，只要時間夠長，每一個方向累加的量大致上會相等，最後就會互消抵消而得到 0。換句話說，所有轉速不是 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.43056em;vertical-align:0em;"></span><span style="margin-right:0.03588em;">ω</span></span></span></span> 的成份，積分後都會消失；而轉速為 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.43056em;vertical-align:0em;"></span><span style="margin-right:0.03588em;">ω</span></span></span></span> 的訊號，因為每一項都是常數，求和之後只會越來越大，不會消失。這邊假設頻率成份是連續的，基本上必須使用頻率密度，而不是該頻率的分量值，所以求和的時候，不會變成無限大，而是得到一個可以反應出 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.43056em;vertical-align:0em;"></span><span style="margin-right:0.03588em;">ω</span></span></span></span> 轉速的訊號成份大小。那這裡只是談一些很基本的概念，詳細的推導過程和原理，可以自行查閱其他資料。</p>
+<div><p>練習</p>
+<br>
+<ol>
+<li>一個特定頻率成份（轉速）的訊號，是否可以由其他不同頻率（轉速）的訊號做線性組合（放大縮小及加減運算）而得到？為什麼？</li>
+<li>傅立葉變換可以用來找出時間訊號中每一個不同頻率的訊號成份；反過來說，如果已知每一個不同頻率的訊號成份，那麼也可以合成原來的時間訊號。請結合這個概念，以及前面所提到的內容，重新說明取樣定理的限制條件。</li>
+</ol>
+</div>
+]]></content>
+    <contributor>
+      <name/>
+    </contributor>
+    <published>2021-03-15T00:47:07.000Z</published>
   </entry>
   <entry>
     <title type="html">SDR 簡介</title>
