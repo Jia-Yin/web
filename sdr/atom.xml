@@ -3,7 +3,7 @@
   <id>https://www.jywglady.org/sdr/sdr/</id>
   <title>通訊實驗教材</title>
   <subtitle>通訊實驗教材</subtitle>
-  <updated>2021-03-29T07:08:27.327Z</updated>
+  <updated>2021-04-26T06:55:09.163Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://www.jywglady.org/sdr/sdr/atom.xml"/>
   <link rel="alternate" href="https://www.jywglady.org/sdr/sdr/"/>
@@ -18,26 +18,6 @@
       <name/>
     </contributor>
     <published>2021-03-07T12:24:56.000Z</published>
-  </entry>
-  <entry>
-    <title type="html">傅立葉變換-01</title>
-    <id>https://www.jywglady.org/sdr/sdr/contents/FFT/Fourier-01/</id>
-    <link href="https://www.jywglady.org/sdr/sdr/contents/FFT/Fourier-01/"/>
-    <updated>2021-03-15T05:40:34.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="傅立葉變換-01"> 傅立葉變換-01</h1>
-<p>觀察頻率 0 1 1，也就是沒有直流成份，且頻率為 1Hz, 2Hz 的兩個弦波振幅皆為 1 的情形。</p>
-<FourierCircular freqs="0 1 1"/>
-<p><br><br>
-<exercise></exercise></p>
-<ol>
-<li>觀察兩個波形相加的結果。如果只顯示相加的總和，而不顯示出成份波，有辦法透過肉眼觀察出有哪些成份波嗎？</li>
-<li>從圖上的結果可以看出，時間取樣值為 <code>2 -1 -1</code>，請思考為什麼？（用暫停且移動時間點的方式來找出答案。）</li>
-</ol>
-]]></content>
-    <contributor>
-      <name/>
-    </contributor>
-    <published>2021-03-15T05:40:34.000Z</published>
   </entry>
   <entry>
     <title type="html">傅立葉變換-02</title>
@@ -57,6 +37,26 @@
 <ol>
 <li>當頻率成份為 <code>1 1 1</code> 時，時間取樣為何？請說明為什麼會得到這樣的結果？（用暫停且移動時間點的方式來找出答案。）</li>
 <li>當頻率成份為 <code>1 1 1 1</code> 時，時間取樣為何？如果頻率成份為 <code>1 1 1 1 1</code> 呢？請試著推廣到更多個 1 的情況，並說明原因。</li>
+</ol>
+]]></content>
+    <contributor>
+      <name/>
+    </contributor>
+    <published>2021-03-15T05:40:34.000Z</published>
+  </entry>
+  <entry>
+    <title type="html">傅立葉變換-01</title>
+    <id>https://www.jywglady.org/sdr/sdr/contents/FFT/Fourier-01/</id>
+    <link href="https://www.jywglady.org/sdr/sdr/contents/FFT/Fourier-01/"/>
+    <updated>2021-03-15T05:40:34.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="傅立葉變換-01"> 傅立葉變換-01</h1>
+<p>觀察頻率 0 1 1，也就是沒有直流成份，且頻率為 1Hz, 2Hz 的兩個弦波振幅皆為 1 的情形。</p>
+<FourierCircular freqs="0 1 1"/>
+<p><br><br>
+<exercise></exercise></p>
+<ol>
+<li>觀察兩個波形相加的結果。如果只顯示相加的總和，而不顯示出成份波，有辦法透過肉眼觀察出有哪些成份波嗎？</li>
+<li>從圖上的結果可以看出，時間取樣值為 <code>2 -1 -1</code>，請思考為什麼？（用暫停且移動時間點的方式來找出答案。）</li>
 </ol>
 ]]></content>
     <contributor>
@@ -569,7 +569,7 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span>​</span></span><
     <title type="html">幾個小問題</title>
     <id>https://www.jywglady.org/sdr/sdr/contents/gnuradio/Questions/</id>
     <link href="https://www.jywglady.org/sdr/sdr/contents/gnuradio/Questions/"/>
-    <updated>2021-03-29T07:08:08.000Z</updated>
+    <updated>2021-04-23T10:50:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="幾個小問題"> 幾個小問題</h1>
 <p>根據上一節的模擬，回答以下幾個問題。
 (本節問題出處<sup></sup>)</p>
@@ -577,7 +577,7 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span>​</span></span><
 <li>如果不接 Throttle 的話有何影響？</li>
 </ol>
 <div><p>Hint</p>
-<p>可以在系統安裝 htop 程式，並在執行模擬時，使用 htop 觀察系統的狀態變化。安裝 htop，可使用 Synaptic 或在終端機使用以下指令安裝：</p>
+<p>可以在系統安裝 htop 程式，並在執行模擬時，使用 htop 觀察系統的狀態變化。安裝 htop，可使用 synaptic 或在終端機使用以下指令安裝：</p>
 <div><pre><code><span>sudo</span> <span>apt</span> <span>install</span> <span>htop</span>
 </code></pre>
 <div><span>1</span><br></div></div></div>
@@ -1186,7 +1186,7 @@ Fsw <span>=</span> Ts<span>*</span>fst<span>*</span><span>exp</span><span>(</spa
     <title type="html">傅立葉級數</title>
     <id>https://www.jywglady.org/sdr/sdr/contents/sampling/Series/</id>
     <link href="https://www.jywglady.org/sdr/sdr/contents/sampling/Series/"/>
-    <updated>2021-03-15T04:56:04.000Z</updated>
+    <updated>2021-04-23T10:50:33.000Z</updated>
     <content type="html"><![CDATA[<h1 id="傅立葉級數"> 傅立葉級數</h1>
 <p>函數有不同頻率成份，可以看成是由不同頻率成份的函數組合而成，而傅立葉分析主要就是用來觀察和分析函數的各種不同頻率成份。</p>
 <p>一般周期性信號的頻率成份，會有一個最低的頻率成份稱為基頻，其他頻率成份會是這個頻率的倍數，也可以說是相關的諧波。這些頻率成份的系數，可以使用傅立葉級數來計算。如果信號不是周期性的，但是有一個限制的區間，那我們也可以把這個區間重複延伸，看成是周期性的函數。</p>
@@ -1225,7 +1225,7 @@ grid on<span>;</span> <span>% 畫格線		</span>
 <div><pre><code>N <span>=</span> <span>5</span><span>;</span>   <span>% 項數</span>
 sgn <span>=</span> <span>1</span><span>;</span> <span>% 用作正負變號使用，第一項為正</span>
 t <span>=</span> <span>-</span><span>8</span><span>:</span><span>0.1</span><span>:</span><span>8</span><span>;</span> 
-fs <span>=</span> <span>zeros</span><span>(</span><span>size</span><span>(</span>s<span>)</span><span>)</span><span>;</span> <span>% 設 fs 跟 s 維度一樣，全為 0</span>
+fs <span>=</span> <span>zeros</span><span>(</span><span>size</span><span>(</span>t<span>)</span><span>)</span><span>;</span> <span>% 設 fs 跟 t 維度一樣，全為 0</span>
 <span>for</span> n <span>=</span> <span>1</span><span>:</span>N          <span>% 從 1 跑到 N</span>
 	fs <span>=</span> fs <span>+</span> <span>2</span><span>*</span>sgn<span>*</span><span>sin</span><span>(</span>n<span>*</span>t<span>)</span><span>/</span><span>(</span>n<span>*</span><span>pi</span><span>)</span><span>;</span> <span>% 加一項</span>
 	sgn <span>=</span> sgn <span>*</span> <span>-</span><span>1</span><span>;</span>  <span>% 變號</span>
@@ -1555,5 +1555,164 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span>​</span></span><
       <name/>
     </contributor>
     <published>2021-03-07T15:30:03.000Z</published>
+  </entry>
+  <entry>
+    <title type="html">單頻訊號的儲存與播放</title>
+    <id>https://www.jywglady.org/sdr/sdr/contents/tonetrans/</id>
+    <link href="https://www.jywglady.org/sdr/sdr/contents/tonetrans/"/>
+    <updated>2021-04-23T15:18:46.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="單頻訊號的儲存與播放"> 單頻訊號的儲存與播放</h1>
+<p>這個單元以單頻訊號的傳送和接收為例，來說明 GNU Radio 的基本使用方法，以及訊號的傳送和接收的基本概念。</p>
+<h2 id="要傳送的單頻訊號"> 要傳送的單頻訊號</h2>
+<p>首先，我們先建立一個實數的 Cos 訊號源，然後把訊號傳送到喇叭 (Audio Sink)，系統架構如下：</p>
+<p><img src="./Fig/2021-04-23-19-15-47.png" alt=""></p>
+<p>注意訊號源的部份，要將輸出型態設定成 float，否則無法和喇叭連接。另外，因為訊號輸出到喇叭時，喇叭會限制訊號的傳送速度，所以系統中不需要添加 Throttle 元件。</p>
+<p>建立好之後，試著存檔，產出模型並執行，如果沒有問題的話，應該會跳出一個小小的空白視窗，同時系統會播放一個音頻訊號。</p>
+<h2 id="將訊號存到檔案"> 將訊號存到檔案</h2>
+<p>接著，在系統中新增一個 Wav File Sink，將訊號源一併連接到新增的檔案模組，系統架構如下：</p>
+<p><img src="./Fig/2021-04-23-19-29-27.png" alt=""></p>
+<p>在 Wav File Sink 模組上快按兩下，將其中的 File 參數填入一個適當的路徑和檔名，記得檔名最後要以 .wav 結尾，表示檔案為 wav 的音源格式檔。範例如下（請修改路徑和檔名）：</p>
+<p><img src="./Fig/2021-04-23-19-35-04.png" alt=""></p>
+<p>完成設定之後，重新產生及執行，會聽到跟之前一樣的聲音，大概三秒左右將程式結束掉。</p>
+<p>執行完之後，打開檔案總管，在原先填入的路徑中檢查，應該會看到所設定的檔案。直接快按檔案兩下，系統會啟動預設的媒體播放程式，播放音檔的內容，基本上應該是一樣的聲音。</p>
+<h2 id="用-gnu-radio-播放音檔"> 用 GNU Radio 播放音檔</h2>
+<p>GNU Radio 中，也有一個 Wav File Source 模組，主要是用來讀取音檔的訊號內容。現在在 GNU Radio 中開啟一個新檔，放入 Wav File Source 模組及喇叭，連結系統架構如下：</p>
+<p><img src="./Fig/2021-04-23-19-48-58.png" alt=""></p>
+<p>把 Wav File Source 模組中的 File 參數填入剛才產生出來的音頻檔案。完成之後，存檔、產出模型及執行，沒有問題的話，應該會聽到同樣的聲音。</p>
+<p>以上主要是透過 GNU Radio 模擬音頻訊號的產生、儲存以及讀取。</p>
+<br>
+<exercise></exercise>
+<p>試著將上面 Wav File Source 中的 File 參數替換成其他的 wav 檔案，試著執行看看，是否可以聽到該 wav 檔案的音樂或聲音。</p>
+]]></content>
+    <contributor>
+      <name/>
+    </contributor>
+    <published>2021-04-23T15:18:46.000Z</published>
+  </entry>
+  <entry>
+    <title type="html">使用 SDR 傳送音頻</title>
+    <id>https://www.jywglady.org/sdr/sdr/contents/tonetrans/byHackRF/</id>
+    <link href="https://www.jywglady.org/sdr/sdr/contents/tonetrans/byHackRF/"/>
+    <updated>2021-04-23T15:18:46.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="使用-sdr-傳送音頻"> 使用 SDR 傳送音頻</h1>
+<p>這個小單元要利用 HackRF SDR 來傳送和接收音頻資料。HackRF 可以用來發射訊號，或者可以用來接收訊號，如果既要發射又要接收，那就必須用到兩台 HackRF。另外 HackRF 的發射功率較小，雖然是無線傳輸，兩台 HackRF 之間距離也不能太長，一般在實驗室中，空間的距離大概是數公尺之間，這樣的傳輸長度應該是沒有問題，不過這個距離也會受到環境配置的影響。以下為了方便實驗，我們想使用一個現成的 FM 發射器，用來發射單頻的訊號，然後使用 HackRF 來接收這個單頻訊號，這樣就可以先行驗證接收的部份是否正常。之後我們再增加一台 HackRF 來發射同樣的單頻訊號，然後看是否依然能夠正確接收。如果都沒有問題的話，那麼可以進一步嘗試各種參數的調整以及傳輸距離的關係。</p>
+<h2 id="接收端"> 接收端</h2>
+<p>目前用來發射 FM 訊號的發送器，其中心頻率為 172.41M Hz，我們利用這個發送器發送頻為
+1Hz 的單頻訊號。</p>
+<p>從程式庫模組中選擇 Variable, osomocomm Source, Low Pass Filter, Rational Resampler, WBFM Receive, QT GUI Frequency Sink 及 Audio Sink 模組。將四個模組如下圖方式連接在一起：</p>
+<p><img src="./Fig/2021-04-26-14-38-47.png" alt=""></p>
+<p>這邊七個模組的參數依次如下：</p>
+<ul>
+<li>Variable: 用來設定接收的中心頻率
+<ul>
+<li>Id: fc</li>
+<li>Value: 17241e4</li>
+</ul>
+</li>
+<li>osomocomm Source: 用來接收 HackRF One 的訊號
+<ul>
+<li>Device Arguments: hackrf=0</li>
+<li>Ch0: Frequency (Hz): fc</li>
+<li>Ch0: RF Gain (dB): 10</li>
+<li>Ch0: IF Gain (dB): 32</li>
+<li>Ch0: BB Gain (dB): 30</li>
+</ul>
+</li>
+<li>Low Pass Filter: 低通濾波並降低抽樣頻率
+<ul>
+<li>Decimation: 50</li>
+<li>Cutoff Freq: 50e3</li>
+<li>Transition Width: 25e3</li>
+</ul>
+</li>
+<li>Rational Resampler: 用來轉換抽樣頻率
+<ul>
+<li>Interpolation: 12</li>
+<li>Decimation: 5</li>
+</ul>
+</li>
+<li>WBFM Receive: 用來解碼 FM 訊號
+<ul>
+<li>Quadrature Rate: 480e3 (調變訊號頻率)</li>
+<li>Audio Decimation: 10 (解碼訊號的 Decimation Factor)</li>
+</ul>
+</li>
+<li>QT GUI Frequency Sink: 用來觀察解碼訊號
+<ul>
+<li>Bandwidth: 48e3</li>
+</ul>
+</li>
+<li>Audio Sink: 用來播放解碼訊號
+<ul>
+<li>Sample Rate: 48e3</li>
+</ul>
+</li>
+</ul>
+<p>接好之後，將檔案存檔，產出模型並執行，應該會看到輸出的弦波圖形，同時會聽到播放的聲音。</p>
+<h2 id="傳送端"> 傳送端</h2>
+<p>施工中。。。</p>
+<br>
+<exercise></exercise>
+]]></content>
+    <contributor>
+      <name/>
+    </contributor>
+    <published>2021-04-23T15:18:46.000Z</published>
+  </entry>
+  <entry>
+    <title type="html">使用網路傳送音頻</title>
+    <id>https://www.jywglady.org/sdr/sdr/contents/tonetrans/byNet/</id>
+    <link href="https://www.jywglady.org/sdr/sdr/contents/tonetrans/byNet/"/>
+    <updated>2021-04-23T15:18:46.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="使用網路傳送音頻"> 使用網路傳送音頻</h1>
+<p>這個小單元要利用網路來傳送音頻資料。一般網路傳送資料多使用 TCP 或 UDP，TCP 本身具有傳輸錯誤控制的能力，如果接收到的封包偵測到錯誤，會請傳送端重傳，因此可以保證傳輸資料的正確性。UDP 本身則不具傳輸錯誤控制的能力，因此傳送資料時，可能較 TCP 來得快速，但不保證所傳的資料都是正確的。由於 TCP 傳送時，如果資料重傳，將會增加封包傳送的延遲時間，這對於即時的語音或影像的通訊來說並不適合，因此大多數語音或影像的通訊，除了控制部份採用 TCP 之外，大部份資料的傳送，則是採用 UDP 來進行傳送。</p>
+<p>本單元主要利用 GNU Radio 來示範網路資料的傳送，將忽略 TCP 控制的部份，只使用 UDP 來傳送及接收資料。</p>
+<h2 id="傳送端"> 傳送端</h2>
+<p>從程式庫模組中選擇 Signal Source, Throttle, QT GUI Time Sink, 及 UDP Sink 模組。將四個模組如下圖方式連接在一起：</p>
+<p><img src="./Fig/2021-04-23-22-42-54.png" alt=""></p>
+<p>這邊四個模組的參數依次如下：</p>
+<ul>
+<li>Signal Source: 把 Output Type 改成 float。</li>
+<li>Throttle: 全部用預設值。</li>
+<li>QT GUI Sink: 全部用預設值。</li>
+<li>UDP Sink: 只改以下兩個參數
+<ul>
+<li>Destination IP Address 改成 127.0.0.1，代表本機</li>
+<li>Destination Port 改成 12345</li>
+</ul>
+</li>
+</ul>
+<p>注意 UDP Sink 的參數，表示資料將會傳送到本機的 UDP Port 12345。另外我們額外接一個 QT GUI Sink，主要是用來觀察傳送的訊號。</p>
+<p>接好之後，將檔案存檔，產出模型並執行，應該會看到輸出的弦波圖形，如下圖所示：</p>
+<p><img src="./Fig/2021-04-23-23-03-12.png" alt=""></p>
+<h2 id="接收端"> 接收端</h2>
+<p>從程式庫模組中選擇 UDP Source, QT GUI Time Sink, 及 Audio Sink 模組。將三個模組如下圖方式連接在一起：</p>
+<p><img src="./Fig/2021-04-23-22-43-35.png" alt=""></p>
+<p>這邊三個模組的參數依次如下：</p>
+<ul>
+<li>UDP Source: 只改以下兩個參數
+<ul>
+<li>IP Address 改成 0.0.0.0，代表來自任何 IP 位置皆可</li>
+<li>Port 改成 12345，表示從 Port 12345 接收資料。</li>
+</ul>
+</li>
+<li>QT GUI Sink: 全部用預設值。</li>
+<li>Audio Sink: 全部用預設值。</li>
+</ul>
+<p>注意 UDP Source 的參數，表示會接收從任何網址傳到本機的 UDP Port 12345 的資料。另外 QT GUI Sink 可用來觀察接收到的訊號。</p>
+<p>接好之後，將檔案存檔，產出模型並執行（先執行傳送端，再執行接收端），應該會看到與傳送端相同的弦波圖形，另外也會聽到音頻的聲音。</p>
+<p>如果執行的時候，發現左下的視窗出現 aUaUaU... 的訊息，同時音頻有間斷的現象，表示資料無法 100% 即時傳送。在這種情況下，可以試著 Disable 掉傳送端或接收端的 QT GUI Sink，看情況是否有所改善。如果還是不行的話，就把接收端的 Audio Sink 拿掉，只使用 QT GUI Sink 觀察波形就好。</p>
+<br>
+<exercise></exercise>
+<ol>
+<li>試著加上一個 Range 元件，讓傳送的訊號頻率可以在執行時進行調整，並觀察接收端是否會跟著進行改變。</li>
+<li>試著修改傳送端的 UDP Sink 參數，把資料傳到另一台電腦。另外把接收端搬到另一台電腦上執行，看是否可以正確接收到資料。</li>
+<li>如果兩台電腦的資料傳送成功，試著加入第三台電腦，看能否正確傳送資料。（此時中間的電腦接收到第一台電腦的資料之後，其輸出應該為 UDP Sink，也就是用來轉傳到第三台電腦的意思。）這個方式可以不斷擴充，可加入更多的電腦。</li>
+</ol>
+]]></content>
+    <contributor>
+      <name/>
+    </contributor>
+    <published>2021-04-23T15:18:46.000Z</published>
   </entry>
 </feed>
