@@ -3,10 +3,22 @@
   <id>https://www.jywglady.org/sdr/sdr/</id>
   <title>通訊實驗教材</title>
   <subtitle>通訊實驗教材</subtitle>
-  <updated>2021-05-03T07:02:47.100Z</updated>
+  <updated>2021-05-09T07:32:30.611Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://www.jywglady.org/sdr/sdr/atom.xml"/>
   <link rel="alternate" href="https://www.jywglady.org/sdr/sdr/"/>
+  <entry>
+    <title type="html">Home</title>
+    <id>https://www.jywglady.org/sdr/sdr/</id>
+    <link href="https://www.jywglady.org/sdr/sdr/"/>
+    <updated>2021-03-15T00:52:43.000Z</updated>
+    <content type="html"><![CDATA[
+]]></content>
+    <contributor>
+      <name/>
+    </contributor>
+    <published>2021-03-07T12:24:56.000Z</published>
+  </entry>
   <entry>
     <title type="html">傅立葉變換-01</title>
     <id>https://www.jywglady.org/sdr/sdr/contents/FFT/Fourier-01/</id>
@@ -28,18 +40,6 @@
     <published>2021-03-15T05:40:34.000Z</published>
   </entry>
   <entry>
-    <title type="html">Home</title>
-    <id>https://www.jywglady.org/sdr/sdr/</id>
-    <link href="https://www.jywglady.org/sdr/sdr/"/>
-    <updated>2021-03-15T00:52:43.000Z</updated>
-    <content type="html"><![CDATA[
-]]></content>
-    <contributor>
-      <name/>
-    </contributor>
-    <published>2021-03-07T12:24:56.000Z</published>
-  </entry>
-  <entry>
     <title type="html">傅立葉變換-02</title>
     <id>https://www.jywglady.org/sdr/sdr/contents/FFT/Fourier-02/</id>
     <link href="https://www.jywglady.org/sdr/sdr/contents/FFT/Fourier-02/"/>
@@ -58,53 +58,6 @@
 <li>當頻率成份為 <code>1 1 1</code> 時，時間取樣為何？請說明為什麼會得到這樣的結果？（用暫停且移動時間點的方式來找出答案。）</li>
 <li>當頻率成份為 <code>1 1 1 1</code> 時，時間取樣為何？如果頻率成份為 <code>1 1 1 1 1</code> 呢？請試著推廣到更多個 1 的情況，並說明原因。</li>
 </ol>
-]]></content>
-    <contributor>
-      <name/>
-    </contributor>
-    <published>2021-03-15T05:40:34.000Z</published>
-  </entry>
-  <entry>
-    <title type="html">傅立葉變換-04</title>
-    <id>https://www.jywglady.org/sdr/sdr/contents/FFT/Fourier-04/</id>
-    <link href="https://www.jywglady.org/sdr/sdr/contents/FFT/Fourier-04/"/>
-    <updated>2021-03-15T05:40:34.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="傅立葉變換-04"> 傅立葉變換-04</h1>
-<p>在上一個小單元中，我們可以把四個不同頻率的成份波想成四個跑者，速度分別是 0 1 2 3，那麼同時出發，經過 1 個時間單位之後，分別跑了 0 1 2 3 圈，於是又重合在一起了，這時的取樣值為 4。至於另三個取樣時間點 (1/4, 2/4, 3/4 單位時間），因為都會產生對稱的情況，所以總和都會是 0，於是就不斷得到 4 0 0 0 的重覆取樣結果。</p>
-<p>那如果要得到 0 4 0 0 的結果，也就是說，在 1/4 單位時間時，四個跑者才會重合。那麼我們不妨把時間倒回去，看看時間為 0 的時候，它們應該在哪裡？這個應該不難，直流成份波還是在原地；速度 1 的應該後退 1/4 圈（-90度）；速度 2 的應該後退 2/4 圈（-180度）；速度 3 的應該後退 3/4 圈（-270度）。</p>
-<p>那麼現在把 Cycles 的部份改成 <code>1 1:-90 1:-180 1:-270</code> 試看看。</p>
-<p align="center">
-<FourierCircular freqs="1 1 1 1" distime="true"/></p>
-<br>
-<exercise></exercise>
-<ol>
-<li>如果上面的問題想通了，那麼試著調整 Cycles 的成份，分別讓時間取樣變成 0 0 4 0 以及 0 0 0 4。</li>
-<li>現在試著調整 Cycles 的成份，讓時間取樣變成 0 0 3。</li>
-<li>現在試著調整 Cycles 的成份，讓時間取樣變成 0 0 6 0 0 0。</li>
-</ol>
-]]></content>
-    <contributor>
-      <name/>
-    </contributor>
-    <published>2021-03-15T05:40:34.000Z</published>
-  </entry>
-  <entry>
-    <title type="html">傅立葉變換-06</title>
-    <id>https://www.jywglady.org/sdr/sdr/contents/FFT/Fourier-06/</id>
-    <link href="https://www.jywglady.org/sdr/sdr/contents/FFT/Fourier-06/"/>
-    <updated>2021-03-15T05:40:34.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="傅立葉變換-06"> 傅立葉變換-06</h1>
-<p>上一個小單元，如果你都想通的話，那應該就可以明瞭，要讓 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.68333em;vertical-align:0em;"></span><span style="margin-right:0.10903em;">N</span></span></span></span> 個時間取樣值中，除了第 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.66666em;vertical-align:-0.08333em;"></span><span>n</span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span></span><span><span style="height:0.64444em;vertical-align:0em;"></span><span>1</span></span></span></span> 個取樣值為 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.68333em;vertical-align:0em;"></span><span style="margin-right:0.10903em;">N</span></span></span></span>，而其他的取樣值都是 0，基本上，就是把時間倒回去 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>n</span><span>/</span><span style="margin-right:0.10903em;">N</span></span></span></span> 秒，這等於把速度為 1 的跑者，倒退 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>n</span><span>/</span><span style="margin-right:0.10903em;">N</span></span></span></span> 圈，把速度為 2 的跑者，倒退 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>2</span><span>n</span><span>/</span><span style="margin-right:0.10903em;">N</span></span></span></span> 圈，...依此類推。所以一開始的位置安排應該如下：</p>
-<p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1.13244em;vertical-align:-0.19444em;"></span><span>1</span><span>,</span><span style="margin-right:0.16666666666666666em;"></span><span><span>e</span><span><span><span><span style="height:0.938em;"><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span>i</span><span>2</span><span style="margin-right:0.03588em;">nπ</span><span>/</span><span style="margin-right:0.10903em;">N</span></span></span></span></span></span></span></span></span><span>,</span><span style="margin-right:0.16666666666666666em;"></span><span><span>e</span><span><span><span><span style="height:0.938em;"><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span>i</span><span>4</span><span style="margin-right:0.03588em;">nπ</span><span>/</span><span style="margin-right:0.10903em;">N</span></span></span></span></span></span></span></span></span><span>,</span><span style="margin-right:0.16666666666666666em;"></span><span>⋯</span><span style="margin-right:0.16666666666666666em;"></span><span style="margin-right:0.16666666666666666em;"></span><span>,</span><span style="margin-right:0.16666666666666666em;"></span><span><span>e</span><span><span><span><span style="height:0.938em;"><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span>i</span><span>2</span><span>(</span><span style="margin-right:0.10903em;">N</span><span>−</span><span>1</span><span>)</span><span style="margin-right:0.03588em;">nπ</span><span>/</span><span style="margin-right:0.10903em;">N</span></span></span></span></span></span></span></span></span></span></span></span></span></p>
-<p>有想通嗎？</p>
-<p>接下來，我們前面曾經提到過：<span style="color:red">波可以疊加，頻率和時間兩者之間的轉換具備線性轉換的特質。</span>那麼我們已經知道如何產生 4 0 0 0 和 0 4 0 0 的取樣值了，請回答以下問題。</p>
-<br>
-<exercise></exercise>
-<ol>
-<li>如何讓時間取樣值變成 <code>4 4 0 0</code>？</li>
-<li>如何讓時間取樣值變成 <code>a b c d</code>？</li>
-</ol>
-<FourierCircular freqs="1 1 1 1" distime="true"/></p>
 ]]></content>
     <contributor>
       <name/>
@@ -138,6 +91,30 @@
     <published>2021-03-15T05:40:34.000Z</published>
   </entry>
   <entry>
+    <title type="html">傅立葉變換-04</title>
+    <id>https://www.jywglady.org/sdr/sdr/contents/FFT/Fourier-04/</id>
+    <link href="https://www.jywglady.org/sdr/sdr/contents/FFT/Fourier-04/"/>
+    <updated>2021-03-15T05:40:34.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="傅立葉變換-04"> 傅立葉變換-04</h1>
+<p>在上一個小單元中，我們可以把四個不同頻率的成份波想成四個跑者，速度分別是 0 1 2 3，那麼同時出發，經過 1 個時間單位之後，分別跑了 0 1 2 3 圈，於是又重合在一起了，這時的取樣值為 4。至於另三個取樣時間點 (1/4, 2/4, 3/4 單位時間），因為都會產生對稱的情況，所以總和都會是 0，於是就不斷得到 4 0 0 0 的重覆取樣結果。</p>
+<p>那如果要得到 0 4 0 0 的結果，也就是說，在 1/4 單位時間時，四個跑者才會重合。那麼我們不妨把時間倒回去，看看時間為 0 的時候，它們應該在哪裡？這個應該不難，直流成份波還是在原地；速度 1 的應該後退 1/4 圈（-90度）；速度 2 的應該後退 2/4 圈（-180度）；速度 3 的應該後退 3/4 圈（-270度）。</p>
+<p>那麼現在把 Cycles 的部份改成 <code>1 1:-90 1:-180 1:-270</code> 試看看。</p>
+<p align="center">
+<FourierCircular freqs="1 1 1 1" distime="true"/></p>
+<br>
+<exercise></exercise>
+<ol>
+<li>如果上面的問題想通了，那麼試著調整 Cycles 的成份，分別讓時間取樣變成 0 0 4 0 以及 0 0 0 4。</li>
+<li>現在試著調整 Cycles 的成份，讓時間取樣變成 0 0 3。</li>
+<li>現在試著調整 Cycles 的成份，讓時間取樣變成 0 0 6 0 0 0。</li>
+</ol>
+]]></content>
+    <contributor>
+      <name/>
+    </contributor>
+    <published>2021-03-15T05:40:34.000Z</published>
+  </entry>
+  <entry>
     <title type="html">傅立葉變換-05</title>
     <id>https://www.jywglady.org/sdr/sdr/contents/FFT/Fourier-05/</id>
     <link href="https://www.jywglady.org/sdr/sdr/contents/FFT/Fourier-05/"/>
@@ -161,6 +138,29 @@
 <li>跟上面類似的推論，當 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.43056em;vertical-align:0em;"></span><span>n</span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:0.64444em;vertical-align:0em;"></span><span>3</span></span></span></span> 的情況下，<span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.68333em;vertical-align:0em;"></span><span style="margin-right:0.10903em;">N</span></span></span></span> 個跑者的起始位置在哪裡？</li>
 <li>一般 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.43056em;vertical-align:0em;"></span><span>n</span></span></span></span> 值的情況呢（<span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.78041em;vertical-align:-0.13597em;"></span><span>1</span><span style="margin-right:0.2777777777777778em;"></span><span>≤</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:0.7719400000000001em;vertical-align:-0.13597em;"></span><span>n</span><span style="margin-right:0.2777777777777778em;"></span><span>≤</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:0.68333em;vertical-align:0em;"></span><span style="margin-right:0.10903em;">N</span></span></span></span>）？先想一想，再往下看。</li>
 </ol>
+]]></content>
+    <contributor>
+      <name/>
+    </contributor>
+    <published>2021-03-15T05:40:34.000Z</published>
+  </entry>
+  <entry>
+    <title type="html">傅立葉變換-06</title>
+    <id>https://www.jywglady.org/sdr/sdr/contents/FFT/Fourier-06/</id>
+    <link href="https://www.jywglady.org/sdr/sdr/contents/FFT/Fourier-06/"/>
+    <updated>2021-03-15T05:40:34.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="傅立葉變換-06"> 傅立葉變換-06</h1>
+<p>上一個小單元，如果你都想通的話，那應該就可以明瞭，要讓 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.68333em;vertical-align:0em;"></span><span style="margin-right:0.10903em;">N</span></span></span></span> 個時間取樣值中，除了第 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.66666em;vertical-align:-0.08333em;"></span><span>n</span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span></span><span><span style="height:0.64444em;vertical-align:0em;"></span><span>1</span></span></span></span> 個取樣值為 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.68333em;vertical-align:0em;"></span><span style="margin-right:0.10903em;">N</span></span></span></span>，而其他的取樣值都是 0，基本上，就是把時間倒回去 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>n</span><span>/</span><span style="margin-right:0.10903em;">N</span></span></span></span> 秒，這等於把速度為 1 的跑者，倒退 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>n</span><span>/</span><span style="margin-right:0.10903em;">N</span></span></span></span> 圈，把速度為 2 的跑者，倒退 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>2</span><span>n</span><span>/</span><span style="margin-right:0.10903em;">N</span></span></span></span> 圈，...依此類推。所以一開始的位置安排應該如下：</p>
+<p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1.13244em;vertical-align:-0.19444em;"></span><span>1</span><span>,</span><span style="margin-right:0.16666666666666666em;"></span><span><span>e</span><span><span><span><span style="height:0.938em;"><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span>i</span><span>2</span><span style="margin-right:0.03588em;">nπ</span><span>/</span><span style="margin-right:0.10903em;">N</span></span></span></span></span></span></span></span></span><span>,</span><span style="margin-right:0.16666666666666666em;"></span><span><span>e</span><span><span><span><span style="height:0.938em;"><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span>i</span><span>4</span><span style="margin-right:0.03588em;">nπ</span><span>/</span><span style="margin-right:0.10903em;">N</span></span></span></span></span></span></span></span></span><span>,</span><span style="margin-right:0.16666666666666666em;"></span><span>⋯</span><span style="margin-right:0.16666666666666666em;"></span><span style="margin-right:0.16666666666666666em;"></span><span>,</span><span style="margin-right:0.16666666666666666em;"></span><span><span>e</span><span><span><span><span style="height:0.938em;"><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span>i</span><span>2</span><span>(</span><span style="margin-right:0.10903em;">N</span><span>−</span><span>1</span><span>)</span><span style="margin-right:0.03588em;">nπ</span><span>/</span><span style="margin-right:0.10903em;">N</span></span></span></span></span></span></span></span></span></span></span></span></span></p>
+<p>有想通嗎？</p>
+<p>接下來，我們前面曾經提到過：<span style="color:red">波可以疊加，頻率和時間兩者之間的轉換具備線性轉換的特質。</span>那麼我們已經知道如何產生 4 0 0 0 和 0 4 0 0 的取樣值了，請回答以下問題。</p>
+<br>
+<exercise></exercise>
+<ol>
+<li>如何讓時間取樣值變成 <code>4 4 0 0</code>？</li>
+<li>如何讓時間取樣值變成 <code>a b c d</code>？</li>
+</ol>
+<FourierCircular freqs="1 1 1 1" distime="true"/></p>
 ]]></content>
     <contributor>
       <name/>
@@ -417,6 +417,263 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span>​</span></span><
     <published>2021-03-07T15:30:03.000Z</published>
   </entry>
   <entry>
+    <title type="html">AM 訊號的解碼</title>
+    <id>https://www.jywglady.org/sdr/sdr/contents/ToPython/</id>
+    <link href="https://www.jywglady.org/sdr/sdr/contents/ToPython/"/>
+    <updated>2021-05-09T07:32:09.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="am-訊號的解碼"> AM 訊號的解碼</h1>
+<p>這個單元從 AM 訊號的接收開始，逐步說明 GNU Radio 如何利用 Python 來擴充相關的功能。</p>
+<h2 id="要解碼的-am-訊號"> 要解碼的 AM 訊號</h2>
+<p>AM 訊號的取得，基本上可以利用 SDR 接收空中的電波，將其存到檔案。不過目前，實驗室所具有的 RTL-SDR 以及 HackRF One，都無法直接接收 AM 訊號的頻段。因此，我們直接利用網路別人所錄製的檔案，目前所用來解碼的檔案，是 California State University 的 Sharlene Katz 教授網頁所提供的，可以從 <a href="https://www.csun.edu/~skatz/katzpage/sdr_project/sdr/am_usrp710.dat.zip" target="_blank" rel="noopener noreferrer">這裡下載</a>，這個檔案的錄製的中心頻率為 710 KHz，而抽樣速度為 256 KHz。</p>
+<h2 id="am-訊號的解碼-2"> AM 訊號的解碼</h2>
+<p>要觀察 AM 訊號，可以將其接到頻域的示波器。不過之前提過，如果系統中沒有硬體相關的元件，最好要加上一個 Throttle 元件，才不會佔用過多的 CPU 資源，另外在時間的模擬上，也比較能符合實際的狀況。</p>
+<p>取用 File Source, Throttle, 以及 QT GUI Frequency Sink 三個元件，連接如下圖所示：</p>
+<p><img src="./Fig/2021-05-08-21-19-39.png" alt=""></p>
+<p>其中參數設定如下：</p>
+<ul>
+<li>samp_rate: 256e3，這是錄製信號的抽樣速度</li>
+<li>File Source: File 設定成下載檔案的路徑</li>
+<li>QT GUI Frequency SInk
+<ul>
+<li>Grid: Yes</li>
+<li>Autoscale: Yes</li>
+<li>Average: Medium</li>
+</ul>
+</li>
+</ul>
+<p>完成之後，存檔並執行之後，會看到以下的結果：</p>
+<p><img src="./Fig/2021-05-08-21-26-43.png" alt=""></p>
+<br>
+<exercise></exercise>
+<p>從訊號的頻譜中觀察，這個訊號檔案可以觀察到頻率範圍為何？相隔的兩個電台頻道，頻率上大概差多少？每個頻道的頻寬大約多少？</p>
+]]></content>
+    <contributor>
+      <name/>
+    </contributor>
+    <published>2021-05-09T07:32:09.000Z</published>
+  </entry>
+  <entry>
+    <title type="html">自己做訊號解碼</title>
+    <id>https://www.jywglady.org/sdr/sdr/contents/ToPython/amDec2/</id>
+    <link href="https://www.jywglady.org/sdr/sdr/contents/ToPython/amDec2/"/>
+    <updated>2021-05-09T07:32:09.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="自己做訊號解碼"> 自己做訊號解碼</h1>
+<p>我們剛才使用系統提供的 AM Demod 模組來解碼 AM 的訊號，但其實 AM 訊號很單純，它使用載波來傳送訊號，而載波的振幅變化，其實就是我們的訊號。了解這個原理之後，其實我們也可以自己來進行解碼。</p>
+<p>解碼的方式，是先找到訊號的振幅，怎麼找呢？因為收到的訊號實際是複數值，因此只要求出其振幅就可以了，GNU Radio 中有一個模組叫做 Complex to Mag，就是用來找複數訊號的振幅，找出來的就是我們的訊號，接著可以將訊號的抽樣率降下來，以便送到 Audio Sink 播放。在播放之前，也可以先去掉訊號的直流成份，以及調整訊號的增益。</p>
+<p>系統的架構如下：</p>
+<p><img src="./Fig/2021-05-08-22-37-47.png" alt=""></p>
+<p>存檔並執行之後，發現也可以將訊號解碼出來，不過解出來的訊號似乎沒有 AM Demod 解出來的訊號來得清晰。</p>
+<br>
+<exercise></exercise>
+<ol>
+<li>實際上，我們使用 Complex to Mag 得到的是載波振幅的變化，但我們真正的訊號應該是載波的振幅波包才對，這兩者還是有一點點小差別的。請說明這兩者的差別為何？</li>
+<li>試著將上圖中的 Rational Resampler 改成 Low Pass Filter，Decimation 一樣設成 8，但是 Cutoff frequency 和 Transition Width 可以設得比 5K 和 100 再小一點，看解碼出來的訊號有何影響？</li>
+</ol>
+]]></content>
+    <contributor>
+      <name/>
+    </contributor>
+    <published>2021-05-09T07:32:09.000Z</published>
+  </entry>
+  <entry>
+    <title type="html">使用 Python Block 找訊號波包</title>
+    <id>https://www.jywglady.org/sdr/sdr/contents/ToPython/amDecPy/</id>
+    <link href="https://www.jywglady.org/sdr/sdr/contents/ToPython/amDecPy/"/>
+    <updated>2021-05-09T07:32:09.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="使用-python-block-找訊號波包"> 使用 Python Block 找訊號波包</h1>
+<p>GNU Radio 允許我們利用 Python 和 C++ 來撰寫自己的模組，然後將模組放到 GNU Radio 的程式庫中使用。但是要撰寫一個模組，牽涉到的細節較多，有興趣的讀者可以參考 <a href="https://wiki.gnuradio.org/index.php/OutOfTreeModules" target="_blank" rel="noopener noreferrer">官網的說明</a>。不過在擴充模組的方式中，有一種比較簡單的方法，叫做 Python Block，這是 GNU Radio 程式庫中所提供的一個模組，使用這個模組，要進行擴充會比較容易一點。本節將以上述 AM 訊號解碼的應用為例，來說明撰寫的方法。</p>
+<p>在上一小節中，我們提到，經過 Complex to Mag 模組之後的訊號，其實是載波乘上訊號的絕對值，實際上它的波包才是我們要的訊號。在上一小節中，我們是使用低通濾波器，由於波包的部份屬低頻訊號，因此大致也可以把訊號的波包找出來。那這邊，我們要試著用 Python 寫一個程式來尋找訊號的波包。</p>
+<p>首先在 GNU Radio 程式庫中拉出來一個 Python Block 的模組，將其點開之後，會看到如下的畫面：</p>
+<p><img src="./Fig/2021-05-09-08-33-04.png" alt=""></p>
+<p>接著按一下 Open in Editor 那個鈕，會看到以下的 Python 程式：</p>
+<div><pre><code><span>"""
+Embedded Python Blocks:
+
+Each time this file is saved, GRC will instantiate the first class it finds
+to get ports and parameters of your block. The arguments to __init__  will
+be the parameters. All of them are required to have default values!
+"""</span>
+
+<span>import</span> numpy <span>as</span> np
+<span>from</span> gnuradio <span>import</span> gr
+
+
+<span>class</span> <span>blk</span><span>(</span>gr<span>.</span>sync_block<span>)</span><span>:</span>  <span># other base classes are basic_block, decim_block, interp_block</span>
+    <span>"""Embedded Python Block example - a simple multiply const"""</span>
+
+    <span>def</span> <span>__init__</span><span>(</span>self<span>,</span> example_param<span>=</span><span>1.0</span><span>)</span><span>:</span>  <span># only default arguments here</span>
+        <span>"""arguments to this function show up as parameters in GRC"""</span>
+        gr<span>.</span>sync_block<span>.</span>__init__<span>(</span>
+            self<span>,</span>
+            name<span>=</span><span>'Embedded Python Block'</span><span>,</span>   <span># will show up in GRC</span>
+            in_sig<span>=</span><span>[</span>np<span>.</span>complex64<span>]</span><span>,</span>
+            out_sig<span>=</span><span>[</span>np<span>.</span>complex64<span>]</span>
+        <span>)</span>
+        <span># if an attribute with the same name as a parameter is found,</span>
+        <span># a callback is registered (properties work, too).</span>
+        self<span>.</span>example_param <span>=</span> example_param
+
+    <span>def</span> <span>work</span><span>(</span>self<span>,</span> input_items<span>,</span> output_items<span>)</span><span>:</span>
+        <span>"""example: multiply with constant"""</span>
+        output_items<span>[</span><span>0</span><span>]</span><span>[</span><span>:</span><span>]</span> <span>=</span> input_items<span>[</span><span>0</span><span>]</span> <span>*</span> self<span>.</span>example_param
+        <span>return</span> <span>len</span><span>(</span>output_items<span>[</span><span>0</span><span>]</span><span>)</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br><span>29</span><br><span>30</span><br><span>31</span><br></div></div><p>這個程式最主要有兩個部份，第一個是 <code>__init__</code> 那個函式，其中函式的參數中宣告了一個 example_param 的變數，這個變數會出現在模組的參數列中，供使用者進行設定。另外在第 21 行設定了 name 的值，這個就是模組會顯示的名稱。參數傳進來之後，第 27 行使用 self.example_param 把它存起來，變成物件的變數，這樣就可以在其他的函式中使用。</p>
+<p>另外一個主要的函式，就是 work，這個函式傳進來的參數是 input_items 及 output_items，這兩者就是這個模組的輸入和輸出，注意每一個模組的輸入和輸出都可能有很多個（回想一下 Multiply 那個模組），對於單獨的輸入和輸出模組來說，我們必須處理的部份是 input_items[0] 和 output_items[0]，每一個都還是一個陣列之類的型態。最後函式必須回傳一個整數，表示輸出了幾個資料元素。</p>
+<p>在這個例子中，主要是把輸入的資料乘上一個常數，然後傳到輸出陣列當中，因此輸入的資料個數和輸出資料個數是相同的。</p>
+<p>在我們的應用範例中，主要是要尋找訊號的波包，基本上可以使用一個簡單的遞迴式來取得近似值：</p>
+<p>output[i] = w0 * input[i] + (1-w0) * output[i-1]</p>
+<p>這邊 w0 是一個介於 0 和 1 的參數。</p>
+<p>現在將 Python 程式碼中的兩個函式改成所下所示的程式碼：</p>
+<div><pre><code>    <span>def</span> <span>__init__</span><span>(</span>self<span>,</span> coeff<span>=</span><span>0.8</span><span>)</span><span>:</span>  <span># only default arguments here</span>
+        <span>"""arguments to this function show up as parameters in GRC"""</span>
+        gr<span>.</span>sync_block<span>.</span>__init__<span>(</span>
+            self<span>,</span>
+            name<span>=</span><span>'My Am Demod'</span><span>,</span>   <span># will show up in GRC</span>
+            in_sig<span>=</span><span>[</span>np<span>.</span>float32<span>]</span><span>,</span>
+            out_sig<span>=</span><span>[</span>np<span>.</span>float32<span>]</span>
+        <span>)</span>
+        <span># if an attribute with the same name as a parameter is found,</span>
+        <span># a callback is registered (properties work, too).</span>
+        self<span>.</span>coeff <span>=</span> coeff
+        self<span>.</span>lasts <span>=</span> <span>0.0</span>
+
+    <span>def</span> <span>work</span><span>(</span>self<span>,</span> input_items<span>,</span> output_items<span>)</span><span>:</span>
+
+        idata <span>=</span> input_items<span>[</span><span>0</span><span>]</span>
+        ilen <span>=</span> <span>len</span><span>(</span>idata<span>)</span>
+        w0 <span>=</span> self<span>.</span>coeff
+        w1 <span>=</span> <span>1</span><span>-</span>w0
+
+        output_items<span>[</span><span>0</span><span>]</span><span>[</span><span>0</span><span>]</span> <span>=</span> w0 <span>*</span> idata<span>[</span><span>0</span><span>]</span> <span>+</span> w1 <span>*</span> self<span>.</span>lasts
+        <span>for</span> i <span>in</span> <span>range</span><span>(</span><span>1</span><span>,</span> ilen<span>)</span><span>:</span>
+            output_items<span>[</span><span>0</span><span>]</span><span>[</span>i<span>]</span> <span>=</span> w0 <span>*</span> idata<span>[</span>i<span>]</span> <span>+</span> w1 <span>*</span> output_items<span>[</span><span>0</span><span>]</span><span>[</span>i<span>-</span><span>1</span><span>]</span>
+        
+        self<span>.</span>lasts <span>=</span> idata<span>[</span>ilen<span>-</span><span>1</span><span>]</span>
+        <span>return</span> ilen
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br></div></div><p>這裡我們把模組命名為 My Am Demod，另外在程式第 26 行的位置，我們把輸入的最後一個元素保留下來，主要給下一回合使用（程式第 22 行）。</p>
+<p>現在將整個系統改成如下的架構：</p>
+<p><img src="./Fig/2021-05-09-08-20-45.png" alt=""></p>
+<p>訊號經過我們定義的模組 My Am Demod 之後，應該已大致取得原始的訊號，但是要播放之前，仍必須降低抽樣速率，這邊我們只簡單使用 Keep 1 in N 這個模組，其中參數設定為 8。</p>
+<p>將系統存檔並執行，然後試著調整頻率以及 coeff 參數（試著調小一點），看看解碼的效果如何。</p>
+<br>
+<exercise></exercise>
+<p>在上面的系統架構中，我們使用了 Complex to Mag 模組，把複數的部份變成其振幅大小，之後才連接我們自製的 Python 模組。
+現在試著把 Complex to Mag 這個模組的功能，一起放到我們的 Python 模組當中。(提示：把輸入的型態從 float32 改成 complex64，就可以改變輸入的資料類型。另外，使用 np.abs(x) 可以把 x 陣列中每個複數值都變成其絕對值大小)</p>
+]]></content>
+    <contributor>
+      <name/>
+    </contributor>
+    <published>2021-05-09T07:32:09.000Z</published>
+  </entry>
+  <entry>
+    <title type="html">AM 訊號解碼</title>
+    <id>https://www.jywglady.org/sdr/sdr/contents/ToPython/amDec/</id>
+    <link href="https://www.jywglady.org/sdr/sdr/contents/ToPython/amDec/"/>
+    <updated>2021-05-09T07:32:09.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="am-訊號解碼"> AM 訊號解碼</h1>
+<p>把頻道調到中心點之後，接著用一個低通濾波器，就可以把想要的訊號保留住，而把其他電台的訊號濾除掉。這時的訊號仍是 AM 調變過的訊號，因此只要使用 AM 的解碼模塊，就可以將訊號解碼了。</p>
+<p>將上一個系統擴充如下圖：</p>
+<p><img src="./Fig/2021-05-08-21-16-39.png" alt=""></p>
+<p>這邊我們加了幾個元件，首先是低通濾波器，這邊 Cutoff Freq 設定為 5e3，過渡帶設定為 100（為什麼這樣設呢？），接下來訊號接到 AM Demod 進行 AM 的解碼。其中的參數 Channel Rate 設定 256e3，而 Audio Decimation 設為 8，也就是將解碼出來的訊號，其抽樣速度改成 256K/8 = 32K。因此接下來就可以透過 Audio Sink 進行播放，不過播放之前，我們先乘上一個常數，以便用來調整播放的音量，而所乘的常數則使用 QT GUI Range，便於在執行時進行調整。注意這邊 Audio Sink 的 samp_rate 要設定成 32K。</p>
+<p>如果沒有接錯的話，存檔執行之後，就可以調整電台的頻道及播放的音量了。</p>
+<p>實際上，上面調整頻道的過程：把訊號和一個 Signal Source 做相乘，然後再經過低通濾波，實在太常使用了，因此 GNU Radio 提供了一個 Frequency Xlating FIR Filter 模組來做這件事。這個模組就是把訊號原來的中心點移到新的頻率，並且以新的頻率為中心做低通濾波，來保留所要的頻道訊號。</p>
+<p>試著將系統改成如下圖所示：</p>
+<p><img src="./Fig/2021-05-08-22-17-17.png" alt=""></p>
+<p>其中 Frequency Xlating FIR Filter 模組的參數如下：</p>
+<ul>
+<li>Taps: firdes.low_pass(1, 256e3, 5000, 100)：表示增益為 1，抽樣速度為 256K，保留頻帶到 5K，過濾帶為 100。</li>
+<li>Center Frequency: fc-710e3：原來中心 0 的地方為 710e3，現在則以 fc 為中心。</li>
+</ul>
+<p>使用 Frequency Xlating FIR Filter 可以讓系統看起來更清爽，不過缺點是調整過頻率而還沒有濾波的中間訊號，沒有辦法拉出來用 Frequency Sink 來進行觀察。</p>
+]]></content>
+    <contributor>
+      <name/>
+    </contributor>
+    <published>2021-05-09T07:32:09.000Z</published>
+  </entry>
+  <entry>
+    <title type="html">調整中心頻率</title>
+    <id>https://www.jywglady.org/sdr/sdr/contents/ToPython/freqShift/</id>
+    <link href="https://www.jywglady.org/sdr/sdr/contents/ToPython/freqShift/"/>
+    <updated>2021-05-09T07:32:09.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="調整中心頻率"> 調整中心頻率</h1>
+<p>目前這個檔案，在頻率 0 的地方，實際上代表的頻率是 710 KHz，而在解碼某一個電台頻道之前，我們要以該頻道的頻率為中心，做一個低通濾波器，以便得到該頻道的訊號，同時濾除掉其他頻道的訊號。</p>
+<p>一般常見的作法，會先將訊號乘上 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.8491079999999999em;vertical-align:0em;"></span><span><span>e</span><span><span><span><span style="height:0.8491079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.05724em;">j</span><span>2</span><span style="margin-right:0.03588em;">π</span><span style="margin-right:0.10764em;">f</span><span>t</span></span></span></span></span></span></span></span></span></span></span></span>，這等於是將每個頻率成份都加上 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span style="margin-right:0.10764em;">f</span></span></span></span>，或者就是將訊號圖往右移 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span style="margin-right:0.10764em;">f</span></span></span></span> Hz。往右移 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span style="margin-right:0.10764em;">f</span></span></span></span> Hz 之後，這時頻率 0 的地方，實際上代表的頻率應該是 710K - <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span style="margin-right:0.10764em;">f</span></span></span></span>，假設這就是我們要觀察的中心頻率 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span><span style="margin-right:0.10764em;">f</span><span><span><span><span style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.10764em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>c</span></span></span></span><span>​</span></span><span><span style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>，那麼 710K - <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span style="margin-right:0.10764em;">f</span></span></span></span> 要等於 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span><span style="margin-right:0.10764em;">f</span><span><span><span><span style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.10764em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>c</span></span></span></span><span>​</span></span><span><span style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>，也就是說，<span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span style="margin-right:0.10764em;">f</span></span></span></span> 等於 710K - <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span><span style="margin-right:0.10764em;">f</span><span><span><span><span style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.10764em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>c</span></span></span></span><span>​</span></span><span><span style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>。</p>
+<p>我們可以建構以下的系統來觀察這個結果：</p>
+<p><img src="./Fig/2021-05-08-21-49-57.png" alt=""></p>
+<p>其中 Signal Source 的頻率設定成 710e3-fc，而 fc 則使用 QT GUI Range 來進行設定，值從 600e3 到 820e3，間隔取 1e3。</p>
+<p>存檔執行之後，試著將頻率調為 680K，可以得到下面的圖形，此時 680K 已經變成新的頻率中心點了。（目前最高點仍是 710K）</p>
+<p><img src="./Fig/2021-05-08-21-52-54.png" alt=""></p>
+<p>如果試著拉動頻率的捲動棒，會看到圖的中心點也會做相應的移動。我們目前已經可以調整頻率的中心點了。</p>
+]]></content>
+    <contributor>
+      <name/>
+    </contributor>
+    <published>2021-05-09T07:32:09.000Z</published>
+  </entry>
+  <entry>
+    <title type="html">安裝 GNU Radio</title>
+    <id>https://www.jywglady.org/sdr/sdr/contents/gnuradio/Install/</id>
+    <link href="https://www.jywglady.org/sdr/sdr/contents/gnuradio/Install/"/>
+    <updated>2021-03-15T04:56:04.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="安裝-gnu-radio"> 安裝 GNU Radio</h1>
+<p>除了 GNU Radio 主要的應用程式之外，之後我們會使用 HackRF One 來進行實驗，因此這裡要安裝的有以下三個套件：</p>
+<ol>
+<li>GNU Radio</li>
+<li>gr-osmosdr</li>
+<li>hackrf</li>
+</ol>
+<p>其中，gr-osmosdr 是 GNU Radio 中，用來介接各種軟體無線電模組的程式；hackrf 則是 HackRF One 模組的相關應用程式。以下做法是先標記所有需要安裝的套件，然後再全部一起安裝。讀者也可以一個一個套件分開安裝。</p>
+<p><strong>標記 GNU Radio 套件</strong></p>
+<p>在 Quick filter 欄位輸入「gnuradio」，在搜尋結果中找到 gnuradio 3.8.1.0 的套件。對著套件左邊的小框框點擊「滑鼠右鍵」，選擇「Mark for Installation」。</p>
+<p><img src="./Fig/RAOb0HL.png" alt="搜尋gunradio"></p>
+<p><img src="./Fig/VRrqNy4.png" alt="標記gnuradio"></p>
+<p>接著會跳出一個對話框，告知使用者，以下的套件也會被安裝。請點選 「Mark」，標記這些套件。</p>
+<p><img src="./Fig/N3Qted5.png" alt="標記其它相關套件"></p>
+<p>被標記安裝的套件，左邊的小框框都會被打勾，而且套件備標記成綠色。<br>
+<img src="./Fig/VObPqdo.png" alt=""></p>
+<p><strong>標記 gr-osmosdr 套件</strong></p>
+<p>在 Quick filter 欄位輸入「gr-osmosdr」，在搜尋結果中找到 gr-osmosdr 的套件。對著套件左邊的小框框點擊「滑鼠右鍵」，選擇「Mark for Installation」。</p>
+<p><img src="./Fig/lpExI7I.png" alt="搜尋gr-osmosdr"></p>
+<p><img src="./Fig/e8Xe2pI.png" alt="標記gr-osmosdr套件"></p>
+<p>接著會跳出一個對話框，告知使用者，以下的套件也會被安裝。請點選 「Mark」，標記這些套件。</p>
+<p><img src="./Fig/7jqdAUU.png" alt=""></p>
+<p>被標記安裝的套件，左邊的小框框都會被打勾，而且套件被標記成綠色。</p>
+<p><img src="./Fig/1bSe1PV.png" alt="gr-osmosdr標記完成"></p>
+<p><strong>標記 hackrf 套件</strong></p>
+<p>在 Quick filter 欄位輸入「hackrf」，在搜尋結果中找到 hackrf 的套件。對著套件左邊的小框框點擊「滑鼠右鍵」，選擇「Mark for Installation」。</p>
+<p><img src="./Fig/abb4bYK.png" alt="搜尋hackrf"></p>
+<p><img src="./Fig/cazoXmx.png" alt="標記hackrf"></p>
+<p>被標記安裝的套件，左邊的小框框都會被打勾，而且套件被標記成綠色。</p>
+<p><img src="./Fig/yPucGwv.png" alt="hackrf標記完成"></p>
+<p><strong>安裝已標記的套件</strong></p>
+<p>安裝前，可以順便標記需要升級的套件，點選左上方的「Mark All Upgrades」。</p>
+<p><img src="./Fig/j1fCLzL.png" alt="標記需要升級的套件"></p>
+<p>請點選左上方的「Apply」。此時，會跳出一個對話框，請再一次點選「Apply」。</p>
+<p><img src="./Fig/3SO8lHh.png" alt="點選Apply"></p>
+<p><img src="./Fig/vQFAD7s.png" alt="再次點選Apply"></p>
+<p>之後等待 Synaptic 自動下載及安裝套件。安裝完成後，點選「Close」關閉對話框。</p>
+<p><img src="./Fig/u3s3b8a.png" alt="等待系統自動安裝"></p>
+<p><img src="./Fig/9mPSXEL.png" alt="安裝完成"></p>
+<p><strong>開啟 GNU Radio</strong>
+先點選「Show Applications」，然後搜尋「gnuradio」。</p>
+<p><img src="./Fig/NDISIIJ.png" alt="點選Show Applications"></p>
+<p><img src="./Fig/JmU7qlw.png" alt="搜尋gnuradio"></p>
+<p>看到此畫面，表示你成功開啟 GNU Radio。</p>
+<p><img src="./Fig/8eT6XKZ.png" alt="成功開啟 GNU Radio"></p>
+<p>現在要確認 OsmoSDR 模組是否順利安裝。<br>
+將右側的模組欄位拉到最下方，查看是否有「OsmoSDR」模組。</p>
+<p><img src="./Fig/sk3PnQl.png" alt="查看 OsmoSDR 模組"></p>
+<p>恭喜你順利完成環境設定。</p>
+]]></content>
+    <contributor>
+      <name/>
+    </contributor>
+    <published>2021-03-15T04:56:04.000Z</published>
+  </entry>
+  <entry>
     <title type="html">問題參考答案</title>
     <id>https://www.jywglady.org/sdr/sdr/contents/gnuradio/Answer/</id>
     <link href="https://www.jywglady.org/sdr/sdr/contents/gnuradio/Answer/"/>
@@ -479,66 +736,6 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span>​</span></span><
       <name/>
     </contributor>
     <published>2021-03-29T07:08:08.000Z</published>
-  </entry>
-  <entry>
-    <title type="html">安裝 GNU Radio</title>
-    <id>https://www.jywglady.org/sdr/sdr/contents/gnuradio/Install/</id>
-    <link href="https://www.jywglady.org/sdr/sdr/contents/gnuradio/Install/"/>
-    <updated>2021-03-15T04:56:04.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="安裝-gnu-radio"> 安裝 GNU Radio</h1>
-<p>除了 GNU Radio 主要的應用程式之外，之後我們會使用 HackRF One 來進行實驗，因此這裡要安裝的有以下三個套件：</p>
-<ol>
-<li>GNU Radio</li>
-<li>gr-osmosdr</li>
-<li>hackrf</li>
-</ol>
-<p>其中，gr-osmosdr 是 GNU Radio 中，用來介接各種軟體無線電模組的程式；hackrf 則是 HackRF One 模組的相關應用程式。以下做法是先標記所有需要安裝的套件，然後再全部一起安裝。讀者也可以一個一個套件分開安裝。</p>
-<p><strong>標記 GNU Radio 套件</strong></p>
-<p>在 Quick filter 欄位輸入「gnuradio」，在搜尋結果中找到 gnuradio 3.8.1.0 的套件。對著套件左邊的小框框點擊「滑鼠右鍵」，選擇「Mark for Installation」。</p>
-<p><img src="./Fig/RAOb0HL.png" alt="搜尋gunradio"></p>
-<p><img src="./Fig/VRrqNy4.png" alt="標記gnuradio"></p>
-<p>接著會跳出一個對話框，告知使用者，以下的套件也會被安裝。請點選 「Mark」，標記這些套件。</p>
-<p><img src="./Fig/N3Qted5.png" alt="標記其它相關套件"></p>
-<p>被標記安裝的套件，左邊的小框框都會被打勾，而且套件備標記成綠色。<br>
-<img src="./Fig/VObPqdo.png" alt=""></p>
-<p><strong>標記 gr-osmosdr 套件</strong></p>
-<p>在 Quick filter 欄位輸入「gr-osmosdr」，在搜尋結果中找到 gr-osmosdr 的套件。對著套件左邊的小框框點擊「滑鼠右鍵」，選擇「Mark for Installation」。</p>
-<p><img src="./Fig/lpExI7I.png" alt="搜尋gr-osmosdr"></p>
-<p><img src="./Fig/e8Xe2pI.png" alt="標記gr-osmosdr套件"></p>
-<p>接著會跳出一個對話框，告知使用者，以下的套件也會被安裝。請點選 「Mark」，標記這些套件。</p>
-<p><img src="./Fig/7jqdAUU.png" alt=""></p>
-<p>被標記安裝的套件，左邊的小框框都會被打勾，而且套件被標記成綠色。</p>
-<p><img src="./Fig/1bSe1PV.png" alt="gr-osmosdr標記完成"></p>
-<p><strong>標記 hackrf 套件</strong></p>
-<p>在 Quick filter 欄位輸入「hackrf」，在搜尋結果中找到 hackrf 的套件。對著套件左邊的小框框點擊「滑鼠右鍵」，選擇「Mark for Installation」。</p>
-<p><img src="./Fig/abb4bYK.png" alt="搜尋hackrf"></p>
-<p><img src="./Fig/cazoXmx.png" alt="標記hackrf"></p>
-<p>被標記安裝的套件，左邊的小框框都會被打勾，而且套件被標記成綠色。</p>
-<p><img src="./Fig/yPucGwv.png" alt="hackrf標記完成"></p>
-<p><strong>安裝已標記的套件</strong></p>
-<p>安裝前，可以順便標記需要升級的套件，點選左上方的「Mark All Upgrades」。</p>
-<p><img src="./Fig/j1fCLzL.png" alt="標記需要升級的套件"></p>
-<p>請點選左上方的「Apply」。此時，會跳出一個對話框，請再一次點選「Apply」。</p>
-<p><img src="./Fig/3SO8lHh.png" alt="點選Apply"></p>
-<p><img src="./Fig/vQFAD7s.png" alt="再次點選Apply"></p>
-<p>之後等待 Synaptic 自動下載及安裝套件。安裝完成後，點選「Close」關閉對話框。</p>
-<p><img src="./Fig/u3s3b8a.png" alt="等待系統自動安裝"></p>
-<p><img src="./Fig/9mPSXEL.png" alt="安裝完成"></p>
-<p><strong>開啟 GNU Radio</strong>
-先點選「Show Applications」，然後搜尋「gnuradio」。</p>
-<p><img src="./Fig/NDISIIJ.png" alt="點選Show Applications"></p>
-<p><img src="./Fig/JmU7qlw.png" alt="搜尋gnuradio"></p>
-<p>看到此畫面，表示你成功開啟 GNU Radio。</p>
-<p><img src="./Fig/8eT6XKZ.png" alt="成功開啟 GNU Radio"></p>
-<p>現在要確認 OsmoSDR 模組是否順利安裝。<br>
-將右側的模組欄位拉到最下方，查看是否有「OsmoSDR」模組。</p>
-<p><img src="./Fig/sk3PnQl.png" alt="查看 OsmoSDR 模組"></p>
-<p>恭喜你順利完成環境設定。</p>
-]]></content>
-    <contributor>
-      <name/>
-    </contributor>
-    <published>2021-03-15T04:56:04.000Z</published>
   </entry>
   <entry>
     <title type="html">模擬參數</title>
@@ -712,6 +909,39 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span>​</span></span><
     <published>2021-03-28T14:59:02.000Z</published>
   </entry>
   <entry>
+    <title type="html">前言</title>
+    <id>https://www.jywglady.org/sdr/sdr/contents/preface/</id>
+    <link href="https://www.jywglady.org/sdr/sdr/contents/preface/"/>
+    <updated>2021-03-12T05:08:13.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="前言"> 前言</h1>
+<p>軟體無線電 (Software Defined Radio, SDR) 是近年來興起的一項技術。過去無線傳輸設備中所使用到的元件模組，大部份都是使用硬體來設計和實現的，但隨著各種軟硬體技術的快速發展，如今許多硬體模組的功能也可以完全利用軟體的方式來加以實現。使用軟體實現的模組，可以隨時動態調整其中的各項傳輸技術或參數，不但具有更高的彈性，對於新技術的研發，也比硬體來得更有效率，因此 SDR 的技術也就逐漸流行起來。</p>
+<p>過去幾年，我在電機系教授「通訊實驗」課程，有一年系上大約購置了 20 台左右的 HackRF One SDR 模組。藉由這個 SDR 模組的使用，我們可以自己發送和接收無線訊號，可以讓同學更了解通訊相關的原理和應用，而我也開始帶著同學學習相關的內容。</p>
+<p>在準備課程教材的過程中，我發現 GNU Radio 是特別針對軟體無線電的應用而設計的自由軟體，功能十分強大；另一方面，HackRF One 則是經濟實惠的 SDR 入門產品，網路上有非常多玩家用它來實作許多無線技術的各種應用。這兩者似乎是相當不錯的組合，然而我在市面上，卻很難找到相關的書籍和教材，絕大部份的學習資源必須從網路上去發掘。</p>
+<p>過去在教授這門課程的時候，基本上主要就是整理網路上的各種學習資源，自己先做過實驗之後，再做成投影片講解及示範來進行課程的教授。累積了兩三年的經驗之後，想說也許可以逐步把一些教材編輯成冊，並且補充相關的資料，這樣也可以讓同學有更完整的內容可以閱讀和參考，並且也希望透過教學的回饋，將內容做一些調整和修正，未來可以做為出書的參考依據。</p>
+<p>由於教材的內容，主要是針對實驗課程的需要而設計，因此不會涵蓋太多理論的知識，而是以實作為主。雖然如此，但 SDR 技術本身需要許多通訊相關的原理作為基礎，例如時域和頻域的概念、傅立葉轉換與傅立葉分析、抽樣定理、濾波器設計等等，因此針對這些部份，也必須做一些適當的補充。目前規劃的教材內容，預計包含以下章節：</p>
+<ol>
+<li>SDR 簡介</li>
+<li>抽樣定理</li>
+<li>傅立葉轉換</li>
+<li>傅立葉分析</li>
+<li>濾波器簡介</li>
+<li>重新取樣</li>
+<li>Ubuntu 簡介</li>
+<li>GNU Radio 簡介與基本操作</li>
+<li>GNU Radio 進階課題</li>
+<li>RTL SDR 簡介與基本操作</li>
+<li>HackRF One 簡介與基本操作</li>
+<li>Gqrx 與 HackRF One 的使用</li>
+<li>使用 GNU Radio 及 HackRF 的無線通訊</li>
+<li>Github 相關專案介紹與測試</li>
+</ol>
+]]></content>
+    <contributor>
+      <name/>
+    </contributor>
+    <published>2021-03-07T15:30:03.000Z</published>
+  </entry>
+  <entry>
     <title type="html">Ubuntu 及套件管理程式</title>
     <id>https://www.jywglady.org/sdr/sdr/contents/gnuradio/Synaptic/</id>
     <link href="https://www.jywglady.org/sdr/sdr/contents/gnuradio/Synaptic/"/>
@@ -772,39 +1002,6 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span>​</span></span><
       <name/>
     </contributor>
     <published>2021-03-15T04:56:04.000Z</published>
-  </entry>
-  <entry>
-    <title type="html">前言</title>
-    <id>https://www.jywglady.org/sdr/sdr/contents/preface/</id>
-    <link href="https://www.jywglady.org/sdr/sdr/contents/preface/"/>
-    <updated>2021-03-12T05:08:13.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="前言"> 前言</h1>
-<p>軟體無線電 (Software Defined Radio, SDR) 是近年來興起的一項技術。過去無線傳輸設備中所使用到的元件模組，大部份都是使用硬體來設計和實現的，但隨著各種軟硬體技術的快速發展，如今許多硬體模組的功能也可以完全利用軟體的方式來加以實現。使用軟體實現的模組，可以隨時動態調整其中的各項傳輸技術或參數，不但具有更高的彈性，對於新技術的研發，也比硬體來得更有效率，因此 SDR 的技術也就逐漸流行起來。</p>
-<p>過去幾年，我在電機系教授「通訊實驗」課程，有一年系上大約購置了 20 台左右的 HackRF One SDR 模組。藉由這個 SDR 模組的使用，我們可以自己發送和接收無線訊號，可以讓同學更了解通訊相關的原理和應用，而我也開始帶著同學學習相關的內容。</p>
-<p>在準備課程教材的過程中，我發現 GNU Radio 是特別針對軟體無線電的應用而設計的自由軟體，功能十分強大；另一方面，HackRF One 則是經濟實惠的 SDR 入門產品，網路上有非常多玩家用它來實作許多無線技術的各種應用。這兩者似乎是相當不錯的組合，然而我在市面上，卻很難找到相關的書籍和教材，絕大部份的學習資源必須從網路上去發掘。</p>
-<p>過去在教授這門課程的時候，基本上主要就是整理網路上的各種學習資源，自己先做過實驗之後，再做成投影片講解及示範來進行課程的教授。累積了兩三年的經驗之後，想說也許可以逐步把一些教材編輯成冊，並且補充相關的資料，這樣也可以讓同學有更完整的內容可以閱讀和參考，並且也希望透過教學的回饋，將內容做一些調整和修正，未來可以做為出書的參考依據。</p>
-<p>由於教材的內容，主要是針對實驗課程的需要而設計，因此不會涵蓋太多理論的知識，而是以實作為主。雖然如此，但 SDR 技術本身需要許多通訊相關的原理作為基礎，例如時域和頻域的概念、傅立葉轉換與傅立葉分析、抽樣定理、濾波器設計等等，因此針對這些部份，也必須做一些適當的補充。目前規劃的教材內容，預計包含以下章節：</p>
-<ol>
-<li>SDR 簡介</li>
-<li>抽樣定理</li>
-<li>傅立葉轉換</li>
-<li>傅立葉分析</li>
-<li>濾波器簡介</li>
-<li>重新取樣</li>
-<li>Ubuntu 簡介</li>
-<li>GNU Radio 簡介與基本操作</li>
-<li>GNU Radio 進階課題</li>
-<li>RTL SDR 簡介與基本操作</li>
-<li>HackRF One 簡介與基本操作</li>
-<li>Gqrx 與 HackRF One 的使用</li>
-<li>使用 GNU Radio 及 HackRF 的無線通訊</li>
-<li>Github 相關專案介紹與測試</li>
-</ol>
-]]></content>
-    <contributor>
-      <name/>
-    </contributor>
-    <published>2021-03-07T15:30:03.000Z</published>
   </entry>
   <entry>
     <title type="html">GNU Radio Basic</title>
@@ -878,6 +1075,34 @@ y<span>=</span><span>cos</span><span>(</span><span>2</span><span>*</span>t<span>
     <published>2021-03-15T04:56:04.000Z</published>
   </entry>
   <entry>
+    <title type="html">尤拉公式</title>
+    <id>https://www.jywglady.org/sdr/sdr/contents/sampling/Euler/</id>
+    <link href="https://www.jywglady.org/sdr/sdr/contents/sampling/Euler/"/>
+    <updated>2021-03-15T04:56:04.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="尤拉公式"> 尤拉公式</h1>
+<p>在單位圓的圓周上等速旋轉的一個點，其角度可以看成是線性的，不妨寫成 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.61508em;vertical-align:0em;"></span><span style="margin-right:0.03588em;">ω</span><span>t</span></span></span></span>。根據三角函數，該點的水平座標為 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>cos</span><span>(</span><span style="margin-right:0.03588em;">ω</span><span>t</span><span>)</span></span></span></span>，而垂直座標為 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>sin</span><span>(</span><span style="margin-right:0.03588em;">ω</span><span>t</span><span>)</span></span></span></span>，因此在複平面上，該點的位置可以表示如下：</p>
+<p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>cos</span><span>(</span><span style="margin-right:0.03588em;">ω</span><span>t</span><span>)</span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span></span><span><span style="height:1em;vertical-align:-0.25em;"></span><span style="margin-right:0.05724em;">j</span><span style="margin-right:0.16666666666666666em;"></span><span>sin</span><span>(</span><span style="margin-right:0.03588em;">ω</span><span>t</span><span>)</span></span></span></span></span></p>
+<p>根據尤拉公式 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.824664em;vertical-align:0em;"></span><span><span>e</span><span><span><span><span style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:1em;vertical-align:-0.25em;"></span><span>cos</span><span>(</span><span style="margin-right:0.03588em;">ω</span><span>t</span><span>)</span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span></span><span><span style="height:1em;vertical-align:-0.25em;"></span><span style="margin-right:0.05724em;">j</span><span style="margin-right:0.16666666666666666em;"></span><span>sin</span><span>(</span><span style="margin-right:0.03588em;">ω</span><span>t</span><span>)</span></span></span></span>，所以該點的位置也可以寫成 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.824664em;vertical-align:0em;"></span><span><span>e</span><span><span><span><span style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span></span></span></span>；也就是說 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.824664em;vertical-align:0em;"></span><span><span>e</span><span><span><span><span style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span></span></span></span> 代表的就是一個角速度為 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.43056em;vertical-align:0em;"></span><span style="margin-right:0.03588em;">ω</span></span></span></span> 等速旋轉的訊號點。參見下圖：</p>
+<div>
+<Euler/>
+</div>
+<p>如果我們把尤拉公式中的 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.43056em;vertical-align:0em;"></span><span style="margin-right:0.03588em;">ω</span></span></span></span> 改成 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.66666em;vertical-align:-0.08333em;"></span><span>−</span><span style="margin-right:0.03588em;">ω</span></span></span></span>，然後跟上式一起運用，做一點簡單的運算，可以得到以下的公式：</p>
+<p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>cos</span><span>(</span><span style="margin-right:0.03588em;">ω</span><span>t</span><span>)</span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:2.187664em;vertical-align:-0.686em;"></span><span><span></span><span><span><span><span style="height:1.5016639999999999em;"><span style="top:-2.314em;"><span style="height:3em;"></span><span><span>2</span></span></span><span style="top:-3.23em;"><span style="height:3em;"></span><span style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span style="height:3em;"></span><span><span><span>e</span><span><span><span><span style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span><span><span>e</span><span><span><span><span style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span></span></span></span><span>​</span></span><span><span style="height:0.686em;"><span></span></span></span></span></span><span></span></span></span></span></span></span></p>
+<p>換句話說，<span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>cos</span><span>(</span><span style="margin-right:0.03588em;">ω</span><span>t</span><span>)</span></span></span></span> 可以看成是兩個訊號點的合成，其中一個是 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1.190108em;vertical-align:-0.345em;"></span><span><span></span><span><span><span><span style="height:0.845108em;"><span style="top:-2.6550000000000002em;"><span style="height:3em;"></span><span><span><span>2</span></span></span></span><span style="top:-3.23em;"><span style="height:3em;"></span><span style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span style="height:3em;"></span><span><span><span>1</span></span></span></span></span><span>​</span></span><span><span style="height:0.345em;"><span></span></span></span></span></span><span></span></span><span><span>e</span><span><span><span><span style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span></span></span></span>，另外一個是 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1.190108em;vertical-align:-0.345em;"></span><span><span></span><span><span><span><span style="height:0.845108em;"><span style="top:-2.6550000000000002em;"><span style="height:3em;"></span><span><span><span>2</span></span></span></span><span style="top:-3.23em;"><span style="height:3em;"></span><span style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span style="height:3em;"></span><span><span><span>1</span></span></span></span></span><span>​</span></span><span><span style="height:0.345em;"><span></span></span></span></span></span><span></span></span><span><span>e</span><span><span><span><span style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span></span></span></span>。</p>
+<div><p>練習</p>
+<br>
+<ol>
+<li>試著把 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>sin</span><span>(</span><span style="margin-right:0.03588em;">ω</span><span>t</span><span>)</span></span></span></span> 寫成 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.824664em;vertical-align:0em;"></span><span><span>e</span><span><span><span><span style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span></span></span></span> 和 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.824664em;vertical-align:0em;"></span><span><span>e</span><span><span><span><span style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span></span></span></span> 的線性組合。</li>
+<li>試著把 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>cos</span><span>(</span><span style="margin-right:0.03588em;">ω</span><span>t</span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span></span><span><span style="height:1em;vertical-align:-0.25em;"></span><span style="margin-right:0.02778em;">θ</span><span>)</span></span></span></span> 寫成 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.824664em;vertical-align:0em;"></span><span><span>e</span><span><span><span><span style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span></span></span></span> 和 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.824664em;vertical-align:0em;"></span><span><span>e</span><span><span><span><span style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span></span></span></span> 的線性組合。</li>
+</ol>
+</div>
+]]></content>
+    <contributor>
+      <name/>
+    </contributor>
+    <published>2021-03-15T00:47:07.000Z</published>
+  </entry>
+  <entry>
     <title type="html">DTMF 應用練習</title>
     <id>https://www.jywglady.org/sdr/sdr/contents/sampling/DTMF/</id>
     <link href="https://www.jywglady.org/sdr/sdr/contents/sampling/DTMF/"/>
@@ -929,32 +1154,34 @@ fnum <span>=</span> <span>(</span><span>-</span>N<span>/</span><span>2</span><sp
     <published>2021-03-15T04:56:04.000Z</published>
   </entry>
   <entry>
-    <title type="html">尤拉公式</title>
-    <id>https://www.jywglady.org/sdr/sdr/contents/sampling/Euler/</id>
-    <link href="https://www.jywglady.org/sdr/sdr/contents/sampling/Euler/"/>
+    <title type="html">軟體設置</title>
+    <id>https://www.jywglady.org/sdr/sdr/contents/sampling/Octave/</id>
+    <link href="https://www.jywglady.org/sdr/sdr/contents/sampling/Octave/"/>
     <updated>2021-03-15T04:56:04.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="尤拉公式"> 尤拉公式</h1>
-<p>在單位圓的圓周上等速旋轉的一個點，其角度可以看成是線性的，不妨寫成 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.61508em;vertical-align:0em;"></span><span style="margin-right:0.03588em;">ω</span><span>t</span></span></span></span>。根據三角函數，該點的水平座標為 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>cos</span><span>(</span><span style="margin-right:0.03588em;">ω</span><span>t</span><span>)</span></span></span></span>，而垂直座標為 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>sin</span><span>(</span><span style="margin-right:0.03588em;">ω</span><span>t</span><span>)</span></span></span></span>，因此在複平面上，該點的位置可以表示如下：</p>
-<p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>cos</span><span>(</span><span style="margin-right:0.03588em;">ω</span><span>t</span><span>)</span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span></span><span><span style="height:1em;vertical-align:-0.25em;"></span><span style="margin-right:0.05724em;">j</span><span style="margin-right:0.16666666666666666em;"></span><span>sin</span><span>(</span><span style="margin-right:0.03588em;">ω</span><span>t</span><span>)</span></span></span></span></span></p>
-<p>根據尤拉公式 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.824664em;vertical-align:0em;"></span><span><span>e</span><span><span><span><span style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:1em;vertical-align:-0.25em;"></span><span>cos</span><span>(</span><span style="margin-right:0.03588em;">ω</span><span>t</span><span>)</span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span></span><span><span style="height:1em;vertical-align:-0.25em;"></span><span style="margin-right:0.05724em;">j</span><span style="margin-right:0.16666666666666666em;"></span><span>sin</span><span>(</span><span style="margin-right:0.03588em;">ω</span><span>t</span><span>)</span></span></span></span>，所以該點的位置也可以寫成 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.824664em;vertical-align:0em;"></span><span><span>e</span><span><span><span><span style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span></span></span></span>；也就是說 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.824664em;vertical-align:0em;"></span><span><span>e</span><span><span><span><span style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span></span></span></span> 代表的就是一個角速度為 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.43056em;vertical-align:0em;"></span><span style="margin-right:0.03588em;">ω</span></span></span></span> 等速旋轉的訊號點。參見下圖：</p>
-<div>
-<Euler/>
-</div>
-<p>如果我們把尤拉公式中的 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.43056em;vertical-align:0em;"></span><span style="margin-right:0.03588em;">ω</span></span></span></span> 改成 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.66666em;vertical-align:-0.08333em;"></span><span>−</span><span style="margin-right:0.03588em;">ω</span></span></span></span>，然後跟上式一起運用，做一點簡單的運算，可以得到以下的公式：</p>
-<p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>cos</span><span>(</span><span style="margin-right:0.03588em;">ω</span><span>t</span><span>)</span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:2.187664em;vertical-align:-0.686em;"></span><span><span></span><span><span><span><span style="height:1.5016639999999999em;"><span style="top:-2.314em;"><span style="height:3em;"></span><span><span>2</span></span></span><span style="top:-3.23em;"><span style="height:3em;"></span><span style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span style="height:3em;"></span><span><span><span>e</span><span><span><span><span style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span><span><span>e</span><span><span><span><span style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span></span></span></span><span>​</span></span><span><span style="height:0.686em;"><span></span></span></span></span></span><span></span></span></span></span></span></span></p>
-<p>換句話說，<span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>cos</span><span>(</span><span style="margin-right:0.03588em;">ω</span><span>t</span><span>)</span></span></span></span> 可以看成是兩個訊號點的合成，其中一個是 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1.190108em;vertical-align:-0.345em;"></span><span><span></span><span><span><span><span style="height:0.845108em;"><span style="top:-2.6550000000000002em;"><span style="height:3em;"></span><span><span><span>2</span></span></span></span><span style="top:-3.23em;"><span style="height:3em;"></span><span style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span style="height:3em;"></span><span><span><span>1</span></span></span></span></span><span>​</span></span><span><span style="height:0.345em;"><span></span></span></span></span></span><span></span></span><span><span>e</span><span><span><span><span style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span></span></span></span>，另外一個是 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1.190108em;vertical-align:-0.345em;"></span><span><span></span><span><span><span><span style="height:0.845108em;"><span style="top:-2.6550000000000002em;"><span style="height:3em;"></span><span><span><span>2</span></span></span></span><span style="top:-3.23em;"><span style="height:3em;"></span><span style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span style="height:3em;"></span><span><span><span>1</span></span></span></span></span><span>​</span></span><span><span style="height:0.345em;"><span></span></span></span></span></span><span></span></span><span><span>e</span><span><span><span><span style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span></span></span></span>。</p>
-<div><p>練習</p>
+    <content type="html"><![CDATA[<h1 id="軟體設置"> 軟體設置</h1>
+<p>MATLAB 是矩陣式的數值運算軟體，提供許多附加的工具箱，可以運用在各種不同的領域，另外還有一個配套軟體叫 Simulink，提供視覺化的開發和模擬環境，常被用來做系統模擬。由於 MATLAB 是商業軟體，對一般同學來說比較昂貴，因此同學除了可以在學校提供的實驗教學環境使用之外，老師也推薦以下幾款很相似的自由軟體，供同學參考使用。</p>
+<p><strong>GNU Octave</strong></p>
+<p>GNU Octave 是跨平台的自由軟體，可以在 GNU/Linux, macOS, BSD, 以及 Windows 等環境使用，語法與 MATLAB 相同，相容性極高，大多數用 MATLAB 寫好的程式，幾乎不用更改就可以在 GNU Octave 上面執行。Octave 也提供了很多的擴充套件，等同於 MATLAB 的工具箱，非常方便。個人非常推薦同學可以下載使用看看。</p>
+<p><strong>FreeMat</strong></p>
+<p>FreeMat 是另一款跨平台的自由軟體，與 MATLAB 的相容性也很高，不過近幾年比較沒有看到更新的訊息，比較好的地方是提供了連接
+C/Fortran 的程式界面。如果對於運算的要求不高，也是一個可以考慮的自由軟體。</p>
+<p><strong>Scilab</strong></p>
+<p>Scilab 也是跨平台的自由軟體，使用的語法與 MATLAB 近似，雖然還是有些許的不同，但提供了一個轉換 MATLAB 程式檔的工具。Scilab 有一個搭配的圖形工具箱 Xcos，與 MATLAB 的 Simulink 相似，可以提供視覺化的開發和模擬環境。</p>
 <br>
-<ol>
-<li>試著把 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>sin</span><span>(</span><span style="margin-right:0.03588em;">ω</span><span>t</span><span>)</span></span></span></span> 寫成 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.824664em;vertical-align:0em;"></span><span><span>e</span><span><span><span><span style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span></span></span></span> 和 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.824664em;vertical-align:0em;"></span><span><span>e</span><span><span><span><span style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span></span></span></span> 的線性組合。</li>
-<li>試著把 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>cos</span><span>(</span><span style="margin-right:0.03588em;">ω</span><span>t</span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span></span><span><span style="height:1em;vertical-align:-0.25em;"></span><span style="margin-right:0.02778em;">θ</span><span>)</span></span></span></span> 寫成 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.824664em;vertical-align:0em;"></span><span><span>e</span><span><span><span><span style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span></span></span></span> 和 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.824664em;vertical-align:0em;"></span><span><span>e</span><span><span><span><span style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span></span></span></span> 的線性組合。</li>
-</ol>
-</div>
+<p>以下實驗基本上是在 GNU Octave 上進行測試。基本上要先安裝 Octave，可在 <a href="https://www.gnu.org/software/octave/" target="_blank" rel="noopener noreferrer">官網</a> 下載軟體安裝，如果是在 Ubuntu 系統，可使用以下方式直接安裝：</p>
+<div><pre><code><span>sudo</span> <span>apt</span> <span>install</span> octave
+</code></pre>
+<div><span>1</span><br></div></div><p>Octave 有圖形介面及文字介面，一般安裝完之後，執行 octave 指令，會自動開啟圖形介面，如下圖所示：</p>
+<p><img src="./Fig/octave-gui.png" alt=""></p>
+<p>另外，根據安裝版本及設定，也有可能開啟文字介面，如下圖所示：</p>
+<p><img src="./Fig/octave-nogui.png" alt=""></p>
+<p><exercise num="1"></exercise>
+請練習安裝 Octave 軟體，並試著執行 octave，檢查安裝是否正確無誤。</p>
 ]]></content>
     <contributor>
       <name/>
     </contributor>
-    <published>2021-03-15T00:47:07.000Z</published>
+    <published>2021-03-15T04:56:04.000Z</published>
   </entry>
   <entry>
     <title type="html">抽樣模擬實驗</title>
@@ -996,36 +1223,6 @@ fnum <span>=</span> <span>(</span><span>-</span>N<span>/</span><span>2</span><sp
       <name/>
     </contributor>
     <published>2021-03-15T00:47:07.000Z</published>
-  </entry>
-  <entry>
-    <title type="html">軟體設置</title>
-    <id>https://www.jywglady.org/sdr/sdr/contents/sampling/Octave/</id>
-    <link href="https://www.jywglady.org/sdr/sdr/contents/sampling/Octave/"/>
-    <updated>2021-03-15T04:56:04.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="軟體設置"> 軟體設置</h1>
-<p>MATLAB 是矩陣式的數值運算軟體，提供許多附加的工具箱，可以運用在各種不同的領域，另外還有一個配套軟體叫 Simulink，提供視覺化的開發和模擬環境，常被用來做系統模擬。由於 MATLAB 是商業軟體，對一般同學來說比較昂貴，因此同學除了可以在學校提供的實驗教學環境使用之外，老師也推薦以下幾款很相似的自由軟體，供同學參考使用。</p>
-<p><strong>GNU Octave</strong></p>
-<p>GNU Octave 是跨平台的自由軟體，可以在 GNU/Linux, macOS, BSD, 以及 Windows 等環境使用，語法與 MATLAB 相同，相容性極高，大多數用 MATLAB 寫好的程式，幾乎不用更改就可以在 GNU Octave 上面執行。Octave 也提供了很多的擴充套件，等同於 MATLAB 的工具箱，非常方便。個人非常推薦同學可以下載使用看看。</p>
-<p><strong>FreeMat</strong></p>
-<p>FreeMat 是另一款跨平台的自由軟體，與 MATLAB 的相容性也很高，不過近幾年比較沒有看到更新的訊息，比較好的地方是提供了連接
-C/Fortran 的程式界面。如果對於運算的要求不高，也是一個可以考慮的自由軟體。</p>
-<p><strong>Scilab</strong></p>
-<p>Scilab 也是跨平台的自由軟體，使用的語法與 MATLAB 近似，雖然還是有些許的不同，但提供了一個轉換 MATLAB 程式檔的工具。Scilab 有一個搭配的圖形工具箱 Xcos，與 MATLAB 的 Simulink 相似，可以提供視覺化的開發和模擬環境。</p>
-<br>
-<p>以下實驗基本上是在 GNU Octave 上進行測試。基本上要先安裝 Octave，可在 <a href="https://www.gnu.org/software/octave/" target="_blank" rel="noopener noreferrer">官網</a> 下載軟體安裝，如果是在 Ubuntu 系統，可使用以下方式直接安裝：</p>
-<div><pre><code><span>sudo</span> <span>apt</span> <span>install</span> octave
-</code></pre>
-<div><span>1</span><br></div></div><p>Octave 有圖形介面及文字介面，一般安裝完之後，執行 octave 指令，會自動開啟圖形介面，如下圖所示：</p>
-<p><img src="./Fig/octave-gui.png" alt=""></p>
-<p>另外，根據安裝版本及設定，也有可能開啟文字介面，如下圖所示：</p>
-<p><img src="./Fig/octave-nogui.png" alt=""></p>
-<p><exercise num="1"></exercise>
-請練習安裝 Octave 軟體，並試著執行 octave，檢查安裝是否正確無誤。</p>
-]]></content>
-    <contributor>
-      <name/>
-    </contributor>
-    <published>2021-03-15T04:56:04.000Z</published>
   </entry>
   <entry>
     <title type="html">升餘弦脈衝信號</title>
@@ -1089,42 +1286,6 @@ grid on<span>;</span>
     <published>2021-03-15T04:56:04.000Z</published>
   </entry>
   <entry>
-    <title type="html">信號還原</title>
-    <id>https://www.jywglady.org/sdr/sdr/contents/sampling/Recovery/</id>
-    <link href="https://www.jywglady.org/sdr/sdr/contents/sampling/Recovery/"/>
-    <updated>2021-03-15T04:56:04.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="信號還原"> 信號還原</h1>
-<p>抽樣之後的信號，其頻譜會不斷重覆，如果抽樣夠快，使用一個低通濾波器便可以把信號還原回來。在頻率乘上一個低通濾波器，等於在時域上和 sinc 函數做摺積，其還原信號公式如下:</p>
-<p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>x</span><span>(</span><span>t</span><span>)</span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:2.959733em;vertical-align:-1.308336em;"></span><span><span><span><span style="height:1.6513970000000002em;"><span style="top:-1.8999949999999999em;margin-left:0em;"><span style="height:3.05em;"></span><span><span><span>n</span><span>=</span><span>−</span><span>∞</span></span></span></span><span style="top:-3.050005em;"><span style="height:3.05em;"></span><span><span>∑</span></span></span><span style="top:-4.3000050000000005em;margin-left:0em;"><span style="height:3.05em;"></span><span><span><span>∞</span></span></span></span></span><span>​</span></span><span><span style="height:1.308336em;"><span></span></span></span></span></span><span style="margin-right:0.16666666666666666em;"></span><span>x</span><span>(</span><span>n</span><span style="margin-right:0.13889em;">T</span><span>)</span><span style="margin-right:0.16666666666666666em;"></span><span><span>sinc</span></span><span>(</span><span><span></span><span><span><span><span style="height:1.36033em;"><span style="top:-2.314em;"><span style="height:3em;"></span><span><span style="margin-right:0.13889em;">T</span></span></span><span style="top:-3.23em;"><span style="height:3em;"></span><span style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span style="height:3em;"></span><span><span>t</span><span style="margin-right:0.2222222222222222em;"></span><span>−</span><span style="margin-right:0.2222222222222222em;"></span><span>n</span><span style="margin-right:0.13889em;">T</span></span></span></span><span>​</span></span><span><span style="height:0.686em;"><span></span></span></span></span></span><span></span></span><span>)</span></span></span></span></span></p>
-<p>現在試著使用以下程式碼做信號的還原：</p>
-<div><pre><code>srate <span>=</span> <span>2</span><span>;</span>         <span>% 抽樣速度</span>
-st <span>=</span> <span>(</span><span>-</span><span>8</span><span>:</span><span>8</span><span>)</span><span>/</span>srate<span>;</span> <span>% 抽樣點</span>
-xn <span>=</span> <span>mys</span><span>(</span>st<span>)</span><span>;</span>      <span>% 信號值</span>
-
-N <span>=</span> <span>floor</span><span>(</span><span>length</span><span>(</span>xn<span>)</span><span>/</span><span>2</span><span>)</span><span>;</span>  <span>% 點數一半</span>
-t <span>=</span> <span>-</span><span>5</span><span>:</span><span>0.1</span><span>:</span><span>5</span><span>;</span>             <span>% 計算還原信號的時間點</span>
-rt <span>=</span> <span>zeros</span><span>(</span><span>size</span><span>(</span>t<span>)</span><span>)</span><span>;</span>
-<span>for</span> n<span>=</span><span>-</span>N<span>:</span>N
-  rt <span>=</span> rt <span>+</span> <span>xn</span><span>(</span>n<span>+</span>N<span>+</span><span>1</span><span>)</span><span>*</span><span>sinc</span><span>(</span><span>(</span>t<span>-</span>n<span>/</span>srate<span>)</span><span>*</span>srate<span>)</span><span>;</span>
-<span>end</span>
-<span>plot</span><span>(</span>t<span>,</span>rt<span>)</span><span>,</span> grid on<span>;</span>
-<span>xlabel</span><span>(</span><span>'t'</span><span>)</span><span>,</span> <span>ylabel</span><span>(</span><span>'s(t)'</span><span>)</span><span>;</span>
-<span>title</span><span>(</span><span>'Reconstructed Signal'</span><span>)</span><span>;</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br></div></div><p>得到的圖形如下。</p>
-<div>
-<p><img src="./Fig/rec01.png" alt="">
-還原的升餘弦脈衝信號, fs=2</p>
-</div>
-<p><exercise></exercise>
-試著調整不同的抽樣速度，例如大於或小於信號最高頻率的兩倍，計算還原的信號與原來信號的誤差。</p>
-]]></content>
-    <contributor>
-      <name/>
-    </contributor>
-    <published>2021-03-15T04:56:04.000Z</published>
-  </entry>
-  <entry>
     <title type="html">抽樣頻譜</title>
     <id>https://www.jywglady.org/sdr/sdr/contents/sampling/SampleFreq/</id>
     <link href="https://www.jywglady.org/sdr/sdr/contents/sampling/SampleFreq/"/>
@@ -1176,6 +1337,130 @@ Fsw <span>=</span> Ts<span>*</span>fst<span>*</span><span>exp</span><span>(</spa
 升餘弦脈衝信號取樣後的頻譜, fs=1</p>
 </div>
 <p>這個結果和我們用 myssf 計算出來的是一樣的,唯一的差別是橫軸放大了 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.64444em;vertical-align:0em;"></span><span>2</span><span style="margin-right:0.03588em;">π</span></span></span></span>，有興趣的同學可以驗證一下。</p>
+]]></content>
+    <contributor>
+      <name/>
+    </contributor>
+    <published>2021-03-15T04:56:04.000Z</published>
+  </entry>
+  <entry>
+    <title type="html">信號還原</title>
+    <id>https://www.jywglady.org/sdr/sdr/contents/sampling/Recovery/</id>
+    <link href="https://www.jywglady.org/sdr/sdr/contents/sampling/Recovery/"/>
+    <updated>2021-03-15T04:56:04.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="信號還原"> 信號還原</h1>
+<p>抽樣之後的信號，其頻譜會不斷重覆，如果抽樣夠快，使用一個低通濾波器便可以把信號還原回來。在頻率乘上一個低通濾波器，等於在時域上和 sinc 函數做摺積，其還原信號公式如下:</p>
+<p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>x</span><span>(</span><span>t</span><span>)</span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:2.959733em;vertical-align:-1.308336em;"></span><span><span><span><span style="height:1.6513970000000002em;"><span style="top:-1.8999949999999999em;margin-left:0em;"><span style="height:3.05em;"></span><span><span><span>n</span><span>=</span><span>−</span><span>∞</span></span></span></span><span style="top:-3.050005em;"><span style="height:3.05em;"></span><span><span>∑</span></span></span><span style="top:-4.3000050000000005em;margin-left:0em;"><span style="height:3.05em;"></span><span><span><span>∞</span></span></span></span></span><span>​</span></span><span><span style="height:1.308336em;"><span></span></span></span></span></span><span style="margin-right:0.16666666666666666em;"></span><span>x</span><span>(</span><span>n</span><span style="margin-right:0.13889em;">T</span><span>)</span><span style="margin-right:0.16666666666666666em;"></span><span><span>sinc</span></span><span>(</span><span><span></span><span><span><span><span style="height:1.36033em;"><span style="top:-2.314em;"><span style="height:3em;"></span><span><span style="margin-right:0.13889em;">T</span></span></span><span style="top:-3.23em;"><span style="height:3em;"></span><span style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span style="height:3em;"></span><span><span>t</span><span style="margin-right:0.2222222222222222em;"></span><span>−</span><span style="margin-right:0.2222222222222222em;"></span><span>n</span><span style="margin-right:0.13889em;">T</span></span></span></span><span>​</span></span><span><span style="height:0.686em;"><span></span></span></span></span></span><span></span></span><span>)</span></span></span></span></span></p>
+<p>現在試著使用以下程式碼做信號的還原：</p>
+<div><pre><code>srate <span>=</span> <span>2</span><span>;</span>         <span>% 抽樣速度</span>
+st <span>=</span> <span>(</span><span>-</span><span>8</span><span>:</span><span>8</span><span>)</span><span>/</span>srate<span>;</span> <span>% 抽樣點</span>
+xn <span>=</span> <span>mys</span><span>(</span>st<span>)</span><span>;</span>      <span>% 信號值</span>
+
+N <span>=</span> <span>floor</span><span>(</span><span>length</span><span>(</span>xn<span>)</span><span>/</span><span>2</span><span>)</span><span>;</span>  <span>% 點數一半</span>
+t <span>=</span> <span>-</span><span>5</span><span>:</span><span>0.1</span><span>:</span><span>5</span><span>;</span>             <span>% 計算還原信號的時間點</span>
+rt <span>=</span> <span>zeros</span><span>(</span><span>size</span><span>(</span>t<span>)</span><span>)</span><span>;</span>
+<span>for</span> n<span>=</span><span>-</span>N<span>:</span>N
+  rt <span>=</span> rt <span>+</span> <span>xn</span><span>(</span>n<span>+</span>N<span>+</span><span>1</span><span>)</span><span>*</span><span>sinc</span><span>(</span><span>(</span>t<span>-</span>n<span>/</span>srate<span>)</span><span>*</span>srate<span>)</span><span>;</span>
+<span>end</span>
+<span>plot</span><span>(</span>t<span>,</span>rt<span>)</span><span>,</span> grid on<span>;</span>
+<span>xlabel</span><span>(</span><span>'t'</span><span>)</span><span>,</span> <span>ylabel</span><span>(</span><span>'s(t)'</span><span>)</span><span>;</span>
+<span>title</span><span>(</span><span>'Reconstructed Signal'</span><span>)</span><span>;</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br></div></div><p>得到的圖形如下。</p>
+<div>
+<p><img src="./Fig/rec01.png" alt="">
+還原的升餘弦脈衝信號, fs=2</p>
+</div>
+<p><exercise></exercise>
+試著調整不同的抽樣速度，例如大於或小於信號最高頻率的兩倍，計算還原的信號與原來信號的誤差。</p>
+]]></content>
+    <contributor>
+      <name/>
+    </contributor>
+    <published>2021-03-15T04:56:04.000Z</published>
+  </entry>
+  <entry>
+    <title type="html">模擬實驗解答</title>
+    <id>https://www.jywglady.org/sdr/sdr/contents/sampling/SimuAnswer/</id>
+    <link href="https://www.jywglady.org/sdr/sdr/contents/sampling/SimuAnswer/"/>
+    <updated>2021-03-22T05:21:34.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="模擬實驗解答"> 模擬實驗解答</h1>
+<h2 id="抽樣實驗"> <a href="https://www.jywglady.org/sdr/contents/sampling/" target="_blank" rel="noopener noreferrer">抽樣實驗</a></h2>
+<p>password: keepgoing</p>
+<p>試著利用上圖的模擬器回答以下問題：</p>
+<ol>
+<li>旋轉速率和抽樣速率同時乘上一個倍數，模擬會產生什麼變化？</li>
+</ol>
+<div><p>Answer</p>
+<p>當旋轉速率和抽樣速率同時乘上一個倍數，圓周上取樣的點相同，但是時間尺度會改變。</p>
+</div>
+<ol start="2">
+<li>訊號點的轉速 r 增加 f 的整數倍，對於訊號點的軌跡和抽樣有何影響？</li>
+</ol>
+<div><p>Answer</p>
+<p>轉速增加抽樣的整數倍，圓周上取樣的點相同。因此只看抽樣點時，無法區分轉速 r, r+f, r+2f... 等的差別。</p>
+</div>
+<ol start="3">
+<li>改變訊號點轉速的正負號，對於訊號點的軌跡和抽樣有何影響？</li>
+</ol>
+<div><p>Answer</p>
+<p>轉速正與負，對於訊號點的軌跡與抽樣而言，都是映射（旋轉方向不同，對稱於 x 軸），數學上代表共軛的複數。</p>
+</div>
+<ol start="4">
+<li>假設 f=10，當 r 分別為 1 和 9 時，訊號點的軌跡和抽樣有什麼異同？</li>
+</ol>
+<div><p>Answer</p>
+<p>已知當 r 增加 f 的整數倍時，抽樣點位置不變，因此 r=9 與 r=-1 的抽樣點是相同的。如此一來，等同於比較 r=1 及 r=-1 的差異。所以 r=1 與r=9 的訊號點軌跡不同，但是抽樣點對稱於 x 軸。也就是說，兩者的抽樣訊號是共軛複數。</p>
+</div>
+<ol start="5">
+<li>假設 f=10，且 r&lt;10，可否透過抽樣點所猜測的訊號點軌跡來確定 r 值？</li>
+</ol>
+<div><p>Answer</p>
+<p>無法確定，例如：「轉速1的反轉」與「轉速9的正轉」兩者是無法區分的。</p>
+</div>
+<ol start="6">
+<li>假設 r 值不超過 30，如果要透過抽樣點來估測訊號點的實際轉速，那麼 f 值有何限制？</li>
+</ol>
+<div><p>Answer</p>
+<p>為了區隔正轉與反轉，每次抽樣時，旋轉角度不能超過 1/2 圓，因此抽樣速率要大於 2 倍的 r，也就是說，抽樣速率 f 須大於 60。</p>
+</div>
+<ol start="7">
+<li>這個模擬和抽樣定理有沒有什麼相似的地方？</li>
+</ol>
+<div><p>Answer</p>
+<p>此實驗就是在模擬抽樣定理。但是，此實驗只模擬單一頻率的情況。單一頻率可能有正轉或負轉，當訊號頻率固定時，抽樣頻率只要大於 2 倍轉速，就可以唯一確定。</p>
+</div>
+<h2 id="尤拉公式"> <a href="https://www.jywglady.org/sdr/contents/sampling/Euler/" target="_blank" rel="noopener noreferrer">尤拉公式</a></h2>
+<ol>
+<li>試著把 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>sin</span><span>(</span><span style="margin-right:0.03588em;">ω</span><span>t</span><span>)</span></span></span></span> 寫成 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.824664em;vertical-align:0em;"></span><span><span>e</span><span><span><span><span style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span></span></span></span> 和 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.824664em;vertical-align:0em;"></span><span><span>e</span><span><span><span><span style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span></span></span></span> 的線性組合。</li>
+</ol>
+<div><p>Answer</p>
+<p>已知尤拉公式：</p>
+<p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.874664em;vertical-align:0em;"></span><span><span>e</span><span><span><span><span style="height:0.874664em;"><span style="top:-3.1130000000000004em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:1em;vertical-align:-0.25em;"></span><span>cos</span><span>(</span><span style="margin-right:0.03588em;">ω</span><span>t</span><span>)</span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span></span><span><span style="height:1em;vertical-align:-0.25em;"></span><span style="margin-right:0.05724em;">j</span><span style="margin-right:0.16666666666666666em;"></span><span>sin</span><span>(</span><span style="margin-right:0.03588em;">ω</span><span>t</span><span>)</span></span></span></span></span></p>
+<p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.874664em;vertical-align:0em;"></span><span><span>e</span><span><span><span><span style="height:0.874664em;"><span style="top:-3.1130000000000004em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:1em;vertical-align:-0.25em;"></span><span>cos</span><span>(</span><span style="margin-right:0.03588em;">ω</span><span>t</span><span>)</span><span style="margin-right:0.2222222222222222em;"></span><span>−</span><span style="margin-right:0.2222222222222222em;"></span></span><span><span style="height:1em;vertical-align:-0.25em;"></span><span style="margin-right:0.05724em;">j</span><span style="margin-right:0.16666666666666666em;"></span><span>sin</span><span>(</span><span style="margin-right:0.03588em;">ω</span><span>t</span><span>)</span></span></span></span></span></p>
+<p>兩式相減：</p>
+<p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.957994em;vertical-align:-0.08333em;"></span><span><span>e</span><span><span><span><span style="height:0.874664em;"><span style="top:-3.1130000000000004em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span><span style="margin-right:0.2222222222222222em;"></span><span>−</span><span style="margin-right:0.2222222222222222em;"></span></span><span><span style="height:0.874664em;vertical-align:0em;"></span><span><span>e</span><span><span><span><span style="height:0.874664em;"><span style="top:-3.1130000000000004em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:1em;vertical-align:-0.25em;"></span><span>2</span><span style="margin-right:0.05724em;">j</span><span style="margin-right:0.16666666666666666em;"></span><span>sin</span><span>(</span><span style="margin-right:0.03588em;">ω</span><span>t</span><span>)</span></span></span></span></span></p>
+<p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.36687em;vertical-align:0em;"></span><span>⇒</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:1em;vertical-align:-0.25em;"></span><span>sin</span><span>(</span><span style="margin-right:0.03588em;">ω</span><span>t</span><span>)</span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:2.382104em;vertical-align:-0.8804400000000001em;"></span><span><span></span><span><span><span><span style="height:1.5016639999999999em;"><span style="top:-2.314em;"><span style="height:3em;"></span><span><span>2</span><span style="margin-right:0.05724em;">j</span></span></span><span style="top:-3.23em;"><span style="height:3em;"></span><span style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span style="height:3em;"></span><span><span><span>e</span><span><span><span><span style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span><span style="margin-right:0.2222222222222222em;"></span><span>−</span><span style="margin-right:0.2222222222222222em;"></span><span><span>e</span><span><span><span><span style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span></span></span></span><span>​</span></span><span><span style="height:0.8804400000000001em;"><span></span></span></span></span></span><span></span></span></span></span></span></span></p>
+</div>
+<ol start="2">
+<li>試著把 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>cos</span><span>(</span><span style="margin-right:0.03588em;">ω</span><span>t</span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span></span><span><span style="height:1em;vertical-align:-0.25em;"></span><span style="margin-right:0.02778em;">θ</span><span>)</span></span></span></span>寫成 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.824664em;vertical-align:0em;"></span><span><span>e</span><span><span><span><span style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span></span></span></span> 和 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.824664em;vertical-align:0em;"></span><span><span>e</span><span><span><span><span style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span></span></span></span>的線性組合。</li>
+</ol>
+<div><p>Answer</p>
+<p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:2.251em;vertical-align:-0.686em;"></span><span><span></span><span><span><span><span style="height:1.565em;"><span style="top:-2.314em;"><span style="height:3em;"></span><span><span>2</span></span></span><span style="top:-3.23em;"><span style="height:3em;"></span><span style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span style="height:3em;"></span><span><span><span>e</span><span><span><span><span style="height:0.8879999999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.05724em;">j</span><span>(</span><span style="margin-right:0.03588em;">ω</span><span>t</span><span>+</span><span style="margin-right:0.02778em;">θ</span><span>)</span></span></span></span></span></span></span></span></span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span><span><span>e</span><span><span><span><span style="height:0.8879999999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span style="margin-right:0.05724em;">j</span><span>(</span><span style="margin-right:0.03588em;">ω</span><span>t</span><span>+</span><span style="margin-right:0.02778em;">θ</span><span>)</span></span></span></span></span></span></span></span></span></span></span></span><span>​</span></span><span><span style="height:0.686em;"><span></span></span></span></span></span><span></span></span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:2.2121079999999997em;vertical-align:-0.686em;"></span><span><span></span><span><span><span><span style="height:1.5261079999999998em;"><span style="top:-2.314em;"><span style="height:3em;"></span><span><span>2</span></span></span><span style="top:-3.23em;"><span style="height:3em;"></span><span style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span style="height:3em;"></span><span><span><span>e</span><span><span><span><span style="height:0.8491079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.05724em;">j</span><span style="margin-right:0.02778em;">θ</span></span></span></span></span></span></span></span></span></span></span></span><span>​</span></span><span><span style="height:0.686em;"><span></span></span></span></span></span><span></span></span><span><span>e</span><span><span><span><span style="height:0.874664em;"><span style="top:-3.1130000000000004em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span></span><span><span style="height:2.2121079999999997em;vertical-align:-0.686em;"></span><span><span></span><span><span><span><span style="height:1.5261079999999998em;"><span style="top:-2.314em;"><span style="height:3em;"></span><span><span>2</span></span></span><span style="top:-3.23em;"><span style="height:3em;"></span><span style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span style="height:3em;"></span><span><span><span>e</span><span><span><span><span style="height:0.8491079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span style="margin-right:0.05724em;">j</span><span style="margin-right:0.02778em;">θ</span></span></span></span></span></span></span></span></span></span></span></span><span>​</span></span><span><span style="height:0.686em;"><span></span></span></span></span></span><span></span></span><span><span>e</span><span><span><span><span style="height:0.874664em;"><span style="top:-3.1130000000000004em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span></span></span></span></span></p>
+</div>
+<h2 id="傅立葉變換"> <a href="https://www.jywglady.org/sdr/contents/sampling/Transform/" target="_blank" rel="noopener noreferrer">傅立葉變換</a></h2>
+<ol>
+<li>一個特定頻率成份（轉速）的訊號，是否可以由其他不同頻率（轉速）的訊號做線性組合（放大縮小及加減運算）而得到？為什麼？</li>
+</ol>
+<div><p>Answer</p>
+<p>不可以。每一個不同頻率的旋轉波都保有各自頻率的特性，不能由其他旋轉波組合而成。</p>
+</div>
+<ol start="2">
+<li>傅立葉變換可以用來找出時間訊號中每一個不同頻率的訊號成份；反過來說，如果已知每一個不同頻率的訊號成份，那麼也可以合成原來的時間訊號。請結合這個概念，以及前面所提到的內容，重新說明取樣定理的限制條件。</li>
+</ol>
+<div><p>Answer</p>
+<p>抽樣速率超過訊號中最高頻率成份的 2 倍，也就超過所有頻率成份的 2 倍，那麼每個頻率成份都可以確定，因此整個訊號就可以確定下來。</p>
+</div>
 ]]></content>
     <contributor>
       <name/>
@@ -1267,94 +1552,6 @@ an <span>=</span> <span>int</span><span>(</span>f<span>*</span><span>cos</span><
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div><br>
 <exercise num="3"></exercise>
 <p>MATLAB 裡面有一個 square 函數，可以用來畫出方波函數 (用 help square 查詢看看)。請利用 symbolic 套件來計算方波的傅立葉級數，接著用程式畫出方波及其部分傅立葉級數和的圖形，此處方波的周期和振幅可自己定義。</p>
-]]></content>
-    <contributor>
-      <name/>
-    </contributor>
-    <published>2021-03-15T04:56:04.000Z</published>
-  </entry>
-  <entry>
-    <title type="html">模擬實驗解答</title>
-    <id>https://www.jywglady.org/sdr/sdr/contents/sampling/SimuAnswer/</id>
-    <link href="https://www.jywglady.org/sdr/sdr/contents/sampling/SimuAnswer/"/>
-    <updated>2021-03-22T05:21:34.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="模擬實驗解答"> 模擬實驗解答</h1>
-<h2 id="抽樣實驗"> <a href="https://www.jywglady.org/sdr/contents/sampling/" target="_blank" rel="noopener noreferrer">抽樣實驗</a></h2>
-<p>password: keepgoing</p>
-<p>試著利用上圖的模擬器回答以下問題：</p>
-<ol>
-<li>旋轉速率和抽樣速率同時乘上一個倍數，模擬會產生什麼變化？</li>
-</ol>
-<div><p>Answer</p>
-<p>當旋轉速率和抽樣速率同時乘上一個倍數，圓周上取樣的點相同，但是時間尺度會改變。</p>
-</div>
-<ol start="2">
-<li>訊號點的轉速 r 增加 f 的整數倍，對於訊號點的軌跡和抽樣有何影響？</li>
-</ol>
-<div><p>Answer</p>
-<p>轉速增加抽樣的整數倍，圓周上取樣的點相同。因此只看抽樣點時，無法區分轉速 r, r+f, r+2f... 等的差別。</p>
-</div>
-<ol start="3">
-<li>改變訊號點轉速的正負號，對於訊號點的軌跡和抽樣有何影響？</li>
-</ol>
-<div><p>Answer</p>
-<p>轉速正與負，對於訊號點的軌跡與抽樣而言，都是映射（旋轉方向不同，對稱於 x 軸），數學上代表共軛的複數。</p>
-</div>
-<ol start="4">
-<li>假設 f=10，當 r 分別為 1 和 9 時，訊號點的軌跡和抽樣有什麼異同？</li>
-</ol>
-<div><p>Answer</p>
-<p>已知當 r 增加 f 的整數倍時，抽樣點位置不變，因此 r=9 與 r=-1 的抽樣點是相同的。如此一來，等同於比較 r=1 及 r=-1 的差異。所以 r=1 與r=9 的訊號點軌跡不同，但是抽樣點對稱於 x 軸。也就是說，兩者的抽樣訊號是共軛複數。</p>
-</div>
-<ol start="5">
-<li>假設 f=10，且 r&lt;10，可否透過抽樣點所猜測的訊號點軌跡來確定 r 值？</li>
-</ol>
-<div><p>Answer</p>
-<p>無法確定，例如：「轉速1的反轉」與「轉速9的正轉」兩者是無法區分的。</p>
-</div>
-<ol start="6">
-<li>假設 r 值不超過 30，如果要透過抽樣點來估測訊號點的實際轉速，那麼 f 值有何限制？</li>
-</ol>
-<div><p>Answer</p>
-<p>為了區隔正轉與反轉，每次抽樣時，旋轉角度不能超過 1/2 圓，因此抽樣速率要大於 2 倍的 r，也就是說，抽樣速率 f 須大於 60。</p>
-</div>
-<ol start="7">
-<li>這個模擬和抽樣定理有沒有什麼相似的地方？</li>
-</ol>
-<div><p>Answer</p>
-<p>此實驗就是在模擬抽樣定理。但是，此實驗只模擬單一頻率的情況。單一頻率可能有正轉或負轉，當訊號頻率固定時，抽樣頻率只要大於 2 倍轉速，就可以唯一確定。</p>
-</div>
-<h2 id="尤拉公式"> <a href="https://www.jywglady.org/sdr/contents/sampling/Euler/" target="_blank" rel="noopener noreferrer">尤拉公式</a></h2>
-<ol>
-<li>試著把 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>sin</span><span>(</span><span style="margin-right:0.03588em;">ω</span><span>t</span><span>)</span></span></span></span> 寫成 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.824664em;vertical-align:0em;"></span><span><span>e</span><span><span><span><span style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span></span></span></span> 和 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.824664em;vertical-align:0em;"></span><span><span>e</span><span><span><span><span style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span></span></span></span> 的線性組合。</li>
-</ol>
-<div><p>Answer</p>
-<p>已知尤拉公式：</p>
-<p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.874664em;vertical-align:0em;"></span><span><span>e</span><span><span><span><span style="height:0.874664em;"><span style="top:-3.1130000000000004em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:1em;vertical-align:-0.25em;"></span><span>cos</span><span>(</span><span style="margin-right:0.03588em;">ω</span><span>t</span><span>)</span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span></span><span><span style="height:1em;vertical-align:-0.25em;"></span><span style="margin-right:0.05724em;">j</span><span style="margin-right:0.16666666666666666em;"></span><span>sin</span><span>(</span><span style="margin-right:0.03588em;">ω</span><span>t</span><span>)</span></span></span></span></span></p>
-<p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.874664em;vertical-align:0em;"></span><span><span>e</span><span><span><span><span style="height:0.874664em;"><span style="top:-3.1130000000000004em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:1em;vertical-align:-0.25em;"></span><span>cos</span><span>(</span><span style="margin-right:0.03588em;">ω</span><span>t</span><span>)</span><span style="margin-right:0.2222222222222222em;"></span><span>−</span><span style="margin-right:0.2222222222222222em;"></span></span><span><span style="height:1em;vertical-align:-0.25em;"></span><span style="margin-right:0.05724em;">j</span><span style="margin-right:0.16666666666666666em;"></span><span>sin</span><span>(</span><span style="margin-right:0.03588em;">ω</span><span>t</span><span>)</span></span></span></span></span></p>
-<p>兩式相減：</p>
-<p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.957994em;vertical-align:-0.08333em;"></span><span><span>e</span><span><span><span><span style="height:0.874664em;"><span style="top:-3.1130000000000004em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span><span style="margin-right:0.2222222222222222em;"></span><span>−</span><span style="margin-right:0.2222222222222222em;"></span></span><span><span style="height:0.874664em;vertical-align:0em;"></span><span><span>e</span><span><span><span><span style="height:0.874664em;"><span style="top:-3.1130000000000004em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:1em;vertical-align:-0.25em;"></span><span>2</span><span style="margin-right:0.05724em;">j</span><span style="margin-right:0.16666666666666666em;"></span><span>sin</span><span>(</span><span style="margin-right:0.03588em;">ω</span><span>t</span><span>)</span></span></span></span></span></p>
-<p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.36687em;vertical-align:0em;"></span><span>⇒</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:1em;vertical-align:-0.25em;"></span><span>sin</span><span>(</span><span style="margin-right:0.03588em;">ω</span><span>t</span><span>)</span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:2.382104em;vertical-align:-0.8804400000000001em;"></span><span><span></span><span><span><span><span style="height:1.5016639999999999em;"><span style="top:-2.314em;"><span style="height:3em;"></span><span><span>2</span><span style="margin-right:0.05724em;">j</span></span></span><span style="top:-3.23em;"><span style="height:3em;"></span><span style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span style="height:3em;"></span><span><span><span>e</span><span><span><span><span style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span><span style="margin-right:0.2222222222222222em;"></span><span>−</span><span style="margin-right:0.2222222222222222em;"></span><span><span>e</span><span><span><span><span style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span></span></span></span><span>​</span></span><span><span style="height:0.8804400000000001em;"><span></span></span></span></span></span><span></span></span></span></span></span></span></p>
-</div>
-<ol start="2">
-<li>試著把 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>cos</span><span>(</span><span style="margin-right:0.03588em;">ω</span><span>t</span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span></span><span><span style="height:1em;vertical-align:-0.25em;"></span><span style="margin-right:0.02778em;">θ</span><span>)</span></span></span></span>寫成 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.824664em;vertical-align:0em;"></span><span><span>e</span><span><span><span><span style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span></span></span></span> 和 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.824664em;vertical-align:0em;"></span><span><span>e</span><span><span><span><span style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span></span></span></span>的線性組合。</li>
-</ol>
-<div><p>Answer</p>
-<p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:2.251em;vertical-align:-0.686em;"></span><span><span></span><span><span><span><span style="height:1.565em;"><span style="top:-2.314em;"><span style="height:3em;"></span><span><span>2</span></span></span><span style="top:-3.23em;"><span style="height:3em;"></span><span style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span style="height:3em;"></span><span><span><span>e</span><span><span><span><span style="height:0.8879999999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.05724em;">j</span><span>(</span><span style="margin-right:0.03588em;">ω</span><span>t</span><span>+</span><span style="margin-right:0.02778em;">θ</span><span>)</span></span></span></span></span></span></span></span></span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span><span><span>e</span><span><span><span><span style="height:0.8879999999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span style="margin-right:0.05724em;">j</span><span>(</span><span style="margin-right:0.03588em;">ω</span><span>t</span><span>+</span><span style="margin-right:0.02778em;">θ</span><span>)</span></span></span></span></span></span></span></span></span></span></span></span><span>​</span></span><span><span style="height:0.686em;"><span></span></span></span></span></span><span></span></span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:2.2121079999999997em;vertical-align:-0.686em;"></span><span><span></span><span><span><span><span style="height:1.5261079999999998em;"><span style="top:-2.314em;"><span style="height:3em;"></span><span><span>2</span></span></span><span style="top:-3.23em;"><span style="height:3em;"></span><span style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span style="height:3em;"></span><span><span><span>e</span><span><span><span><span style="height:0.8491079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.05724em;">j</span><span style="margin-right:0.02778em;">θ</span></span></span></span></span></span></span></span></span></span></span></span><span>​</span></span><span><span style="height:0.686em;"><span></span></span></span></span></span><span></span></span><span><span>e</span><span><span><span><span style="height:0.874664em;"><span style="top:-3.1130000000000004em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span></span><span><span style="height:2.2121079999999997em;vertical-align:-0.686em;"></span><span><span></span><span><span><span><span style="height:1.5261079999999998em;"><span style="top:-2.314em;"><span style="height:3em;"></span><span><span>2</span></span></span><span style="top:-3.23em;"><span style="height:3em;"></span><span style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span style="height:3em;"></span><span><span><span>e</span><span><span><span><span style="height:0.8491079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span style="margin-right:0.05724em;">j</span><span style="margin-right:0.02778em;">θ</span></span></span></span></span></span></span></span></span></span></span></span><span>​</span></span><span><span style="height:0.686em;"><span></span></span></span></span></span><span></span></span><span><span>e</span><span><span><span><span style="height:0.874664em;"><span style="top:-3.1130000000000004em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span></span></span></span></span></p>
-</div>
-<h2 id="傅立葉變換"> <a href="https://www.jywglady.org/sdr/contents/sampling/Transform/" target="_blank" rel="noopener noreferrer">傅立葉變換</a></h2>
-<ol>
-<li>一個特定頻率成份（轉速）的訊號，是否可以由其他不同頻率（轉速）的訊號做線性組合（放大縮小及加減運算）而得到？為什麼？</li>
-</ol>
-<div><p>Answer</p>
-<p>不可以。每一個不同頻率的旋轉波都保有各自頻率的特性，不能由其他旋轉波組合而成。</p>
-</div>
-<ol start="2">
-<li>傅立葉變換可以用來找出時間訊號中每一個不同頻率的訊號成份；反過來說，如果已知每一個不同頻率的訊號成份，那麼也可以合成原來的時間訊號。請結合這個概念，以及前面所提到的內容，重新說明取樣定理的限制條件。</li>
-</ol>
-<div><p>Answer</p>
-<p>抽樣速率超過訊號中最高頻率成份的 2 倍，也就超過所有頻率成份的 2 倍，那麼每個頻率成份都可以確定，因此整個訊號就可以確定下來。</p>
-</div>
 ]]></content>
     <contributor>
       <name/>
@@ -1478,35 +1675,6 @@ grid on<span>;</span>
     <published>2021-03-15T04:56:04.000Z</published>
   </entry>
   <entry>
-    <title type="html">傅立葉變換</title>
-    <id>https://www.jywglady.org/sdr/sdr/contents/sampling/Transform/</id>
-    <link href="https://www.jywglady.org/sdr/sdr/contents/sampling/Transform/"/>
-    <updated>2021-03-15T04:56:04.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="傅立葉變換"> 傅立葉變換</h1>
-<p>根據傅立葉變換的理論，不只是 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>cos</span><span>(</span><span style="margin-right:0.03588em;">ω</span><span>t</span><span>)</span></span></span></span>，實際上，我們可以把任意的時間函數 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>x</span><span>(</span><span>t</span><span>)</span></span></span></span>，寫成 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.824664em;vertical-align:0em;"></span><span><span>e</span><span><span><span><span style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span></span></span></span> 的線性組合。</p>
-<p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>x</span><span>(</span><span>t</span><span>)</span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:2.384573em;vertical-align:-0.970281em;"></span><span><span></span><span><span><span><span style="height:1.32144em;"><span style="top:-2.314em;"><span style="height:3em;"></span><span><span>2</span><span style="margin-right:0.03588em;">π</span></span></span><span style="top:-3.23em;"><span style="height:3em;"></span><span style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span style="height:3em;"></span><span><span>1</span></span></span></span><span>​</span></span><span><span style="height:0.686em;"><span></span></span></span></span></span><span></span></span><span style="margin-right:0.16666666666666666em;"></span><span><span style="margin-right:0.44445em;position:relative;top:-0.0011249999999999316em;">∫</span><span><span><span><span style="height:1.414292em;"><span style="top:-1.7880500000000001em;margin-left:-0.44445em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span>∞</span></span></span></span><span style="top:-3.8129000000000004em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>∞</span></span></span></span><span>​</span></span><span><span style="height:0.970281em;"><span></span></span></span></span></span></span><span style="margin-right:0.16666666666666666em;"></span><span style="margin-right:0.07847em;">X</span><span>(</span><span style="margin-right:0.03588em;">ω</span><span>)</span><span> </span><span><span>e</span><span><span><span><span style="height:0.874664em;"><span style="top:-3.1130000000000004em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span><span style="margin-right:0.16666666666666666em;"></span><span>d</span><span style="margin-right:0.03588em;">ω</span></span></span></span></span></p>
-<p>其中</p>
-<p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span style="margin-right:0.07847em;">X</span><span>(</span><span style="margin-right:0.03588em;">ω</span><span>)</span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:2.384573em;vertical-align:-0.970281em;"></span><span><span style="margin-right:0.44445em;position:relative;top:-0.0011249999999999316em;">∫</span><span><span><span><span style="height:1.414292em;"><span style="top:-1.7880500000000001em;margin-left:-0.44445em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span>∞</span></span></span></span><span style="top:-3.8129000000000004em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>∞</span></span></span></span><span>​</span></span><span><span style="height:0.970281em;"><span></span></span></span></span></span></span><span style="margin-right:0.16666666666666666em;"></span><span>x</span><span>(</span><span>t</span><span>)</span><span> </span><span><span>e</span><span><span><span><span style="height:0.874664em;"><span style="top:-3.1130000000000004em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span><span style="margin-right:0.16666666666666666em;"></span><span>d</span><span>t</span></span></span></span></span></p>
-<p>也就是說，任意的時間函數，我們都可以把它看成是不同圓周上各類等速旋轉的訊號點的合成。</p>
-<p>我們這邊不談太多數學證明，而是打算用比較直觀的方式來看一下這個變換公式。</p>
-<p>如果 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>x</span><span>(</span><span>t</span><span>)</span></span></span></span> 可以看成是很多不同轉速的訊號點的合成，那麼把 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>x</span><span>(</span><span>t</span><span>)</span></span></span></span> 乘上 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.824664em;vertical-align:0em;"></span><span><span>e</span><span><span><span><span style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span></span></span></span> 會發生什麼事呢？基本上，</p>
-<p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.99248em;vertical-align:0em;"></span><span><span>e</span><span><span><span><span style="height:0.99248em;"><span style="top:-3.1130000000000004em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.05724em;">j</span><span><span style="margin-right:0.03588em;">ω</span><span><span><span><span style="height:0.8278285714285715em;"><span style="top:-2.931em;margin-right:0.07142857142857144em;"><span style="height:2.5em;"></span><span><span><span>′</span></span></span></span></span></span></span></span></span><span>t</span></span></span></span></span></span></span></span></span><span style="margin-right:0.16666666666666666em;"></span><span><span>e</span><span><span><span><span style="height:0.874664em;"><span style="top:-3.1130000000000004em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:0.99248em;vertical-align:0em;"></span><span><span>e</span><span><span><span><span style="height:0.99248em;"><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.05724em;">j</span><span>(</span><span><span style="margin-right:0.03588em;">ω</span><span><span><span><span style="height:0.8278285714285715em;"><span style="top:-2.931em;margin-right:0.07142857142857144em;"><span style="height:2.5em;"></span><span><span><span>′</span></span></span></span></span></span></span></span></span><span>−</span><span style="margin-right:0.03588em;">ω</span><span>)</span><span>t</span></span></span></span></span></span></span></span></span></span></span></span></span></p>
-<p>換句話說，每一個成份波的轉速都會減少 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.43056em;vertical-align:0em;"></span><span style="margin-right:0.03588em;">ω</span></span></span></span>，那麼如果 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.751892em;vertical-align:0em;"></span><span><span style="margin-right:0.03588em;">ω</span><span><span><span><span style="height:0.751892em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>′</span></span></span></span></span></span></span></span></span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:0.43056em;vertical-align:0em;"></span><span style="margin-right:0.03588em;">ω</span></span></span></span>，指數的部份變成 0，所以乘出來的結果就會變成常數 1；否則的話，仍然會是一個旋轉的波，只是轉速減少了 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.43056em;vertical-align:0em;"></span><span style="margin-right:0.03588em;">ω</span></span></span></span>。</p>
-<p>那如果我們把一個旋轉的波在時間上做積分會得到什麼結果呢？基本上積分是一種求和的運算，而複數的加法也可以看成是二維向量的加法。因為是一個等速旋轉的訊號，只要時間夠長，每一個方向累加的量大致上會相等，最後就會互消抵消而得到 0。換句話說，所有轉速不是 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.43056em;vertical-align:0em;"></span><span style="margin-right:0.03588em;">ω</span></span></span></span> 的成份，積分後都會消失；而轉速為 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.43056em;vertical-align:0em;"></span><span style="margin-right:0.03588em;">ω</span></span></span></span> 的訊號，因為每一項都是常數，求和之後只會越來越大，不會消失。這邊假設頻率成份是連續的，基本上必須使用頻率密度，而不是該頻率的分量值，所以求和的時候，不會變成無限大，而是得到一個可以反應出 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.43056em;vertical-align:0em;"></span><span style="margin-right:0.03588em;">ω</span></span></span></span> 轉速的訊號成份大小。那這裡只是談一些很基本的概念，詳細的推導過程和原理，可以自行查閱其他資料。</p>
-<div><p>練習</p>
-<br>
-<ol>
-<li>一個特定頻率成份（轉速）的訊號，是否可以由其他不同頻率（轉速）的訊號做線性組合（放大縮小及加減運算）而得到？為什麼？</li>
-<li>傅立葉變換可以用來找出時間訊號中每一個不同頻率的訊號成份；反過來說，如果已知每一個不同頻率的訊號成份，那麼也可以合成原來的時間訊號。請結合這個概念，以及前面所提到的內容，重新說明取樣定理的限制條件。</li>
-</ol>
-</div>
-]]></content>
-    <contributor>
-      <name/>
-    </contributor>
-    <published>2021-03-15T00:47:07.000Z</published>
-  </entry>
-  <entry>
     <title type="html">SDR 簡介</title>
     <id>https://www.jywglady.org/sdr/sdr/contents/sdrintro/</id>
     <link href="https://www.jywglady.org/sdr/sdr/contents/sdrintro/"/>
@@ -1557,32 +1725,187 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span>​</span></span><
     <published>2021-03-07T15:30:03.000Z</published>
   </entry>
   <entry>
-    <title type="html">單頻訊號的儲存與播放</title>
-    <id>https://www.jywglady.org/sdr/sdr/contents/tonetrans/</id>
-    <link href="https://www.jywglady.org/sdr/sdr/contents/tonetrans/"/>
-    <updated>2021-04-23T15:18:46.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="單頻訊號的儲存與播放"> 單頻訊號的儲存與播放</h1>
-<p>這個單元以單頻訊號的傳送和接收為例，來說明 GNU Radio 的基本使用方法，以及訊號的傳送和接收的基本概念。</p>
-<h2 id="要傳送的單頻訊號"> 要傳送的單頻訊號</h2>
-<p>首先，我們先建立一個實數的 Cos 訊號源，然後把訊號傳送到喇叭 (Audio Sink)，系統架構如下：</p>
-<p><img src="./Fig/2021-04-23-19-15-47.png" alt=""></p>
-<p>注意訊號源的部份，要將輸出型態設定成 float，否則無法和喇叭連接。另外，因為訊號輸出到喇叭時，喇叭會限制訊號的傳送速度，所以系統中不需要添加 Throttle 元件。</p>
-<p>建立好之後，試著存檔，產出模型並執行，如果沒有問題的話，應該會跳出一個小小的空白視窗，同時系統會播放一個音頻訊號。</p>
-<h2 id="將訊號存到檔案"> 將訊號存到檔案</h2>
-<p>接著，在系統中新增一個 Wav File Sink，將訊號源一併連接到新增的檔案模組，系統架構如下：</p>
-<p><img src="./Fig/2021-04-23-19-29-27.png" alt=""></p>
-<p>在 Wav File Sink 模組上快按兩下，將其中的 File 參數填入一個適當的路徑和檔名，記得檔名最後要以 .wav 結尾，表示檔案為 wav 的音源格式檔。範例如下（請修改路徑和檔名）：</p>
-<p><img src="./Fig/2021-04-23-19-35-04.png" alt=""></p>
-<p>完成設定之後，重新產生及執行，會聽到跟之前一樣的聲音，大概三秒左右將程式結束掉。</p>
-<p>執行完之後，打開檔案總管，在原先填入的路徑中檢查，應該會看到所設定的檔案。直接快按檔案兩下，系統會啟動預設的媒體播放程式，播放音檔的內容，基本上應該是一樣的聲音。</p>
-<h2 id="用-gnu-radio-播放音檔"> 用 GNU Radio 播放音檔</h2>
-<p>GNU Radio 中，也有一個 Wav File Source 模組，主要是用來讀取音檔的訊號內容。現在在 GNU Radio 中開啟一個新檔，放入 Wav File Source 模組及喇叭，連結系統架構如下：</p>
-<p><img src="./Fig/2021-04-23-19-48-58.png" alt=""></p>
-<p>把 Wav File Source 模組中的 File 參數填入剛才產生出來的音頻檔案。完成之後，存檔、產出模型及執行，沒有問題的話，應該會聽到同樣的聲音。</p>
-<p>以上主要是透過 GNU Radio 模擬音頻訊號的產生、儲存以及讀取。</p>
+    <title type="html">傅立葉變換</title>
+    <id>https://www.jywglady.org/sdr/sdr/contents/sampling/Transform/</id>
+    <link href="https://www.jywglady.org/sdr/sdr/contents/sampling/Transform/"/>
+    <updated>2021-03-15T04:56:04.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="傅立葉變換"> 傅立葉變換</h1>
+<p>根據傅立葉變換的理論，不只是 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>cos</span><span>(</span><span style="margin-right:0.03588em;">ω</span><span>t</span><span>)</span></span></span></span>，實際上，我們可以把任意的時間函數 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>x</span><span>(</span><span>t</span><span>)</span></span></span></span>，寫成 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.824664em;vertical-align:0em;"></span><span><span>e</span><span><span><span><span style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span></span></span></span> 的線性組合。</p>
+<p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>x</span><span>(</span><span>t</span><span>)</span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:2.384573em;vertical-align:-0.970281em;"></span><span><span></span><span><span><span><span style="height:1.32144em;"><span style="top:-2.314em;"><span style="height:3em;"></span><span><span>2</span><span style="margin-right:0.03588em;">π</span></span></span><span style="top:-3.23em;"><span style="height:3em;"></span><span style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span style="height:3em;"></span><span><span>1</span></span></span></span><span>​</span></span><span><span style="height:0.686em;"><span></span></span></span></span></span><span></span></span><span style="margin-right:0.16666666666666666em;"></span><span><span style="margin-right:0.44445em;position:relative;top:-0.0011249999999999316em;">∫</span><span><span><span><span style="height:1.414292em;"><span style="top:-1.7880500000000001em;margin-left:-0.44445em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span>∞</span></span></span></span><span style="top:-3.8129000000000004em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>∞</span></span></span></span><span>​</span></span><span><span style="height:0.970281em;"><span></span></span></span></span></span></span><span style="margin-right:0.16666666666666666em;"></span><span style="margin-right:0.07847em;">X</span><span>(</span><span style="margin-right:0.03588em;">ω</span><span>)</span><span> </span><span><span>e</span><span><span><span><span style="height:0.874664em;"><span style="top:-3.1130000000000004em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span><span style="margin-right:0.16666666666666666em;"></span><span>d</span><span style="margin-right:0.03588em;">ω</span></span></span></span></span></p>
+<p>其中</p>
+<p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span style="margin-right:0.07847em;">X</span><span>(</span><span style="margin-right:0.03588em;">ω</span><span>)</span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:2.384573em;vertical-align:-0.970281em;"></span><span><span style="margin-right:0.44445em;position:relative;top:-0.0011249999999999316em;">∫</span><span><span><span><span style="height:1.414292em;"><span style="top:-1.7880500000000001em;margin-left:-0.44445em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span>∞</span></span></span></span><span style="top:-3.8129000000000004em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>∞</span></span></span></span><span>​</span></span><span><span style="height:0.970281em;"><span></span></span></span></span></span></span><span style="margin-right:0.16666666666666666em;"></span><span>x</span><span>(</span><span>t</span><span>)</span><span> </span><span><span>e</span><span><span><span><span style="height:0.874664em;"><span style="top:-3.1130000000000004em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span><span style="margin-right:0.16666666666666666em;"></span><span>d</span><span>t</span></span></span></span></span></p>
+<p>也就是說，任意的時間函數，我們都可以把它看成是不同圓周上各類等速旋轉的訊號點的合成。</p>
+<p>我們這邊不談太多數學證明，而是打算用比較直觀的方式來看一下這個變換公式。</p>
+<p>如果 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>x</span><span>(</span><span>t</span><span>)</span></span></span></span> 可以看成是很多不同轉速的訊號點的合成，那麼把 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>x</span><span>(</span><span>t</span><span>)</span></span></span></span> 乘上 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.824664em;vertical-align:0em;"></span><span><span>e</span><span><span><span><span style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span></span></span></span> 會發生什麼事呢？基本上，</p>
+<p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.99248em;vertical-align:0em;"></span><span><span>e</span><span><span><span><span style="height:0.99248em;"><span style="top:-3.1130000000000004em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.05724em;">j</span><span><span style="margin-right:0.03588em;">ω</span><span><span><span><span style="height:0.8278285714285715em;"><span style="top:-2.931em;margin-right:0.07142857142857144em;"><span style="height:2.5em;"></span><span><span><span>′</span></span></span></span></span></span></span></span></span><span>t</span></span></span></span></span></span></span></span></span><span style="margin-right:0.16666666666666666em;"></span><span><span>e</span><span><span><span><span style="height:0.874664em;"><span style="top:-3.1130000000000004em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span style="margin-right:0.03588em;">jω</span><span>t</span></span></span></span></span></span></span></span></span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:0.99248em;vertical-align:0em;"></span><span><span>e</span><span><span><span><span style="height:0.99248em;"><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.05724em;">j</span><span>(</span><span><span style="margin-right:0.03588em;">ω</span><span><span><span><span style="height:0.8278285714285715em;"><span style="top:-2.931em;margin-right:0.07142857142857144em;"><span style="height:2.5em;"></span><span><span><span>′</span></span></span></span></span></span></span></span></span><span>−</span><span style="margin-right:0.03588em;">ω</span><span>)</span><span>t</span></span></span></span></span></span></span></span></span></span></span></span></span></p>
+<p>換句話說，每一個成份波的轉速都會減少 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.43056em;vertical-align:0em;"></span><span style="margin-right:0.03588em;">ω</span></span></span></span>，那麼如果 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.751892em;vertical-align:0em;"></span><span><span style="margin-right:0.03588em;">ω</span><span><span><span><span style="height:0.751892em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>′</span></span></span></span></span></span></span></span></span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:0.43056em;vertical-align:0em;"></span><span style="margin-right:0.03588em;">ω</span></span></span></span>，指數的部份變成 0，所以乘出來的結果就會變成常數 1；否則的話，仍然會是一個旋轉的波，只是轉速減少了 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.43056em;vertical-align:0em;"></span><span style="margin-right:0.03588em;">ω</span></span></span></span>。</p>
+<p>那如果我們把一個旋轉的波在時間上做積分會得到什麼結果呢？基本上積分是一種求和的運算，而複數的加法也可以看成是二維向量的加法。因為是一個等速旋轉的訊號，只要時間夠長，每一個方向累加的量大致上會相等，最後就會互消抵消而得到 0。換句話說，所有轉速不是 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.43056em;vertical-align:0em;"></span><span style="margin-right:0.03588em;">ω</span></span></span></span> 的成份，積分後都會消失；而轉速為 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.43056em;vertical-align:0em;"></span><span style="margin-right:0.03588em;">ω</span></span></span></span> 的訊號，因為每一項都是常數，求和之後只會越來越大，不會消失。這邊假設頻率成份是連續的，基本上必須使用頻率密度，而不是該頻率的分量值，所以求和的時候，不會變成無限大，而是得到一個可以反應出 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.43056em;vertical-align:0em;"></span><span style="margin-right:0.03588em;">ω</span></span></span></span> 轉速的訊號成份大小。那這裡只是談一些很基本的概念，詳細的推導過程和原理，可以自行查閱其他資料。</p>
+<div><p>練習</p>
+<br>
+<ol>
+<li>一個特定頻率成份（轉速）的訊號，是否可以由其他不同頻率（轉速）的訊號做線性組合（放大縮小及加減運算）而得到？為什麼？</li>
+<li>傅立葉變換可以用來找出時間訊號中每一個不同頻率的訊號成份；反過來說，如果已知每一個不同頻率的訊號成份，那麼也可以合成原來的時間訊號。請結合這個概念，以及前面所提到的內容，重新說明取樣定理的限制條件。</li>
+</ol>
+</div>
+]]></content>
+    <contributor>
+      <name/>
+    </contributor>
+    <published>2021-03-15T00:47:07.000Z</published>
+  </entry>
+  <entry>
+    <title type="html">Something</title>
+    <id>https://www.jywglady.org/sdr/sdr/contents/something/</id>
+    <link href="https://www.jywglady.org/sdr/sdr/contents/something/"/>
+    <updated>2021-05-09T07:32:09.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="something"> Something</h1>
+<p>Something to put in the book.</p>
+<h1 id="install"> Install</h1>
+<p><a href="http://www.gcndevelopment.com/gnuradio/index.htm" target="_blank" rel="noopener noreferrer">Windows Binary-1</a></p>
+<h2 id="tune-frequency"> Tune frequency</h2>
+<ul>
+<li>waht is baseband</li>
+<li>what is center_freq for the SDR</li>
+<li>tune by shifting the freq: multiply and low-pass filter</li>
+<li>low-pass filter design</li>
+<li>Frequency Xlating FIR Filter block</li>
+</ul>
+<h2 id="modulation"> Modulation</h2>
+<ul>
+<li>Exam wave signal (AM/FM examples)</li>
+</ul>
+<h2 id="basic"> Basic</h2>
+<ul>
+<li>human ear can detect 20 Hz to 20 kHz</li>
+<li>decimation / interpolation</li>
+<li>python expression: int()</li>
+<li>RF Spectrum: II-54</li>
+<li>Simple Radio Model: II-61</li>
+</ul>
+]]></content>
+    <contributor>
+      <name/>
+    </contributor>
+    <published>2021-05-09T07:32:09.000Z</published>
+  </entry>
+  <entry>
+    <title type="html">使用 SDR 傳送音頻</title>
+    <id>https://www.jywglady.org/sdr/sdr/contents/tonetrans/byHackRFTx/</id>
+    <link href="https://www.jywglady.org/sdr/sdr/contents/tonetrans/byHackRFTx/"/>
+    <updated>2021-05-09T07:32:09.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="使用-sdr-傳送音頻"> 使用 SDR 傳送音頻</h2>
+<p><font color="red">目前各國政府對於無線電頻道使用，都有相應的法令規範，因此在使用 SDR 傳送無線訊號之前，必須先了解相關的法規，否則隨意傳送無線訊號，可能干擾或破壞現有的無線頻道通訊，可能觸犯相關的法令。因此在進行無線訊號發送的相關實驗之前，應取得合格的身份證明以及使用權限。若是在實驗室進行相關實驗，也要特別注意訊號的傳送是否伺限在一個密閉的環境，以免干擾其他無線頻道的運作而觸犯相關法令。</font></p>
+<p>此處所要建立的模擬系統，仍然是針對單頻的 FM 訊號。從程式庫模組中選擇 Signal Source, Rational Resampler x2, osomocomm Source, WBFM Transmit, QT GUI Sink 及 osmocom Sink 模組。將所有模組如下圖方式連接在一起：</p>
+<p><img src="./Fig/2021-05-03-13-59-39.png" alt=""></p>
+<p>各模組的參數依次如下：</p>
+<ul>
+<li>Sample Rate: 設定為 32 KHz。</li>
+<li>Signal Source: 設定發送的訊號
+<ul>
+<li>Output Type: float</li>
+<li>Waveform: Cosine</li>
+<li>Frequency: 1000</li>
+</ul>
+</li>
+<li>Rational Resampler 1: 將抽樣頻率從 32K 轉換成 320K
+<ul>
+<li>Interpolation: 10</li>
+<li>Decimation: 1</li>
+<li>Taps: firdes.low_pass(1, 320e3, 20e3, 2e3)</li>
+</ul>
+</li>
+<li>WBFM Transmit: 將訊號進行 FM 調變
+<ul>
+<li>Audio Rate: 320e3</li>
+<li>Quadrature Rate: 320e3</li>
+</ul>
+</li>
+<li>Rational Resampler 2: 將抽樣頻率從 320K 轉換成 8M
+<ul>
+<li>Interpolation: 25</li>
+<li>Decimation: 1</li>
+<li>Taps: firdes.low_pass(40, 8e6, 75e3, 10e3)</li>
+</ul>
+</li>
+<li>QT GUI Sink: 觀察送出的訊號
+<ul>
+<li>Bandwidth: 8e6</li>
+</ul>
+</li>
+<li>osomocomm Sink: 使用 HackRF One 傳送 FM 訊號
+<ul>
+<li>Device Arguments: hackrf=0</li>
+<li>Sample Rate: 8e6</li>
+<li>Ch0: Frequency (Hz): 17241e4</li>
+<li>Ch0: RF Gain (dB): 0</li>
+<li>Ch0: IF Gain (dB): 32</li>
+</ul>
+</li>
+</ul>
+<div><p>使用 HackRF One 傳送</p>
+<p>在某些機器上，可能要把上面 osomcomm Sink 的 Device Arguments 拿掉（變成空白）才能正常傳送訊號。</p>
+</div>
+<p>在這個系統中，訊號由 Signal Source 產生，之後透過抽樣轉換模組將訊號的抽樣速度由 32K 轉換成 320K。之後經由 WBFM Transmit 模組進行 FM 調變，調變之後，再次透過樣轉換模組將訊號的抽樣速度由 320K 轉換成 8M，最後再透過 osomocomm Sink 將訊號送出，同時也使用一個 QT GUI Sink 模組進行訊號的觀察。</p>
+<p>接好之後，將檔案存檔，產出模型並執行，如果沒有錯誤的話，應該會在 QT GUI Sink 看到輸出的訊號圖。如果有相應的 FM 接收器，也可以聽到音頻的聲音。</p>
 <br>
 <exercise></exercise>
-<p>試著將上面 Wav File Source 中的 File 參數替換成其他的 wav 檔案，試著執行看看，是否可以聽到該 wav 檔案的音樂或聲音。</p>
+兩組一起做實驗，一組發射訊號，另一組接收訊號，看是否能夠成功？
+]]></content>
+    <contributor>
+      <name/>
+    </contributor>
+    <published>2021-05-07T02:25:09.000Z</published>
+  </entry>
+  <entry>
+    <title type="html">使用網路傳送音頻</title>
+    <id>https://www.jywglady.org/sdr/sdr/contents/tonetrans/byNet/</id>
+    <link href="https://www.jywglady.org/sdr/sdr/contents/tonetrans/byNet/"/>
+    <updated>2021-04-23T15:18:46.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="使用網路傳送音頻"> 使用網路傳送音頻</h1>
+<p>這個小單元要利用網路來傳送音頻資料。一般網路傳送資料多使用 TCP 或 UDP，TCP 本身具有傳輸錯誤控制的能力，如果接收到的封包偵測到錯誤，會請傳送端重傳，因此可以保證傳輸資料的正確性。UDP 本身則不具傳輸錯誤控制的能力，因此傳送資料時，可能較 TCP 來得快速，但不保證所傳的資料都是正確的。由於 TCP 傳送時，如果資料重傳，將會增加封包傳送的延遲時間，這對於即時的語音或影像的通訊來說並不適合，因此大多數語音或影像的通訊，除了控制部份採用 TCP 之外，大部份資料的傳送，則是採用 UDP 來進行傳送。</p>
+<p>本單元主要利用 GNU Radio 來示範網路資料的傳送，將忽略 TCP 控制的部份，只使用 UDP 來傳送及接收資料。</p>
+<h2 id="傳送端"> 傳送端</h2>
+<p>從程式庫模組中選擇 Signal Source, Throttle, QT GUI Time Sink, 及 UDP Sink 模組。將四個模組如下圖方式連接在一起：</p>
+<p><img src="./Fig/2021-04-23-22-42-54.png" alt=""></p>
+<p>這邊四個模組的參數依次如下：</p>
+<ul>
+<li>Signal Source: 把 Output Type 改成 float。</li>
+<li>Throttle: 全部用預設值。</li>
+<li>QT GUI Sink: 全部用預設值。</li>
+<li>UDP Sink: 只改以下兩個參數
+<ul>
+<li>Destination IP Address 改成 127.0.0.1，代表本機</li>
+<li>Destination Port 改成 12345</li>
+</ul>
+</li>
+</ul>
+<p>注意 UDP Sink 的參數，表示資料將會傳送到本機的 UDP Port 12345。另外我們額外接一個 QT GUI Sink，主要是用來觀察傳送的訊號。</p>
+<p>接好之後，將檔案存檔，產出模型並執行，應該會看到輸出的弦波圖形，如下圖所示：</p>
+<p><img src="./Fig/2021-04-23-23-03-12.png" alt=""></p>
+<h2 id="接收端"> 接收端</h2>
+<p>從程式庫模組中選擇 UDP Source, QT GUI Time Sink, 及 Audio Sink 模組。將三個模組如下圖方式連接在一起：</p>
+<p><img src="./Fig/2021-04-23-22-43-35.png" alt=""></p>
+<p>這邊三個模組的參數依次如下：</p>
+<ul>
+<li>UDP Source: 只改以下兩個參數
+<ul>
+<li>IP Address 改成 0.0.0.0，代表來自任何 IP 位置皆可</li>
+<li>Port 改成 12345，表示從 Port 12345 接收資料。</li>
+</ul>
+</li>
+<li>QT GUI Sink: 全部用預設值。</li>
+<li>Audio Sink: 全部用預設值。</li>
+</ul>
+<p>注意 UDP Source 的參數，表示會接收從任何網址傳到本機的 UDP Port 12345 的資料。另外 QT GUI Sink 可用來觀察接收到的訊號。</p>
+<p>接好之後，將檔案存檔，產出模型並執行（先執行傳送端，再執行接收端），應該會看到與傳送端相同的弦波圖形，另外也會聽到音頻的聲音。</p>
+<p>如果執行的時候，發現左下的視窗出現 aUaUaU... 的訊息，同時音頻有間斷的現象，表示資料無法 100% 即時傳送。在這種情況下，可以試著 Disable 掉傳送端或接收端的 QT GUI Sink，看情況是否有所改善。如果還是不行的話，就把接收端的 Audio Sink 拿掉，只使用 QT GUI Sink 觀察波形就好。</p>
+<br>
+<exercise></exercise>
+<ol>
+<li>試著加上一個 Range 元件，讓傳送的訊號頻率可以在執行時進行調整，並觀察接收端是否會跟著進行改變。</li>
+<li>試著修改傳送端的 UDP Sink 參數，把資料傳到另一台電腦。另外把接收端搬到另一台電腦上執行，看是否可以正確接收到資料。</li>
+<li>如果兩台電腦的資料傳送成功，試著加入第三台電腦，看能否正確傳送資料。（此時中間的電腦接收到第一台電腦的資料之後，其輸出應該為 UDP Sink，也就是用來轉傳到第三台電腦的意思。）這個方式可以不斷擴充，可加入更多的電腦。</li>
+</ol>
 ]]></content>
     <contributor>
       <name/>
@@ -1593,7 +1916,7 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span>​</span></span><
     <title type="html">使用 SDR 掃描頻譜</title>
     <id>https://www.jywglady.org/sdr/sdr/contents/tonetrans/byHackRF/</id>
     <link href="https://www.jywglady.org/sdr/sdr/contents/tonetrans/byHackRF/"/>
-    <updated>2021-05-02T15:22:58.000Z</updated>
+    <updated>2021-05-07T02:25:09.000Z</updated>
     <content type="html"><![CDATA[<h1 id="使用-sdr-掃描頻譜"> 使用 SDR 掃描頻譜</h1>
 <p>這個小單元要利用 HackRF SDR 來傳送和接收音頻資料。HackRF 可以用來發射訊號，或者可以用來接收訊號，如果既要發射又要接收，那就必須用到兩台 HackRF。另外 HackRF 的發射功率較小，雖然是無線傳輸，兩台 HackRF 之間距離也不能太長，一般在實驗室中，空間的距離大概是數公尺之間，這樣的傳輸長度應該沒有問題，不過這個距離也會受到環境配置的影響。以下為了方便實驗，我們先使用一個現成的 FM 發射器，用來發射單頻的訊號，然後使用 HackRF 來接收這個單頻訊號，這樣就可以先行驗證接收的部份是否正常。之後我們再增加一台 HackRF 來發射同樣的單頻訊號，然後看是否依然能夠正確接收。如果都沒有問題的話，那麼可以進一步嘗試調整各種不同的參數並了解其與傳輸距離之間的關係。此處應特別注意一點：各國政府對於無線電頻道的使用，都會有不同的法令規範，因此在發射訊號之前，應特別注意是否符合法令規範，特別要注意是否干擾到其他已在運作中的頻道，以免觸範相關的法令。</p>
 <h2 id="fm-發射器"> FM 發射器</h2>
@@ -1649,7 +1972,7 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span>​</span></span><
     <title type="html">使用 SDR 接收音頻</title>
     <id>https://www.jywglady.org/sdr/sdr/contents/tonetrans/byHackRFRec/</id>
     <link href="https://www.jywglady.org/sdr/sdr/contents/tonetrans/byHackRFRec/"/>
-    <updated>2021-05-03T07:03:28.048Z</updated>
+    <updated>2021-05-07T02:25:09.000Z</updated>
     <content type="html"><![CDATA[<h1 id="使用-sdr-接收音頻"> 使用 SDR 接收音頻</h1>
 <h2 id="接收及解碼-fm-訊號"> 接收及解碼 FM 訊號</h2>
 <p>找到大致的中心頻率後，接著要建立一個接收和解碼的模擬系統。從程式庫模組中選擇 Variable, osomocomm Source, Low Pass Filter, WBFM Receive, Multiply Const, QT GUI Range, QT GUI Frequency Sink 及 Audio Sink 模組。將所有模組如下圖方式連接在一起：</p>
@@ -1726,121 +2049,35 @@ RF Gain 實際上只有 0 dB 和 14 dB 兩種選擇，其他設定值會依照�
     <contributor>
       <name/>
     </contributor>
+    <published>2021-05-07T02:25:09.000Z</published>
   </entry>
   <entry>
-    <title type="html">使用 SDR 傳送音頻</title>
-    <id>https://www.jywglady.org/sdr/sdr/contents/tonetrans/byHackRFTx/</id>
-    <link href="https://www.jywglady.org/sdr/sdr/contents/tonetrans/byHackRFTx/"/>
-    <updated>2021-05-03T07:03:28.049Z</updated>
-    <content type="html"><![CDATA[<h2 id="使用-sdr-傳送音頻"> 使用 SDR 傳送音頻</h2>
-<p><font color="red">目前各國政府對於無線電頻道使用，都有相應的法令規範，因此在使用 SDR 傳送無線訊號之前，必須先了解相關的法規，否則隨意傳送無線訊號，可能干擾或破壞現有的無線頻道通訊，可能觸犯相關的法令。因此在進行無線訊號發送的相關實驗之前，應取得合格的身份證明以及使用權限。若是在實驗室進行相關實驗，也要特別注意訊號的傳送是否伺限在一個密閉的環境，以免干擾其他無線頻道的運作而觸犯相關法令。</font></p>
-<p>此處所要建立的模擬系統，仍然是針對單頻的 FM 訊號。從程式庫模組中選擇 Signal Source, Rational Resampler x2, osomocomm Source, WBFM Transmit, QT GUI Sink 及 osmocom Sink 模組。將所有模組如下圖方式連接在一起：</p>
-<p><img src="./Fig/2021-05-03-13-59-39.png" alt=""></p>
-<p>各模組的參數依次如下：</p>
-<ul>
-<li>Sample Rate: 設定為 32 KHz。</li>
-<li>Signal Source: 設定發送的訊號
-<ul>
-<li>Output Type: float</li>
-<li>Waveform: Cosine</li>
-<li>Frequency: 1000</li>
-</ul>
-</li>
-<li>Rational Resampler 1: 將抽樣頻率從 32K 轉換成 320K
-<ul>
-<li>Interpolation: 10</li>
-<li>Decimation: 1</li>
-<li>Taps: firdes.low_pass(1, 320e3, 20e3, 2e3)</li>
-</ul>
-</li>
-<li>WBFM Transmit: 將訊號進行 FM 調變
-<ul>
-<li>Audio Rate: 320e3</li>
-<li>Quadrature Rate: 320e3</li>
-</ul>
-</li>
-<li>Rational Resampler 2: 將抽樣頻率從 320K 轉換成 8M
-<ul>
-<li>Interpolation: 25</li>
-<li>Decimation: 1</li>
-<li>Taps: firdes.low_pass(40, 8e6, 75e3, 10e3)</li>
-</ul>
-</li>
-<li>QT GUI Sink: 觀察送出的訊號
-<ul>
-<li>Bandwidth: 8e6</li>
-</ul>
-</li>
-<li>osomocomm Sink: 使用 HackRF One 傳送 FM 訊號
-<ul>
-<li>Device Arguments: hackrf=0</li>
-<li>Sample Rate: 8e6</li>
-<li>Ch0: Frequency (Hz): 17241e4</li>
-<li>Ch0: RF Gain (dB): 0</li>
-<li>Ch0: IF Gain (dB): 32</li>
-</ul>
-</li>
-</ul>
-<p>在這個系統中，訊號由 Signal Source 產生，之後透過抽樣轉換模組將訊號的抽樣速度由 32K 轉換成 320K。之後經由 WBFM Transmit 模組進行 FM 調變，調變之後，再次透過樣轉換模組將訊號的抽樣速度由 320K 轉換成 8M，最後再透過 osomocomm Sink 將訊號送出，同時也使用一個 QT GUI Sink 模組進行訊號的觀察。</p>
-<p>接好之後，將檔案存檔，產出模型並執行，如果沒有錯誤的話，應該會在 QT GUI Sink 看到輸出的訊號圖。如果有相應的 FM 接收器，也可以聽到音頻的聲音。</p>
-<br>
-<exercise></exercise>
-兩組一起做實驗，一組發射訊號，另一組接收訊號，看是否能夠成功？
-]]></content>
-    <contributor>
-      <name/>
-    </contributor>
-  </entry>
-  <entry>
-    <title type="html">使用網路傳送音頻</title>
-    <id>https://www.jywglady.org/sdr/sdr/contents/tonetrans/byNet/</id>
-    <link href="https://www.jywglady.org/sdr/sdr/contents/tonetrans/byNet/"/>
+    <title type="html">單頻訊號的儲存與播放</title>
+    <id>https://www.jywglady.org/sdr/sdr/contents/tonetrans/</id>
+    <link href="https://www.jywglady.org/sdr/sdr/contents/tonetrans/"/>
     <updated>2021-04-23T15:18:46.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="使用網路傳送音頻"> 使用網路傳送音頻</h1>
-<p>這個小單元要利用網路來傳送音頻資料。一般網路傳送資料多使用 TCP 或 UDP，TCP 本身具有傳輸錯誤控制的能力，如果接收到的封包偵測到錯誤，會請傳送端重傳，因此可以保證傳輸資料的正確性。UDP 本身則不具傳輸錯誤控制的能力，因此傳送資料時，可能較 TCP 來得快速，但不保證所傳的資料都是正確的。由於 TCP 傳送時，如果資料重傳，將會增加封包傳送的延遲時間，這對於即時的語音或影像的通訊來說並不適合，因此大多數語音或影像的通訊，除了控制部份採用 TCP 之外，大部份資料的傳送，則是採用 UDP 來進行傳送。</p>
-<p>本單元主要利用 GNU Radio 來示範網路資料的傳送，將忽略 TCP 控制的部份，只使用 UDP 來傳送及接收資料。</p>
-<h2 id="傳送端"> 傳送端</h2>
-<p>從程式庫模組中選擇 Signal Source, Throttle, QT GUI Time Sink, 及 UDP Sink 模組。將四個模組如下圖方式連接在一起：</p>
-<p><img src="./Fig/2021-04-23-22-42-54.png" alt=""></p>
-<p>這邊四個模組的參數依次如下：</p>
-<ul>
-<li>Signal Source: 把 Output Type 改成 float。</li>
-<li>Throttle: 全部用預設值。</li>
-<li>QT GUI Sink: 全部用預設值。</li>
-<li>UDP Sink: 只改以下兩個參數
-<ul>
-<li>Destination IP Address 改成 127.0.0.1，代表本機</li>
-<li>Destination Port 改成 12345</li>
-</ul>
-</li>
-</ul>
-<p>注意 UDP Sink 的參數，表示資料將會傳送到本機的 UDP Port 12345。另外我們額外接一個 QT GUI Sink，主要是用來觀察傳送的訊號。</p>
-<p>接好之後，將檔案存檔，產出模型並執行，應該會看到輸出的弦波圖形，如下圖所示：</p>
-<p><img src="./Fig/2021-04-23-23-03-12.png" alt=""></p>
-<h2 id="接收端"> 接收端</h2>
-<p>從程式庫模組中選擇 UDP Source, QT GUI Time Sink, 及 Audio Sink 模組。將三個模組如下圖方式連接在一起：</p>
-<p><img src="./Fig/2021-04-23-22-43-35.png" alt=""></p>
-<p>這邊三個模組的參數依次如下：</p>
-<ul>
-<li>UDP Source: 只改以下兩個參數
-<ul>
-<li>IP Address 改成 0.0.0.0，代表來自任何 IP 位置皆可</li>
-<li>Port 改成 12345，表示從 Port 12345 接收資料。</li>
-</ul>
-</li>
-<li>QT GUI Sink: 全部用預設值。</li>
-<li>Audio Sink: 全部用預設值。</li>
-</ul>
-<p>注意 UDP Source 的參數，表示會接收從任何網址傳到本機的 UDP Port 12345 的資料。另外 QT GUI Sink 可用來觀察接收到的訊號。</p>
-<p>接好之後，將檔案存檔，產出模型並執行（先執行傳送端，再執行接收端），應該會看到與傳送端相同的弦波圖形，另外也會聽到音頻的聲音。</p>
-<p>如果執行的時候，發現左下的視窗出現 aUaUaU... 的訊息，同時音頻有間斷的現象，表示資料無法 100% 即時傳送。在這種情況下，可以試著 Disable 掉傳送端或接收端的 QT GUI Sink，看情況是否有所改善。如果還是不行的話，就把接收端的 Audio Sink 拿掉，只使用 QT GUI Sink 觀察波形就好。</p>
+    <content type="html"><![CDATA[<h1 id="單頻訊號的儲存與播放"> 單頻訊號的儲存與播放</h1>
+<p>這個單元以單頻訊號的傳送和接收為例，來說明 GNU Radio 的基本使用方法，以及訊號的傳送和接收的基本概念。</p>
+<h2 id="要傳送的單頻訊號"> 要傳送的單頻訊號</h2>
+<p>首先，我們先建立一個實數的 Cos 訊號源，然後把訊號傳送到喇叭 (Audio Sink)，系統架構如下：</p>
+<p><img src="./Fig/2021-04-23-19-15-47.png" alt=""></p>
+<p>注意訊號源的部份，要將輸出型態設定成 float，否則無法和喇叭連接。另外，因為訊號輸出到喇叭時，喇叭會限制訊號的傳送速度，所以系統中不需要添加 Throttle 元件。</p>
+<p>建立好之後，試著存檔，產出模型並執行，如果沒有問題的話，應該會跳出一個小小的空白視窗，同時系統會播放一個音頻訊號。</p>
+<h2 id="將訊號存到檔案"> 將訊號存到檔案</h2>
+<p>接著，在系統中新增一個 Wav File Sink，將訊號源一併連接到新增的檔案模組，系統架構如下：</p>
+<p><img src="./Fig/2021-04-23-19-29-27.png" alt=""></p>
+<p>在 Wav File Sink 模組上快按兩下，將其中的 File 參數填入一個適當的路徑和檔名，記得檔名最後要以 .wav 結尾，表示檔案為 wav 的音源格式檔。範例如下（請修改路徑和檔名）：</p>
+<p><img src="./Fig/2021-04-23-19-35-04.png" alt=""></p>
+<p>完成設定之後，重新產生及執行，會聽到跟之前一樣的聲音，大概三秒左右將程式結束掉。</p>
+<p>執行完之後，打開檔案總管，在原先填入的路徑中檢查，應該會看到所設定的檔案。直接快按檔案兩下，系統會啟動預設的媒體播放程式，播放音檔的內容，基本上應該是一樣的聲音。</p>
+<h2 id="用-gnu-radio-播放音檔"> 用 GNU Radio 播放音檔</h2>
+<p>GNU Radio 中，也有一個 Wav File Source 模組，主要是用來讀取音檔的訊號內容。現在在 GNU Radio 中開啟一個新檔，放入 Wav File Source 模組及喇叭，連結系統架構如下：</p>
+<p><img src="./Fig/2021-04-23-19-48-58.png" alt=""></p>
+<p>把 Wav File Source 模組中的 File 參數填入剛才產生出來的音頻檔案。完成之後，存檔、產出模型及執行，沒有問題的話，應該會聽到同樣的聲音。</p>
+<p>以上主要是透過 GNU Radio 模擬音頻訊號的產生、儲存以及讀取。</p>
 <br>
 <exercise></exercise>
-<ol>
-<li>試著加上一個 Range 元件，讓傳送的訊號頻率可以在執行時進行調整，並觀察接收端是否會跟著進行改變。</li>
-<li>試著修改傳送端的 UDP Sink 參數，把資料傳到另一台電腦。另外把接收端搬到另一台電腦上執行，看是否可以正確接收到資料。</li>
-<li>如果兩台電腦的資料傳送成功，試著加入第三台電腦，看能否正確傳送資料。（此時中間的電腦接收到第一台電腦的資料之後，其輸出應該為 UDP Sink，也就是用來轉傳到第三台電腦的意思。）這個方式可以不斷擴充，可加入更多的電腦。</li>
-</ol>
+<p>試著將上面 Wav File Source 中的 File 參數替換成其他的 wav 檔案，試著執行看看，是否可以聽到該 wav 檔案的音樂或聲音。</p>
 ]]></content>
     <contributor>
       <name/>
