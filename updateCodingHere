@@ -1,0 +1,8 @@
+echo "rm -rf codinghere"
+rm -rf codinghere
+echo "cp -r ../codinghere/public/ codinghere/"
+cp -r ../codinghere/public/ codinghere/
+echo "git add codinghere/"
+git add codinghere/
+echo "git commit -am $1"
+git commit -am "$1"
