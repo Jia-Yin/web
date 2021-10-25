@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[31],{922:function(n,t,e){"use strict";e.r(t);var r={data:function(){return{}},components:{UserCom:e(798).a}},o=e(29),component=Object(o.a)(r,(function(){var n=this.$createElement,t=this._self._c||n;return t("b-container",{attrs:{fluid:""}},[t("UserCom")],1)}),[],!1,null,"58e4c3a8",null);t.default=component.exports}}]);
