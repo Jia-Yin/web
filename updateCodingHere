@@ -1,3 +1,4 @@
+git pull
 echo "rm -rf codinghere"
 rm -rf codinghere
 echo "cp -r ../codinghere/public/ codinghere/"
