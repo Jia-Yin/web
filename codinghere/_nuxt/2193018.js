@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[55],{1431:function(e,t,n){"use strict";n.r(t);var l={middleware:"authentication",layout:"normal_user"},r=n(55),component=Object(r.a)(l,(function(){var e=this.$createElement,t=this._self._c||e;return t("div",[t("nuxt-child")],1)}),[],!1,null,"3614e07a",null);t.default=component.exports}}]);
