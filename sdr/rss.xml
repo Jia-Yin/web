@@ -6,8 +6,8 @@
     <link>https://www.jywglady.org/sdr/sdr/</link>
     <description>通訊實驗教材</description>
     <language>en-US</language>
-    <pubDate>Thu, 12 May 2022 11:23:37 GMT</pubDate>
-    <lastBuildDate>Thu, 12 May 2022 11:23:37 GMT</lastBuildDate>
+    <pubDate>Mon, 16 May 2022 09:02:53 GMT</pubDate>
+    <lastBuildDate>Mon, 16 May 2022 09:02:53 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <item>
@@ -28,29 +28,33 @@
 ]]></content:encoded>
     </item>
     <item>
-      <title>傅立葉變換-05</title>
-      <link>https://www.jywglady.org/sdr/sdr/contents/FFT/Fourier-05/</link>
-      <guid>https://www.jywglady.org/sdr/sdr/contents/FFT/Fourier-05/</guid>
-      <source url="https://www.jywglady.org/sdr/sdr/rss.xml">傅立葉變換-05</source>
+      <title>Home</title>
+      <link>https://www.jywglady.org/sdr/sdr/</link>
+      <guid>https://www.jywglady.org/sdr/sdr/</guid>
+      <source url="https://www.jywglady.org/sdr/sdr/rss.xml">Home</source>
+      <pubDate>Sun, 07 Mar 2021 12:24:56 GMT</pubDate>
+      <content:encoded><![CDATA[
+]]></content:encoded>
+    </item>
+    <item>
+      <title>傅立葉變換-02</title>
+      <link>https://www.jywglady.org/sdr/sdr/contents/FFT/Fourier-02/</link>
+      <guid>https://www.jywglady.org/sdr/sdr/contents/FFT/Fourier-02/</guid>
+      <source url="https://www.jywglady.org/sdr/sdr/rss.xml">傅立葉變換-02</source>
       <pubDate>Mon, 15 Mar 2021 05:40:34 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="傅立葉變換-05"> 傅立葉變換-05</h1>
-<p>現在我們來看一點數學。首先看一下這個模擬圖：</p>
-<p align="center">
-<Euler></Euler>
-</p>
-<p>這邊橘色點在單位圓上繞行，假設綠色線段和 x 軸的交角為 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.69444em;vertical-align:0em;"></span><span style="margin-right:0.02778em;">θ</span></span></span></span>，那麼橘點的位置應該在
-<span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>cos</span><span>(</span><span style="margin-right:0.02778em;">θ</span><span>)</span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span></span><span><span style="height:1em;vertical-align:-0.25em;"></span><span>i</span><span style="margin-right:0.16666666666666666em;"></span><span>sin</span><span>(</span><span style="margin-right:0.02778em;">θ</span><span>)</span></span></span></span> 的位置，或者我們也可以把它寫成 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.849108em;vertical-align:0em;"></span><span><span>e</span><span><span><span><span style="height:0.849108em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>i</span><span style="margin-right:0.02778em;">θ</span></span></span></span></span></span></span></span></span></span></span></span> (尤拉公式)。
-如果橘點的角速度是 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.43056em;vertical-align:0em;"></span><span style="margin-right:0.03588em;">ω</span></span></span></span>，那它在時間 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.61508em;vertical-align:0em;"></span><span>t</span></span></span></span> 的位置可以寫成 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.824664em;vertical-align:0em;"></span><span><span>e</span><span><span><span><span style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.03588em;">iω</span><span>t</span></span></span></span></span></span></span></span></span></span></span></span>。
-注意在這種表示法中，指數部份每增加 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.64444em;vertical-align:0em;"></span><span>2</span><span style="margin-right:0.03588em;">π</span></span></span></span> 表示剛好繞一圈，所以 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.824664em;vertical-align:0em;"></span><span><span>e</span><span><span><span><span style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>i</span><span>2</span><span style="margin-right:0.03588em;">π</span></span></span></span></span></span></span></span></span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:0.824664em;vertical-align:0em;"></span><span><span>e</span><span><span><span><span style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>i</span><span>0</span></span></span></span></span></span></span></span></span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:0.64444em;vertical-align:0em;"></span><span>1</span></span></span></span>。</p>
-<p>現在考慮 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.68333em;vertical-align:0em;"></span><span style="margin-right:0.10903em;">N</span></span></span></span> 個跑者，有 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.68333em;vertical-align:0em;"></span><span style="margin-right:0.10903em;">N</span></span></span></span> 個取樣時間點 (<span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>0</span><span>,</span><span style="margin-right:0.16666666666666666em;"></span><span>1/</span><span style="margin-right:0.10903em;">N</span><span>,</span><span style="margin-right:0.16666666666666666em;"></span><span>2/</span><span style="margin-right:0.10903em;">N</span><span>,</span><span style="margin-right:0.16666666666666666em;"></span><span>⋯</span><span style="margin-right:0.16666666666666666em;"></span><span style="margin-right:0.16666666666666666em;"></span><span>,</span><span style="margin-right:0.16666666666666666em;"></span><span>(</span><span style="margin-right:0.10903em;">N</span><span style="margin-right:0.2222222222222222em;"></span><span>−</span><span style="margin-right:0.2222222222222222em;"></span></span><span><span style="height:1em;vertical-align:-0.25em;"></span><span>1</span><span>)</span><span>/</span><span style="margin-right:0.10903em;">N</span></span></span></span>) 的問題。如果全部的振幅都是 1，開始的角度都是 0，那麼就像前面所討論過的，第一個取樣值應該是 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.68333em;vertical-align:0em;"></span><span style="margin-right:0.10903em;">N</span></span></span></span>，而其他 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.76666em;vertical-align:-0.08333em;"></span><span style="margin-right:0.10903em;">N</span><span style="margin-right:0.2222222222222222em;"></span><span>−</span><span style="margin-right:0.2222222222222222em;"></span></span><span><span style="height:0.64444em;vertical-align:0em;"></span><span>1</span></span></span></span> 個取樣值都是 0。</p>
-<p>那怎樣讓第 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.43056em;vertical-align:0em;"></span><span>n</span></span></span></span> 個取樣值是 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.68333em;vertical-align:0em;"></span><span style="margin-right:0.10903em;">N</span></span></span></span>，而其他值是 0 呢？先看 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.43056em;vertical-align:0em;"></span><span>n</span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:0.64444em;vertical-align:0em;"></span><span>2</span></span></span></span> 的情況，也就是到了第二個取樣時間點所有跑者才重合的情況，那如果我們把時間倒回去第一個取樣點，也就是倒退 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>1/</span><span style="margin-right:0.10903em;">N</span></span></span></span> 秒，會發生什麼事呢？基本上就是把速度 1 的跑者倒退 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>1/</span><span style="margin-right:0.10903em;">N</span></span></span></span> 圈，速度 2 的跑者倒退 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>2/</span><span style="margin-right:0.10903em;">N</span></span></span></span> 圈，依此類推就可以了。換句話說，這 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.68333em;vertical-align:0em;"></span><span style="margin-right:0.10903em;">N</span></span></span></span> 個跑者的起始位置應該是：</p>
-<p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1.13244em;vertical-align:-0.19444em;"></span><span>1</span><span>,</span><span style="margin-right:0.16666666666666666em;"></span><span><span>e</span><span><span><span><span style="height:0.938em;"><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span>i</span><span>2</span><span style="margin-right:0.03588em;">π</span><span>/</span><span style="margin-right:0.10903em;">N</span></span></span></span></span></span></span></span></span><span>,</span><span style="margin-right:0.16666666666666666em;"></span><span><span>e</span><span><span><span><span style="height:0.938em;"><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span>i</span><span>4</span><span style="margin-right:0.03588em;">π</span><span>/</span><span style="margin-right:0.10903em;">N</span></span></span></span></span></span></span></span></span><span>,</span><span style="margin-right:0.16666666666666666em;"></span><span>⋯</span><span style="margin-right:0.16666666666666666em;"></span><span style="margin-right:0.16666666666666666em;"></span><span>,</span><span style="margin-right:0.16666666666666666em;"></span><span><span>e</span><span><span><span><span style="height:0.938em;"><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span>i</span><span>2</span><span>(</span><span style="margin-right:0.10903em;">N</span><span>−</span><span>1</span><span>)</span><span style="margin-right:0.03588em;">π</span><span>/</span><span style="margin-right:0.10903em;">N</span></span></span></span></span></span></span></span></span></span></span></span></span></p>
-<p>思考一下上面的數學式，等到理解了再回答下面的問題。</p>
-<br>
-<exercise></exercise>
+      <content:encoded><![CDATA[<h1 id="傅立葉變換-02"> 傅立葉變換-02</h1>
+<p>試著確認以下各點說明：</p>
+<ul>
+<li>當頻率成份為 <code>1</code> 時，表示只有直流成份，振幅為 1，故時間的取樣值永遠為 1。</li>
+<li>當頻率成份為 <code>0 1</code> 時，表示只有頻率為 1 且振幅為 1 的成份，此時會發現時間的取樣值為 <code>1 -1</code>，為什麼呢？因為是餘弦波，而取樣點恰好在開始和中間的緣故。</li>
+<li>當頻率成份為 <code>1 1</code> 時，表示同時具備前兩者的成份，此時時間的取樣為 <code>2 0</code>，也就是前兩者時間取樣值的和。<span style="color:red">這是波可以疊加的表現，也表示頻率和時間兩者之間的轉換具備了線性轉換的特質。</span></li>
+</ul>
+<FourierCircular freqs="1" distime="true"/>
+<p><br><br>
+<exercise></exercise></p>
 <ol>
-<li>跟上面類似的推論，當 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.43056em;vertical-align:0em;"></span><span>n</span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:0.64444em;vertical-align:0em;"></span><span>3</span></span></span></span> 的情況下，<span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.68333em;vertical-align:0em;"></span><span style="margin-right:0.10903em;">N</span></span></span></span> 個跑者的起始位置在哪裡？</li>
-<li>一般 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.43056em;vertical-align:0em;"></span><span>n</span></span></span></span> 值的情況呢（<span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.78041em;vertical-align:-0.13597em;"></span><span>1</span><span style="margin-right:0.2777777777777778em;"></span><span>≤</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:0.7719400000000001em;vertical-align:-0.13597em;"></span><span>n</span><span style="margin-right:0.2777777777777778em;"></span><span>≤</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:0.68333em;vertical-align:0em;"></span><span style="margin-right:0.10903em;">N</span></span></span></span>）？先想一想，再往下看。</li>
+<li>當頻率成份為 <code>1 1 1</code> 時，時間取樣為何？請說明為什麼會得到這樣的結果？（用暫停且移動時間點的方式來找出答案。）</li>
+<li>當頻率成份為 <code>1 1 1 1</code> 時，時間取樣為何？如果頻率成份為 <code>1 1 1 1 1</code> 呢？請試著推廣到更多個 1 的情況，並說明原因。</li>
 </ol>
 ]]></content:encoded>
     </item>
@@ -75,56 +79,6 @@
 <li>有什麼辦法可以讓時間的取樣值變成 <code>0 4 0 0</code> 呢？先思考一下，再看下一頁。</li>
 <li>如果你很快就想出來了，那麼怎樣讓時間的取樣值變成 <code>0 0 4 0</code>？怎樣可以變成 <code>0 0 0 4</code>？</li>
 </ol>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>傅立葉變換-04</title>
-      <link>https://www.jywglady.org/sdr/sdr/contents/FFT/Fourier-04/</link>
-      <guid>https://www.jywglady.org/sdr/sdr/contents/FFT/Fourier-04/</guid>
-      <source url="https://www.jywglady.org/sdr/sdr/rss.xml">傅立葉變換-04</source>
-      <pubDate>Mon, 15 Mar 2021 05:40:34 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="傅立葉變換-04"> 傅立葉變換-04</h1>
-<p>在上一個小單元中，我們可以把四個不同頻率的成份波想成四個跑者，速度分別是 0 1 2 3，那麼同時出發，經過 1 個時間單位之後，分別跑了 0 1 2 3 圈，於是又重合在一起了，這時的取樣值為 4。至於另三個取樣時間點 (1/4, 2/4, 3/4 單位時間），因為都會產生對稱的情況，所以總和都會是 0，於是就不斷得到 4 0 0 0 的重覆取樣結果。</p>
-<p>那如果要得到 0 4 0 0 的結果，也就是說，在 1/4 單位時間時，四個跑者才會重合。那麼我們不妨把時間倒回去，看看時間為 0 的時候，它們應該在哪裡？這個應該不難，直流成份波還是在原地；速度 1 的應該後退 1/4 圈（-90度）；速度 2 的應該後退 2/4 圈（-180度）；速度 3 的應該後退 3/4 圈（-270度）。</p>
-<p>那麼現在把 Cycles 的部份改成 <code>1 1:-90 1:-180 1:-270</code> 試看看。</p>
-<p align="center">
-<FourierCircular freqs="1 1 1 1" distime="true"/></p>
-<br>
-<exercise></exercise>
-<ol>
-<li>如果上面的問題想通了，那麼試著調整 Cycles 的成份，分別讓時間取樣變成 0 0 4 0 以及 0 0 0 4。</li>
-<li>現在試著調整 Cycles 的成份，讓時間取樣變成 0 0 3。</li>
-<li>現在試著調整 Cycles 的成份，讓時間取樣變成 0 0 6 0 0 0。</li>
-</ol>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>Home</title>
-      <link>https://www.jywglady.org/sdr/sdr/</link>
-      <guid>https://www.jywglady.org/sdr/sdr/</guid>
-      <source url="https://www.jywglady.org/sdr/sdr/rss.xml">Home</source>
-      <pubDate>Sun, 07 Mar 2021 12:24:56 GMT</pubDate>
-      <content:encoded><![CDATA[
-]]></content:encoded>
-    </item>
-    <item>
-      <title>傅立葉變換-06</title>
-      <link>https://www.jywglady.org/sdr/sdr/contents/FFT/Fourier-06/</link>
-      <guid>https://www.jywglady.org/sdr/sdr/contents/FFT/Fourier-06/</guid>
-      <source url="https://www.jywglady.org/sdr/sdr/rss.xml">傅立葉變換-06</source>
-      <pubDate>Mon, 15 Mar 2021 05:40:34 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="傅立葉變換-06"> 傅立葉變換-06</h1>
-<p>上一個小單元，如果你都想通的話，那應該就可以明瞭，要讓 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.68333em;vertical-align:0em;"></span><span style="margin-right:0.10903em;">N</span></span></span></span> 個時間取樣值中，除了第 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.66666em;vertical-align:-0.08333em;"></span><span>n</span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span></span><span><span style="height:0.64444em;vertical-align:0em;"></span><span>1</span></span></span></span> 個取樣值為 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.68333em;vertical-align:0em;"></span><span style="margin-right:0.10903em;">N</span></span></span></span>，而其他的取樣值都是 0，基本上，就是把時間倒回去 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>n</span><span>/</span><span style="margin-right:0.10903em;">N</span></span></span></span> 秒，這等於把速度為 1 的跑者，倒退 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>n</span><span>/</span><span style="margin-right:0.10903em;">N</span></span></span></span> 圈，把速度為 2 的跑者，倒退 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>2</span><span>n</span><span>/</span><span style="margin-right:0.10903em;">N</span></span></span></span> 圈，...依此類推。所以一開始的位置安排應該如下：</p>
-<p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1.13244em;vertical-align:-0.19444em;"></span><span>1</span><span>,</span><span style="margin-right:0.16666666666666666em;"></span><span><span>e</span><span><span><span><span style="height:0.938em;"><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span>i</span><span>2</span><span style="margin-right:0.03588em;">nπ</span><span>/</span><span style="margin-right:0.10903em;">N</span></span></span></span></span></span></span></span></span><span>,</span><span style="margin-right:0.16666666666666666em;"></span><span><span>e</span><span><span><span><span style="height:0.938em;"><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span>i</span><span>4</span><span style="margin-right:0.03588em;">nπ</span><span>/</span><span style="margin-right:0.10903em;">N</span></span></span></span></span></span></span></span></span><span>,</span><span style="margin-right:0.16666666666666666em;"></span><span>⋯</span><span style="margin-right:0.16666666666666666em;"></span><span style="margin-right:0.16666666666666666em;"></span><span>,</span><span style="margin-right:0.16666666666666666em;"></span><span><span>e</span><span><span><span><span style="height:0.938em;"><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span>i</span><span>2</span><span>(</span><span style="margin-right:0.10903em;">N</span><span>−</span><span>1</span><span>)</span><span style="margin-right:0.03588em;">nπ</span><span>/</span><span style="margin-right:0.10903em;">N</span></span></span></span></span></span></span></span></span></span></span></span></span></p>
-<p>有想通嗎？</p>
-<p>接下來，我們前面曾經提到過：<span style="color:red">波可以疊加，頻率和時間兩者之間的轉換具備線性轉換的特質。</span>那麼我們已經知道如何產生 4 0 0 0 和 0 4 0 0 的取樣值了，請回答以下問題。</p>
-<br>
-<exercise></exercise>
-<ol>
-<li>如何讓時間取樣值變成 <code>4 4 0 0</code>？</li>
-<li>如何讓時間取樣值變成 <code>a b c d</code>？</li>
-</ol>
-<FourierCircular freqs="1 1 1 1" distime="true"/></p>
 ]]></content:encoded>
     </item>
     <item>
@@ -180,6 +134,47 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span>​</span></span><
 ]]></content:encoded>
     </item>
     <item>
+      <title>傅立葉變換-04</title>
+      <link>https://www.jywglady.org/sdr/sdr/contents/FFT/Fourier-04/</link>
+      <guid>https://www.jywglady.org/sdr/sdr/contents/FFT/Fourier-04/</guid>
+      <source url="https://www.jywglady.org/sdr/sdr/rss.xml">傅立葉變換-04</source>
+      <pubDate>Mon, 15 Mar 2021 05:40:34 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="傅立葉變換-04"> 傅立葉變換-04</h1>
+<p>在上一個小單元中，我們可以把四個不同頻率的成份波想成四個跑者，速度分別是 0 1 2 3，那麼同時出發，經過 1 個時間單位之後，分別跑了 0 1 2 3 圈，於是又重合在一起了，這時的取樣值為 4。至於另三個取樣時間點 (1/4, 2/4, 3/4 單位時間），因為都會產生對稱的情況，所以總和都會是 0，於是就不斷得到 4 0 0 0 的重覆取樣結果。</p>
+<p>那如果要得到 0 4 0 0 的結果，也就是說，在 1/4 單位時間時，四個跑者才會重合。那麼我們不妨把時間倒回去，看看時間為 0 的時候，它們應該在哪裡？這個應該不難，直流成份波還是在原地；速度 1 的應該後退 1/4 圈（-90度）；速度 2 的應該後退 2/4 圈（-180度）；速度 3 的應該後退 3/4 圈（-270度）。</p>
+<p>那麼現在把 Cycles 的部份改成 <code>1 1:-90 1:-180 1:-270</code> 試看看。</p>
+<p align="center">
+<FourierCircular freqs="1 1 1 1" distime="true"/></p>
+<br>
+<exercise></exercise>
+<ol>
+<li>如果上面的問題想通了，那麼試著調整 Cycles 的成份，分別讓時間取樣變成 0 0 4 0 以及 0 0 0 4。</li>
+<li>現在試著調整 Cycles 的成份，讓時間取樣變成 0 0 3。</li>
+<li>現在試著調整 Cycles 的成份，讓時間取樣變成 0 0 6 0 0 0。</li>
+</ol>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>傅立葉變換-06</title>
+      <link>https://www.jywglady.org/sdr/sdr/contents/FFT/Fourier-06/</link>
+      <guid>https://www.jywglady.org/sdr/sdr/contents/FFT/Fourier-06/</guid>
+      <source url="https://www.jywglady.org/sdr/sdr/rss.xml">傅立葉變換-06</source>
+      <pubDate>Mon, 15 Mar 2021 05:40:34 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="傅立葉變換-06"> 傅立葉變換-06</h1>
+<p>上一個小單元，如果你都想通的話，那應該就可以明瞭，要讓 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.68333em;vertical-align:0em;"></span><span style="margin-right:0.10903em;">N</span></span></span></span> 個時間取樣值中，除了第 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.66666em;vertical-align:-0.08333em;"></span><span>n</span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span></span><span><span style="height:0.64444em;vertical-align:0em;"></span><span>1</span></span></span></span> 個取樣值為 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.68333em;vertical-align:0em;"></span><span style="margin-right:0.10903em;">N</span></span></span></span>，而其他的取樣值都是 0，基本上，就是把時間倒回去 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>n</span><span>/</span><span style="margin-right:0.10903em;">N</span></span></span></span> 秒，這等於把速度為 1 的跑者，倒退 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>n</span><span>/</span><span style="margin-right:0.10903em;">N</span></span></span></span> 圈，把速度為 2 的跑者，倒退 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>2</span><span>n</span><span>/</span><span style="margin-right:0.10903em;">N</span></span></span></span> 圈，...依此類推。所以一開始的位置安排應該如下：</p>
+<p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1.13244em;vertical-align:-0.19444em;"></span><span>1</span><span>,</span><span style="margin-right:0.16666666666666666em;"></span><span><span>e</span><span><span><span><span style="height:0.938em;"><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span>i</span><span>2</span><span style="margin-right:0.03588em;">nπ</span><span>/</span><span style="margin-right:0.10903em;">N</span></span></span></span></span></span></span></span></span><span>,</span><span style="margin-right:0.16666666666666666em;"></span><span><span>e</span><span><span><span><span style="height:0.938em;"><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span>i</span><span>4</span><span style="margin-right:0.03588em;">nπ</span><span>/</span><span style="margin-right:0.10903em;">N</span></span></span></span></span></span></span></span></span><span>,</span><span style="margin-right:0.16666666666666666em;"></span><span>⋯</span><span style="margin-right:0.16666666666666666em;"></span><span style="margin-right:0.16666666666666666em;"></span><span>,</span><span style="margin-right:0.16666666666666666em;"></span><span><span>e</span><span><span><span><span style="height:0.938em;"><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span>i</span><span>2</span><span>(</span><span style="margin-right:0.10903em;">N</span><span>−</span><span>1</span><span>)</span><span style="margin-right:0.03588em;">nπ</span><span>/</span><span style="margin-right:0.10903em;">N</span></span></span></span></span></span></span></span></span></span></span></span></span></p>
+<p>有想通嗎？</p>
+<p>接下來，我們前面曾經提到過：<span style="color:red">波可以疊加，頻率和時間兩者之間的轉換具備線性轉換的特質。</span>那麼我們已經知道如何產生 4 0 0 0 和 0 4 0 0 的取樣值了，請回答以下問題。</p>
+<br>
+<exercise></exercise>
+<ol>
+<li>如何讓時間取樣值變成 <code>4 4 0 0</code>？</li>
+<li>如何讓時間取樣值變成 <code>a b c d</code>？</li>
+</ol>
+<FourierCircular freqs="1 1 1 1" distime="true"/></p>
+]]></content:encoded>
+    </item>
+    <item>
       <title>傅立葉變換-08</title>
       <link>https://www.jywglady.org/sdr/sdr/contents/FFT/Fourier-08/</link>
       <guid>https://www.jywglady.org/sdr/sdr/contents/FFT/Fourier-08/</guid>
@@ -205,25 +200,6 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span>​</span></span><
 <li>
 <p>假設頻率成份為 <code>1 1 1 1</code>，則時間取樣值應該為何？試著先用公式算看看，然後再用模擬圖檢查看看是否相同。</p>
 </li>
-</ol>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>傅立葉變換-09</title>
-      <link>https://www.jywglady.org/sdr/sdr/contents/FFT/Fourier-09/</link>
-      <guid>https://www.jywglady.org/sdr/sdr/contents/FFT/Fourier-09/</guid>
-      <source url="https://www.jywglady.org/sdr/sdr/rss.xml">傅立葉變換-09</source>
-      <pubDate>Mon, 15 Mar 2021 05:40:34 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="傅立葉變換-09"> 傅立葉變換-09</h1>
-<p>延續上一個單元的轉換公式，如果所有頻率成份速度都加快成為原來的 2 倍，那麼我們把所有取樣時間點也都縮短成 1/2 倍，這樣的話，每次取樣時，各個成份波跑的位移和原來是一樣的，所以最後合成的結果自然也會相同，因此轉換公式不會改變。</p>
-<p>那如果頻率為 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>0</span><span>,</span><span style="margin-right:0.16666666666666666em;"></span><span>Δ</span><span style="margin-right:0.10764em;">f</span><span>,</span><span style="margin-right:0.16666666666666666em;"></span><span>2Δ</span><span style="margin-right:0.10764em;">f</span><span>,</span><span style="margin-right:0.16666666666666666em;"></span><span>⋯</span><span style="margin-right:0.16666666666666666em;"></span><span style="margin-right:0.16666666666666666em;"></span><span>,</span><span style="margin-right:0.16666666666666666em;"></span><span>(</span><span style="margin-right:0.10903em;">N</span><span style="margin-right:0.2222222222222222em;"></span><span>−</span><span style="margin-right:0.2222222222222222em;"></span></span><span><span style="height:1em;vertical-align:-0.25em;"></span><span>1</span><span>)</span><span>Δ</span><span style="margin-right:0.10764em;">f</span></span></span></span>，表示每個頻率變成 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span>Δ</span><span style="margin-right:0.10764em;">f</span></span></span></span> 倍，那我們只要把取樣時間間隔 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>1/</span><span style="margin-right:0.10903em;">N</span></span></span></span> 縮短成 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>1/Δ</span><span style="margin-right:0.10764em;">f</span></span></span></span> 倍（等於是 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>1/</span><span>(</span><span style="margin-right:0.10903em;">N</span><span>Δ</span><span style="margin-right:0.10764em;">f</span><span>)</span></span></span></span>)，那麼公式還是不會改變。</p>
-<br>
-<exercise></exercise>
-<ol>
-<li>反過來，如果取樣點的時間間隔變成 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.68333em;vertical-align:0em;"></span><span>Δ</span><span>t</span></span></span></span> 時，使用同樣的轉換公式，那麼頻率間隔會變成多少呢？</li>
-<li>假設總共取樣的時間總長度為 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.68333em;vertical-align:0em;"></span><span style="margin-right:0.13889em;">T</span></span></span></span>，而且總共取了 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.68333em;vertical-align:0em;"></span><span style="margin-right:0.10903em;">N</span></span></span></span> 點，那麼頻率間隔為何？</li>
-<li>如果我們希望看到的最小頻率間隔要小一點，那麼時間取樣部份應該要做怎樣的調整？</li>
-<li>如果我們希望看到的最大頻率成份要大一點，那麼時間取樣部份應該要做怎樣的調整？</li>
 </ol>
 ]]></content:encoded>
     </item>
@@ -270,47 +246,6 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span>​</span></span><
 <ol>
 <li>假設希望觀察到的最大頻率成份是 500 Hz，而且頻率間隔為 1/2 Hz，那麼時間取樣應該要如何才能達成。</li>
 <li>透過這個課程，你對傅立葉變換的原理是否有進一步的理解？</li>
-</ol>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>傅立葉變換-12</title>
-      <link>https://www.jywglady.org/sdr/sdr/contents/FFT/Fourier-12/</link>
-      <guid>https://www.jywglady.org/sdr/sdr/contents/FFT/Fourier-12/</guid>
-      <source url="https://www.jywglady.org/sdr/sdr/rss.xml">傅立葉變換-12</source>
-      <pubDate>Mon, 15 Mar 2021 05:40:34 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="傅立葉變換-12"> 傅立葉變換-12</h1>
-<p>這個單元是要解釋模擬圖中的 Derive 選項，會略為複雜一點，如果不能理解，可以略過。</p>
-<p>在我們的模擬程式中，有一個 Derive 的選項，把它勾選起來，會跑出一個反方向的成份波，其頻率就是 Derive 右邊框框的數字。而在波點移動的過程中，每次到達取樣點時，會跑出一個紅點，它的高度就是反向波的值乘以總和訊號的時間取樣值。最後，當圖中所有取樣時間都跑過之後，模擬程式會把所有紅點的高度加總，然後計算其平均值，這也就是閃爍出現的文字的實數部份。</p>
-<FourierCircular freqs="0 1" disfreq="true"/>
-<br>
-<exercise></exercise>
-<ol>
-<li>你知道這個平均值有何意義嗎？</li>
-<li>其實模擬程式不只顯示平均的實數值，同時也會顯示一個平均的虛數值，你知道這個虛數值有何意義嗎？</li>
-<li>不只實數和虛數，其實還有一個方括號，裡面可能有一個或兩個數，你知道它們的意義為何嗎？</li>
-</ol>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>傅立葉變換-02</title>
-      <link>https://www.jywglady.org/sdr/sdr/contents/FFT/Fourier-02/</link>
-      <guid>https://www.jywglady.org/sdr/sdr/contents/FFT/Fourier-02/</guid>
-      <source url="https://www.jywglady.org/sdr/sdr/rss.xml">傅立葉變換-02</source>
-      <pubDate>Mon, 15 Mar 2021 05:40:34 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="傅立葉變換-02"> 傅立葉變換-02</h1>
-<p>試著確認以下各點說明：</p>
-<ul>
-<li>當頻率成份為 <code>1</code> 時，表示只有直流成份，振幅為 1，故時間的取樣值永遠為 1。</li>
-<li>當頻率成份為 <code>0 1</code> 時，表示只有頻率為 1 且振幅為 1 的成份，此時會發現時間的取樣值為 <code>1 -1</code>，為什麼呢？因為是餘弦波，而取樣點恰好在開始和中間的緣故。</li>
-<li>當頻率成份為 <code>1 1</code> 時，表示同時具備前兩者的成份，此時時間的取樣為 <code>2 0</code>，也就是前兩者時間取樣值的和。<span style="color:red">這是波可以疊加的表現，也表示頻率和時間兩者之間的轉換具備了線性轉換的特質。</span></li>
-</ul>
-<FourierCircular freqs="1" distime="true"/>
-<p><br><br>
-<exercise></exercise></p>
-<ol>
-<li>當頻率成份為 <code>1 1 1</code> 時，時間取樣為何？請說明為什麼會得到這樣的結果？（用暫停且移動時間點的方式來找出答案。）</li>
-<li>當頻率成份為 <code>1 1 1 1</code> 時，時間取樣為何？如果頻率成份為 <code>1 1 1 1 1</code> 呢？請試著推廣到更多個 1 的情況，並說明原因。</li>
 </ol>
 ]]></content:encoded>
     </item>
@@ -366,6 +301,25 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span>​</span></span><
 ]]></content:encoded>
     </item>
     <item>
+      <title>傅立葉變換-09</title>
+      <link>https://www.jywglady.org/sdr/sdr/contents/FFT/Fourier-09/</link>
+      <guid>https://www.jywglady.org/sdr/sdr/contents/FFT/Fourier-09/</guid>
+      <source url="https://www.jywglady.org/sdr/sdr/rss.xml">傅立葉變換-09</source>
+      <pubDate>Mon, 15 Mar 2021 05:40:34 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="傅立葉變換-09"> 傅立葉變換-09</h1>
+<p>延續上一個單元的轉換公式，如果所有頻率成份速度都加快成為原來的 2 倍，那麼我們把所有取樣時間點也都縮短成 1/2 倍，這樣的話，每次取樣時，各個成份波跑的位移和原來是一樣的，所以最後合成的結果自然也會相同，因此轉換公式不會改變。</p>
+<p>那如果頻率為 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>0</span><span>,</span><span style="margin-right:0.16666666666666666em;"></span><span>Δ</span><span style="margin-right:0.10764em;">f</span><span>,</span><span style="margin-right:0.16666666666666666em;"></span><span>2Δ</span><span style="margin-right:0.10764em;">f</span><span>,</span><span style="margin-right:0.16666666666666666em;"></span><span>⋯</span><span style="margin-right:0.16666666666666666em;"></span><span style="margin-right:0.16666666666666666em;"></span><span>,</span><span style="margin-right:0.16666666666666666em;"></span><span>(</span><span style="margin-right:0.10903em;">N</span><span style="margin-right:0.2222222222222222em;"></span><span>−</span><span style="margin-right:0.2222222222222222em;"></span></span><span><span style="height:1em;vertical-align:-0.25em;"></span><span>1</span><span>)</span><span>Δ</span><span style="margin-right:0.10764em;">f</span></span></span></span>，表示每個頻率變成 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span>Δ</span><span style="margin-right:0.10764em;">f</span></span></span></span> 倍，那我們只要把取樣時間間隔 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>1/</span><span style="margin-right:0.10903em;">N</span></span></span></span> 縮短成 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>1/Δ</span><span style="margin-right:0.10764em;">f</span></span></span></span> 倍（等於是 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>1/</span><span>(</span><span style="margin-right:0.10903em;">N</span><span>Δ</span><span style="margin-right:0.10764em;">f</span><span>)</span></span></span></span>)，那麼公式還是不會改變。</p>
+<br>
+<exercise></exercise>
+<ol>
+<li>反過來，如果取樣點的時間間隔變成 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.68333em;vertical-align:0em;"></span><span>Δ</span><span>t</span></span></span></span> 時，使用同樣的轉換公式，那麼頻率間隔會變成多少呢？</li>
+<li>假設總共取樣的時間總長度為 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.68333em;vertical-align:0em;"></span><span style="margin-right:0.13889em;">T</span></span></span></span>，而且總共取了 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.68333em;vertical-align:0em;"></span><span style="margin-right:0.10903em;">N</span></span></span></span> 點，那麼頻率間隔為何？</li>
+<li>如果我們希望看到的最小頻率間隔要小一點，那麼時間取樣部份應該要做怎樣的調整？</li>
+<li>如果我們希望看到的最大頻率成份要大一點，那麼時間取樣部份應該要做怎樣的調整？</li>
+</ol>
+]]></content:encoded>
+    </item>
+    <item>
       <title>目錄</title>
       <link>https://www.jywglady.org/sdr/sdr/contents/</link>
       <guid>https://www.jywglady.org/sdr/sdr/contents/</guid>
@@ -375,26 +329,49 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span>​</span></span><
 ]]></content:encoded>
     </item>
     <item>
-      <title>AM 訊號解碼</title>
-      <link>https://www.jywglady.org/sdr/sdr/contents/ToPython/amDec/</link>
-      <guid>https://www.jywglady.org/sdr/sdr/contents/ToPython/amDec/</guid>
-      <source url="https://www.jywglady.org/sdr/sdr/rss.xml">AM 訊號解碼</source>
-      <pubDate>Sun, 09 May 2021 07:32:09 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="am-訊號解碼"> AM 訊號解碼</h1>
-<p>把頻道調到中心點之後，接著用一個低通濾波器，就可以把想要的訊號保留住，而把其他電台的訊號濾除掉。這時的訊號仍是 AM 調變過的訊號，因此只要使用 AM 的解碼模塊，就可以將訊號解碼了。</p>
-<p>將上一個系統擴充如下圖：</p>
-<p><img src="./Fig/2021-05-08-21-16-39.png" alt=""></p>
-<p>這邊我們加了幾個元件，首先是低通濾波器，這邊 Cutoff Freq 設定為 5e3，過渡帶設定為 100（為什麼這樣設呢？），接下來訊號接到 AM Demod 進行 AM 的解碼。其中的參數 Channel Rate 設定 256e3，而 Audio Decimation 設為 8，也就是將解碼出來的訊號，其抽樣速度改成 256K/8 = 32K。因此接下來就可以透過 Audio Sink 進行播放，不過播放之前，我們先乘上一個常數，以便用來調整播放的音量，而所乘的常數則使用 QT GUI Range，便於在執行時進行調整。注意這邊 Audio Sink 的 samp_rate 要設定成 32K。</p>
-<p>如果沒有接錯的話，存檔執行之後，就可以調整電台的頻道及播放的音量了。</p>
-<p>實際上，上面調整頻道的過程：把訊號和一個 Signal Source 做相乘，然後再經過低通濾波，實在太常使用了，因此 GNU Radio 提供了一個 Frequency Xlating FIR Filter 模組來做這件事。這個模組就是把訊號原來的中心點移到新的頻率，並且以新的頻率為中心做低通濾波，來保留所要的頻道訊號。</p>
-<p>試著將系統改成如下圖所示：</p>
-<p><img src="./Fig/2021-05-08-22-17-17.png" alt=""></p>
-<p>其中 Frequency Xlating FIR Filter 模組的參數如下：</p>
-<ul>
-<li>Taps: firdes.low_pass(1, 256e3, 5000, 100)：表示增益為 1，抽樣速度為 256K，保留頻帶到 5K，過濾帶為 100。</li>
-<li>Center Frequency: fc-710e3：原來中心 0 的地方為 710e3，現在則以 fc 為中心。</li>
-</ul>
-<p>使用 Frequency Xlating FIR Filter 可以讓系統看起來更清爽，不過缺點是調整過頻率而還沒有濾波的中間訊號，沒有辦法拉出來用 Frequency Sink 來進行觀察。</p>
+      <title>傅立葉變換-05</title>
+      <link>https://www.jywglady.org/sdr/sdr/contents/FFT/Fourier-05/</link>
+      <guid>https://www.jywglady.org/sdr/sdr/contents/FFT/Fourier-05/</guid>
+      <source url="https://www.jywglady.org/sdr/sdr/rss.xml">傅立葉變換-05</source>
+      <pubDate>Mon, 15 Mar 2021 05:40:34 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="傅立葉變換-05"> 傅立葉變換-05</h1>
+<p>現在我們來看一點數學。首先看一下這個模擬圖：</p>
+<p align="center">
+<Euler></Euler>
+</p>
+<p>這邊橘色點在單位圓上繞行，假設綠色線段和 x 軸的交角為 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.69444em;vertical-align:0em;"></span><span style="margin-right:0.02778em;">θ</span></span></span></span>，那麼橘點的位置應該在
+<span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>cos</span><span>(</span><span style="margin-right:0.02778em;">θ</span><span>)</span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span></span><span><span style="height:1em;vertical-align:-0.25em;"></span><span>i</span><span style="margin-right:0.16666666666666666em;"></span><span>sin</span><span>(</span><span style="margin-right:0.02778em;">θ</span><span>)</span></span></span></span> 的位置，或者我們也可以把它寫成 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.849108em;vertical-align:0em;"></span><span><span>e</span><span><span><span><span style="height:0.849108em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>i</span><span style="margin-right:0.02778em;">θ</span></span></span></span></span></span></span></span></span></span></span></span> (尤拉公式)。
+如果橘點的角速度是 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.43056em;vertical-align:0em;"></span><span style="margin-right:0.03588em;">ω</span></span></span></span>，那它在時間 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.61508em;vertical-align:0em;"></span><span>t</span></span></span></span> 的位置可以寫成 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.824664em;vertical-align:0em;"></span><span><span>e</span><span><span><span><span style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.03588em;">iω</span><span>t</span></span></span></span></span></span></span></span></span></span></span></span>。
+注意在這種表示法中，指數部份每增加 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.64444em;vertical-align:0em;"></span><span>2</span><span style="margin-right:0.03588em;">π</span></span></span></span> 表示剛好繞一圈，所以 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.824664em;vertical-align:0em;"></span><span><span>e</span><span><span><span><span style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>i</span><span>2</span><span style="margin-right:0.03588em;">π</span></span></span></span></span></span></span></span></span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:0.824664em;vertical-align:0em;"></span><span><span>e</span><span><span><span><span style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>i</span><span>0</span></span></span></span></span></span></span></span></span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:0.64444em;vertical-align:0em;"></span><span>1</span></span></span></span>。</p>
+<p>現在考慮 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.68333em;vertical-align:0em;"></span><span style="margin-right:0.10903em;">N</span></span></span></span> 個跑者，有 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.68333em;vertical-align:0em;"></span><span style="margin-right:0.10903em;">N</span></span></span></span> 個取樣時間點 (<span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>0</span><span>,</span><span style="margin-right:0.16666666666666666em;"></span><span>1/</span><span style="margin-right:0.10903em;">N</span><span>,</span><span style="margin-right:0.16666666666666666em;"></span><span>2/</span><span style="margin-right:0.10903em;">N</span><span>,</span><span style="margin-right:0.16666666666666666em;"></span><span>⋯</span><span style="margin-right:0.16666666666666666em;"></span><span style="margin-right:0.16666666666666666em;"></span><span>,</span><span style="margin-right:0.16666666666666666em;"></span><span>(</span><span style="margin-right:0.10903em;">N</span><span style="margin-right:0.2222222222222222em;"></span><span>−</span><span style="margin-right:0.2222222222222222em;"></span></span><span><span style="height:1em;vertical-align:-0.25em;"></span><span>1</span><span>)</span><span>/</span><span style="margin-right:0.10903em;">N</span></span></span></span>) 的問題。如果全部的振幅都是 1，開始的角度都是 0，那麼就像前面所討論過的，第一個取樣值應該是 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.68333em;vertical-align:0em;"></span><span style="margin-right:0.10903em;">N</span></span></span></span>，而其他 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.76666em;vertical-align:-0.08333em;"></span><span style="margin-right:0.10903em;">N</span><span style="margin-right:0.2222222222222222em;"></span><span>−</span><span style="margin-right:0.2222222222222222em;"></span></span><span><span style="height:0.64444em;vertical-align:0em;"></span><span>1</span></span></span></span> 個取樣值都是 0。</p>
+<p>那怎樣讓第 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.43056em;vertical-align:0em;"></span><span>n</span></span></span></span> 個取樣值是 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.68333em;vertical-align:0em;"></span><span style="margin-right:0.10903em;">N</span></span></span></span>，而其他值是 0 呢？先看 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.43056em;vertical-align:0em;"></span><span>n</span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:0.64444em;vertical-align:0em;"></span><span>2</span></span></span></span> 的情況，也就是到了第二個取樣時間點所有跑者才重合的情況，那如果我們把時間倒回去第一個取樣點，也就是倒退 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>1/</span><span style="margin-right:0.10903em;">N</span></span></span></span> 秒，會發生什麼事呢？基本上就是把速度 1 的跑者倒退 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>1/</span><span style="margin-right:0.10903em;">N</span></span></span></span> 圈，速度 2 的跑者倒退 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>2/</span><span style="margin-right:0.10903em;">N</span></span></span></span> 圈，依此類推就可以了。換句話說，這 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.68333em;vertical-align:0em;"></span><span style="margin-right:0.10903em;">N</span></span></span></span> 個跑者的起始位置應該是：</p>
+<p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1.13244em;vertical-align:-0.19444em;"></span><span>1</span><span>,</span><span style="margin-right:0.16666666666666666em;"></span><span><span>e</span><span><span><span><span style="height:0.938em;"><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span>i</span><span>2</span><span style="margin-right:0.03588em;">π</span><span>/</span><span style="margin-right:0.10903em;">N</span></span></span></span></span></span></span></span></span><span>,</span><span style="margin-right:0.16666666666666666em;"></span><span><span>e</span><span><span><span><span style="height:0.938em;"><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span>i</span><span>4</span><span style="margin-right:0.03588em;">π</span><span>/</span><span style="margin-right:0.10903em;">N</span></span></span></span></span></span></span></span></span><span>,</span><span style="margin-right:0.16666666666666666em;"></span><span>⋯</span><span style="margin-right:0.16666666666666666em;"></span><span style="margin-right:0.16666666666666666em;"></span><span>,</span><span style="margin-right:0.16666666666666666em;"></span><span><span>e</span><span><span><span><span style="height:0.938em;"><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>−</span><span>i</span><span>2</span><span>(</span><span style="margin-right:0.10903em;">N</span><span>−</span><span>1</span><span>)</span><span style="margin-right:0.03588em;">π</span><span>/</span><span style="margin-right:0.10903em;">N</span></span></span></span></span></span></span></span></span></span></span></span></span></p>
+<p>思考一下上面的數學式，等到理解了再回答下面的問題。</p>
+<br>
+<exercise></exercise>
+<ol>
+<li>跟上面類似的推論，當 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.43056em;vertical-align:0em;"></span><span>n</span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:0.64444em;vertical-align:0em;"></span><span>3</span></span></span></span> 的情況下，<span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.68333em;vertical-align:0em;"></span><span style="margin-right:0.10903em;">N</span></span></span></span> 個跑者的起始位置在哪裡？</li>
+<li>一般 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.43056em;vertical-align:0em;"></span><span>n</span></span></span></span> 值的情況呢（<span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.78041em;vertical-align:-0.13597em;"></span><span>1</span><span style="margin-right:0.2777777777777778em;"></span><span>≤</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:0.7719400000000001em;vertical-align:-0.13597em;"></span><span>n</span><span style="margin-right:0.2777777777777778em;"></span><span>≤</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:0.68333em;vertical-align:0em;"></span><span style="margin-right:0.10903em;">N</span></span></span></span>）？先想一想，再往下看。</li>
+</ol>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>傅立葉變換-12</title>
+      <link>https://www.jywglady.org/sdr/sdr/contents/FFT/Fourier-12/</link>
+      <guid>https://www.jywglady.org/sdr/sdr/contents/FFT/Fourier-12/</guid>
+      <source url="https://www.jywglady.org/sdr/sdr/rss.xml">傅立葉變換-12</source>
+      <pubDate>Mon, 15 Mar 2021 05:40:34 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="傅立葉變換-12"> 傅立葉變換-12</h1>
+<p>這個單元是要解釋模擬圖中的 Derive 選項，會略為複雜一點，如果不能理解，可以略過。</p>
+<p>在我們的模擬程式中，有一個 Derive 的選項，把它勾選起來，會跑出一個反方向的成份波，其頻率就是 Derive 右邊框框的數字。而在波點移動的過程中，每次到達取樣點時，會跑出一個紅點，它的高度就是反向波的值乘以總和訊號的時間取樣值。最後，當圖中所有取樣時間都跑過之後，模擬程式會把所有紅點的高度加總，然後計算其平均值，這也就是閃爍出現的文字的實數部份。</p>
+<FourierCircular freqs="0 1" disfreq="true"/>
+<br>
+<exercise></exercise>
+<ol>
+<li>你知道這個平均值有何意義嗎？</li>
+<li>其實模擬程式不只顯示平均的實數值，同時也會顯示一個平均的虛數值，你知道這個虛數值有何意義嗎？</li>
+<li>不只實數和虛數，其實還有一個方括號，裡面可能有一個或兩個數，你知道它們的意義為何嗎？</li>
+</ol>
 ]]></content:encoded>
     </item>
     <item>
@@ -428,26 +405,6 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span>​</span></span><
 <br>
 <exercise></exercise>
 <p>從訊號的頻譜中觀察，這個訊號檔案可以觀察到頻率範圍為何？相隔的兩個電台頻道，頻率上大概差多少？每個頻道的頻寬大約多少？</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>自己做訊號解碼</title>
-      <link>https://www.jywglady.org/sdr/sdr/contents/ToPython/amDec2/</link>
-      <guid>https://www.jywglady.org/sdr/sdr/contents/ToPython/amDec2/</guid>
-      <source url="https://www.jywglady.org/sdr/sdr/rss.xml">自己做訊號解碼</source>
-      <pubDate>Sun, 09 May 2021 07:32:09 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="自己做訊號解碼"> 自己做訊號解碼</h1>
-<p>我們剛才使用系統提供的 AM Demod 模組來解碼 AM 的訊號，但其實 AM 訊號很單純，它使用載波來傳送訊號，而載波的振幅變化，其實就是我們的訊號。了解這個原理之後，其實我們也可以自己來進行解碼。</p>
-<p>解碼的方式，是先找到訊號的振幅，怎麼找呢？因為收到的訊號實際是複數值，因此只要求出其振幅就可以了，GNU Radio 中有一個模組叫做 Complex to Mag，就是用來找複數訊號的振幅，找出來的就是我們的訊號，接著可以將訊號的抽樣率降下來，以便送到 Audio Sink 播放。在播放之前，也可以先去掉訊號的直流成份，以及調整訊號的增益。</p>
-<p>系統的架構如下：</p>
-<p><img src="./Fig/2021-05-08-22-37-47.png" alt=""></p>
-<p>存檔並執行之後，發現也可以將訊號解碼出來，不過解出來的訊號似乎沒有 AM Demod 解出來的訊號來得清晰。</p>
-<br>
-<exercise></exercise>
-<ol>
-<li>實際上，我們使用 Complex to Mag 得到的是載波振幅的變化，但我們真正的訊號應該是載波的振幅波包才對，這兩者還是有一點點小差別的。請說明這兩者的差別為何？</li>
-<li>試著將上圖中的 Rational Resampler 改成 Low Pass Filter，Decimation 一樣設成 8，但是 Cutoff frequency 和 Transition Width 可以設得比 5K 和 100 再小一點，看解碼出來的訊號有何影響？</li>
-</ol>
 ]]></content:encoded>
     </item>
     <item>
@@ -525,7 +482,7 @@ be the parameters. All of them are required to have default values!
         <span>for</span> i <span>in</span> <span>range</span><span>(</span><span>1</span><span>,</span> ilen<span>)</span><span>:</span>
             output_items<span>[</span><span>0</span><span>]</span><span>[</span>i<span>]</span> <span>=</span> w0 <span>*</span> idata<span>[</span>i<span>]</span> <span>+</span> w1 <span>*</span> output_items<span>[</span><span>0</span><span>]</span><span>[</span>i<span>-</span><span>1</span><span>]</span>
         
-        self<span>.</span>lasts <span>=</span> idata<span>[</span>ilen<span>-</span><span>1</span><span>]</span>
+        self<span>.</span>lasts <span>=</span> output_items<span>[</span><span>0</span><span>]</span><span>[</span>ilen<span>-</span><span>1</span><span>]</span>
         <span>return</span> ilen
 </code></pre>
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br></div></div><p>這裡我們把模組命名為 My Am Demod，另外在程式第 26 行的位置，我們把輸入的最後一個元素保留下來，主要給下一回合使用（程式第 22 行）。</p>
@@ -537,6 +494,49 @@ be the parameters. All of them are required to have default values!
 <exercise></exercise>
 <p>在上面的系統架構中，我們使用了 Complex to Mag 模組，把複數的部份變成其振幅大小，之後才連接我們自製的 Python 模組。
 現在試著把 Complex to Mag 這個模組的功能，一起放到我們的 Python 模組當中。(提示：把輸入的型態從 float32 改成 complex64，就可以改變輸入的資料類型。另外，使用 np.abs(x) 可以把 x 陣列中每個複數值都變成其絕對值大小)</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>自己做訊號解碼</title>
+      <link>https://www.jywglady.org/sdr/sdr/contents/ToPython/amDec2/</link>
+      <guid>https://www.jywglady.org/sdr/sdr/contents/ToPython/amDec2/</guid>
+      <source url="https://www.jywglady.org/sdr/sdr/rss.xml">自己做訊號解碼</source>
+      <pubDate>Sun, 09 May 2021 07:32:09 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="自己做訊號解碼"> 自己做訊號解碼</h1>
+<p>我們剛才使用系統提供的 AM Demod 模組來解碼 AM 的訊號，但其實 AM 訊號很單純，它使用載波來傳送訊號，而載波的振幅變化，其實就是我們的訊號。了解這個原理之後，其實我們也可以自己來進行解碼。</p>
+<p>解碼的方式，是先找到訊號的振幅，怎麼找呢？因為收到的訊號實際是複數值，因此只要求出其振幅就可以了，GNU Radio 中有一個模組叫做 Complex to Mag，就是用來找複數訊號的振幅，找出來的就是我們的訊號，接著可以將訊號的抽樣率降下來，以便送到 Audio Sink 播放。在播放之前，也可以先去掉訊號的直流成份，以及調整訊號的增益。</p>
+<p>系統的架構如下：</p>
+<p><img src="./Fig/2021-05-08-22-37-47.png" alt=""></p>
+<p>存檔並執行之後，發現也可以將訊號解碼出來，不過解出來的訊號似乎沒有 AM Demod 解出來的訊號來得清晰。</p>
+<br>
+<exercise></exercise>
+<ol>
+<li>實際上，我們使用 Complex to Mag 得到的是載波振幅的變化，但我們真正的訊號應該是載波的振幅波包才對，這兩者還是有一點點小差別的。請說明這兩者的差別為何？</li>
+<li>試著將上圖中的 Rational Resampler 改成 Low Pass Filter，Decimation 一樣設成 8，但是 Cutoff frequency 和 Transition Width 可以設得比 5K 和 100 再小一點，看解碼出來的訊號有何影響？</li>
+</ol>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>AM 訊號解碼</title>
+      <link>https://www.jywglady.org/sdr/sdr/contents/ToPython/amDec/</link>
+      <guid>https://www.jywglady.org/sdr/sdr/contents/ToPython/amDec/</guid>
+      <source url="https://www.jywglady.org/sdr/sdr/rss.xml">AM 訊號解碼</source>
+      <pubDate>Sun, 09 May 2021 07:32:09 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="am-訊號解碼"> AM 訊號解碼</h1>
+<p>把頻道調到中心點之後，接著用一個低通濾波器，就可以把想要的訊號保留住，而把其他電台的訊號濾除掉。這時的訊號仍是 AM 調變過的訊號，因此只要使用 AM 的解碼模塊，就可以將訊號解碼了。</p>
+<p>將上一個系統擴充如下圖：</p>
+<p><img src="./Fig/2021-05-08-21-16-39.png" alt=""></p>
+<p>這邊我們加了幾個元件，首先是低通濾波器，這邊 Cutoff Freq 設定為 5e3，過渡帶設定為 100（為什麼這樣設呢？），接下來訊號接到 AM Demod 進行 AM 的解碼。其中的參數 Channel Rate 設定 256e3，而 Audio Decimation 設為 8，也就是將解碼出來的訊號，其抽樣速度改成 256K/8 = 32K。因此接下來就可以透過 Audio Sink 進行播放，不過播放之前，我們先乘上一個常數，以便用來調整播放的音量，而所乘的常數則使用 QT GUI Range，便於在執行時進行調整。注意這邊 Audio Sink 的 samp_rate 要設定成 32K。</p>
+<p>如果沒有接錯的話，存檔執行之後，就可以調整電台的頻道及播放的音量了。</p>
+<p>實際上，上面調整頻道的過程：把訊號和一個 Signal Source 做相乘，然後再經過低通濾波，實在太常使用了，因此 GNU Radio 提供了一個 Frequency Xlating FIR Filter 模組來做這件事。這個模組就是把訊號原來的中心點移到新的頻率，並且以新的頻率為中心做低通濾波，來保留所要的頻道訊號。</p>
+<p>試著將系統改成如下圖所示：</p>
+<p><img src="./Fig/2021-05-08-22-17-17.png" alt=""></p>
+<p>其中 Frequency Xlating FIR Filter 模組的參數如下：</p>
+<ul>
+<li>Taps: firdes.low_pass(1, 256e3, 5000, 100)：表示增益為 1，抽樣速度為 256K，保留頻帶到 5K，過濾帶為 100。</li>
+<li>Center Frequency: fc-710e3：原來中心 0 的地方為 710e3，現在則以 fc 為中心。</li>
+</ul>
+<p>使用 Frequency Xlating FIR Filter 可以讓系統看起來更清爽，不過缺點是調整過頻率而還沒有濾波的中間訊號，沒有辦法拉出來用 Frequency Sink 來進行觀察。</p>
 ]]></content:encoded>
     </item>
     <item>
@@ -618,6 +618,28 @@ be the parameters. All of them are required to have default values!
 ]]></content:encoded>
     </item>
     <item>
+      <title>模擬參數</title>
+      <link>https://www.jywglady.org/sdr/sdr/contents/gnuradio/Parameters/</link>
+      <guid>https://www.jywglady.org/sdr/sdr/contents/gnuradio/Parameters/</guid>
+      <source url="https://www.jywglady.org/sdr/sdr/rss.xml">模擬參數</source>
+      <pubDate>Sun, 28 Mar 2021 14:59:02 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="模擬參數"> 模擬參數</h1>
+<p>在上面的模擬中，我們使用的都是預設的參數。實際上，每個模組都可以根據模組功能進行相關參數的設定。</p>
+<p>在工作區的 Variable (id: samp_rate) 上面快按兩下，會出現以下畫面。</p>
+<p><img src="./Fig/variable.png" alt=""></p>
+<p>Variable 模組主要用來設定變數。這邊 id=samp_rate, value=32000，意思是設定 samp_rate=32000，samp_rate 這個變數值主要是用做系統模擬時的抽樣頻率。</p>
+<p>接下來快按 Signal Source 模組兩下，會出現以下畫面。</p>
+<p><img src="./Fig/signalsource.png" alt=""></p>
+<p>這邊可以看到這個訊號源的抽樣率 (Sample Rate) 為 samp_rate，也就是上面那個變數方塊的值。另外訊號輸出為 complex，波形為 Cosine，頻率為 1000，振幅為 1，直流偏差和相位偏差都是 0。</p>
+<p>接下來快按 Throttle 模組兩下，會出現以下畫面。</p>
+<p><img src="./Fig/throttle.png" alt=""></p>
+<p>這邊訊號類型為 complex，與訊號源的形式一樣；抽樣率也是 samp_rate。其餘的設定目前先不去管它。</p>
+<p>再來快按 QT GUI Frequency Sink 模組兩下，出現以下結果。</p>
+<p><img src="./Fig/qtfftsink.png" alt=""></p>
+<p>這個模組參數很多，滾動滑鼠可以看到下面還有。不過目前我們主要關注以下幾個參數：輸出形式也是 complex, FFT Size 為 1024，另外 Bandwidth 也是 samp_rate。</p>
+]]></content:encoded>
+    </item>
+    <item>
       <title>安裝 GNU Radio</title>
       <link>https://www.jywglady.org/sdr/sdr/contents/gnuradio/Install/</link>
       <guid>https://www.jywglady.org/sdr/sdr/contents/gnuradio/Install/</guid>
@@ -675,28 +697,6 @@ be the parameters. All of them are required to have default values!
 ]]></content:encoded>
     </item>
     <item>
-      <title>模擬參數</title>
-      <link>https://www.jywglady.org/sdr/sdr/contents/gnuradio/Parameters/</link>
-      <guid>https://www.jywglady.org/sdr/sdr/contents/gnuradio/Parameters/</guid>
-      <source url="https://www.jywglady.org/sdr/sdr/rss.xml">模擬參數</source>
-      <pubDate>Sun, 28 Mar 2021 14:59:02 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="模擬參數"> 模擬參數</h1>
-<p>在上面的模擬中，我們使用的都是預設的參數。實際上，每個模組都可以根據模組功能進行相關參數的設定。</p>
-<p>在工作區的 Variable (id: samp_rate) 上面快按兩下，會出現以下畫面。</p>
-<p><img src="./Fig/variable.png" alt=""></p>
-<p>Variable 模組主要用來設定變數。這邊 id=samp_rate, value=32000，意思是設定 samp_rate=32000，samp_rate 這個變數值主要是用做系統模擬時的抽樣頻率。</p>
-<p>接下來快按 Signal Source 模組兩下，會出現以下畫面。</p>
-<p><img src="./Fig/signalsource.png" alt=""></p>
-<p>這邊可以看到這個訊號源的抽樣率 (Sample Rate) 為 samp_rate，也就是上面那個變數方塊的值。另外訊號輸出為 complex，波形為 Cosine，頻率為 1000，振幅為 1，直流偏差和相位偏差都是 0。</p>
-<p>接下來快按 Throttle 模組兩下，會出現以下畫面。</p>
-<p><img src="./Fig/throttle.png" alt=""></p>
-<p>這邊訊號類型為 complex，與訊號源的形式一樣；抽樣率也是 samp_rate。其餘的設定目前先不去管它。</p>
-<p>再來快按 QT GUI Frequency Sink 模組兩下，出現以下結果。</p>
-<p><img src="./Fig/qtfftsink.png" alt=""></p>
-<p>這個模組參數很多，滾動滑鼠可以看到下面還有。不過目前我們主要關注以下幾個參數：輸出形式也是 complex, FFT Size 為 1024，另外 Bandwidth 也是 samp_rate。</p>
-]]></content:encoded>
-    </item>
-    <item>
       <title>幾個小問題</title>
       <link>https://www.jywglady.org/sdr/sdr/contents/gnuradio/Questions/</link>
       <guid>https://www.jywglady.org/sdr/sdr/contents/gnuradio/Questions/</guid>
@@ -742,33 +742,6 @@ be the parameters. All of them are required to have default values!
 ]]></content:encoded>
     </item>
     <item>
-      <title>GNU Radio 簡介</title>
-      <link>https://www.jywglady.org/sdr/sdr/contents/gnuradio/</link>
-      <guid>https://www.jywglady.org/sdr/sdr/contents/gnuradio/</guid>
-      <source url="https://www.jywglady.org/sdr/sdr/rss.xml">GNU Radio 簡介</source>
-      <pubDate>Mon, 15 Mar 2021 04:56:04 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="gnu-radio-簡介"> GNU Radio 簡介</h1>
-<p>GNU Radio 是一個開源的軟體，提供了許多各種通訊所需要的模組功能，可以讓使用者依據通訊系統的需用來進行系統的設計。例如下圖，便是一個簡單的 GMSK 的通訊設計範例：</p>
-<div>
-<p><img src="./Fig/Example_flowgraph.png" alt="example_flowgraph.png"></p>
-<p>圖片來源：<a href="https://wiki.gnuradio.org/index.php/Guided_Tutorial_Introduction" target="_blank" rel="noopener noreferrer">GNU Radio 官網</a></p>
-</div>
-<p>在上圖中，我們用到了許多模組方塊，這些模組全部都是 GNU Radio 所提供的，使用者只要調整其中的參數，以及適當將這些模組連接起來，就可以進行系統的模擬，所以非常的便利。</p>
-<p>GNU Radio 所提供的通訊模組類別很多，以下簡列一些經常使用到的類別：</p>
-<ul>
-<li>Waveform Generators: 產生各種訊號源</li>
-<li>Modulators: 實現各種不同的調變技術</li>
-<li>Instrumentation: 模擬各種視覺量測儀器，例如示波器</li>
-<li>Math Operators: 各種數學運算</li>
-<li>Channel Models: 模擬各種通道模型</li>
-<li>Filters: 各種濾波器功能</li>
-<li>Fourier Analysis: 各種傅立葉分析相關的運算</li>
-</ul>
-<p>上述的每一個類別都提供了很多模組，使用者可以利用其中的各種模組，用流程圖的方式把各種模組連接在一起，來建構一個模擬系統，並設定適當的參數，接著便可使用 GNU Radio 產出相關的應用程式來進行模擬，而過程中所產生的各種數據，也可以使用一些視覺化的模組元件來進行觀察，可以說是非常方便好用的工具。</p>
-<p>GNU Radio 大多是在 Unix-based 的環境中使用，以 Linux 最常見的 Ubuntu 發行版來說，其中已經包括 GNU Radio 的套件，安裝上非常方便和容易。在官網中，也有說明如何在 Windows 或 MacOS 的系統上進行安裝，但一般來說，安裝較為麻煩。另外，使用上可能也沒有 Ubuntu 中來得穩定便利，因此以下將說明如何在 Ubuntu 中進行安裝。</p>
-]]></content:encoded>
-    </item>
-    <item>
       <title>觀察訊號頻譜的實驗</title>
       <link>https://www.jywglady.org/sdr/sdr/contents/gnuradio/Spectrum/</link>
       <guid>https://www.jywglady.org/sdr/sdr/contents/gnuradio/Spectrum/</guid>
@@ -785,6 +758,58 @@ be the parameters. All of them are required to have default values!
 <p>修改完成之後，重新按下三角形圖示左邊那個鈕，產生新的 Python 模擬檔案，然後再按三角形圖示鈕來執行系統模擬，得到以下的結果。</p>
 <p><img src="./Fig/freqsim.png" alt=""></p>
 <p>注意在輸出的視窗中，多了一個 freq 的捲動棒，試著調整它的值，看輸出有何變化。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>第一個簡單的模擬</title>
+      <link>https://www.jywglady.org/sdr/sdr/contents/gnuradio/SignalFFT/</link>
+      <guid>https://www.jywglady.org/sdr/sdr/contents/gnuradio/SignalFFT/</guid>
+      <source url="https://www.jywglady.org/sdr/sdr/rss.xml">第一個簡單的模擬</source>
+      <pubDate>Sun, 28 Mar 2021 14:59:02 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="第一個簡單的模擬"> 第一個簡單的模擬</h1>
+<p>使用鍵盤視窗鍵，或點選左下角的「Show Applications」，搜尋「gnuradio-companion」程式，打開如下圖所示。
+<img src="./Fig/gnuradio.png" alt=""></p>
+<p>圖中有五個區域，分別為：</p>
+<ol>
+<li>選單列</li>
+<li>工作區</li>
+<li>編譯訊息</li>
+<li>變數資訊</li>
+<li>模組程式庫</li>
+</ol>
+<p><strong>模組程式庫</strong></p>
+<p>提供各種系統模組，可以直接拿來進行系統建構及模擬，使用者只要設定參數即可。另外，使用者也可以利用現有的元件，架構更高層次的模組元件；或者利用 C++ / Python 撰寫新的元件。</p>
+<p>模組程式庫基本上分成很多類別，有時候我們不太清楚要找的模組在哪一個類別，比較簡單的方式，是使用搜尋的方法。按下 Ctrl+F，就會出現搜尋框，這時只要打幾個關鍵字，就會出現相關名字的模組，非常方便。</p>
+<p>練習1：請找出訊號源 Signal Source，按兩下或拖到中間的工作區。</p>
+<p>練習2：接著找出 Throttle 元件，一樣接到中間的工作區。</p>
+<p>練習3：接下來找 QT GUI Frequency Sink，拉到中間的工作區。</p>
+<p><strong>工作區</strong></p>
+<p>主要用來架構模擬系統，包括模組的連接，以及各種參數的設定等。要連接兩個模組，只要點選來源模組右方的輸出標示，然後再點選接收模組左方的輸入標示即可。現在依次將三個模組連接如下圖所示：</p>
+<p><img src="./Fig/signalfft.png" alt=""></p>
+<p>接著點選工作區左上方的 Options 方塊，在 id 欄位填入 basic01，Title 欄位改成 Basic 01。另外 Generate Options 確定出現的是 QT 的圖形選項。如下圖所示。完成後按下確定。</p>
+<p><img src="./Fig/options.png" alt=""></p>
+<p><strong>選單列</strong></p>
+<p>選單列及工具圖示提供各種系統常見的操作，例如檔案存取、工作區編輯、系統模擬、其他工具或說明等功能。</p>
+<p>現在使用 File =&gt; Save (或工具列的第三個圖示) 將檔案存檔。檔名盡量不要出現空白，並使用英文名稱，例如 basic01.grc。</p>
+<p>接下來按一下工具列中間三角形圖案左邊的圖示 (當滑鼠移到圖上的位置時，會出現 Generate the flow graph 的訊息)。這個圖示的意思，是要產生模擬系統的 (python) 程式碼。</p>
+<p><strong>編譯訊息</strong></p>
+<p>按下上面的圖示之後，會在這個區域看到編譯的訊息。這邊顯示的，是已經產生 basic01.py 的訊息，編譯過程沒有發生任何的錯誤。</p>
+<p><img src="./Fig/generate.png" alt=""></p>
+<p><strong>變數資訊</strong></p>
+<p>在上圖中，還可以看到右邊的變數資訊區域。這裡顯示的變數是 samp_rate，它的值是 32000，代表系統的模擬抽樣頻率是 32000 Hz。</p>
+<p><strong>系統模擬</strong></p>
+<p>上述的每個步驟都完成之後，按下選單工具列的三角形圖示，系統會開始進行模擬，並出現以下的結果。</p>
+<p><img src="./Fig/basic01sim.png" alt=""></p>
+<p>這個圖就是發送訊號的頻譜，從圖中可以看出來，訊號主要集中在 1K Hz，這也是發送訊號的預設參數。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>GNU Radio Basic</title>
+      <link>https://www.jywglady.org/sdr/sdr/contents/grbasic/</link>
+      <guid>https://www.jywglady.org/sdr/sdr/contents/grbasic/</guid>
+      <source url="https://www.jywglady.org/sdr/sdr/rss.xml">GNU Radio Basic</source>
+      <pubDate>Mon, 22 Mar 2021 07:03:06 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="gnu-radio-basic"> GNU Radio Basic</h1>
 ]]></content:encoded>
     </item>
     <item>
@@ -847,58 +872,6 @@ be the parameters. All of them are required to have default values!
 ]]></content:encoded>
     </item>
     <item>
-      <title>GNU Radio Basic</title>
-      <link>https://www.jywglady.org/sdr/sdr/contents/grbasic/</link>
-      <guid>https://www.jywglady.org/sdr/sdr/contents/grbasic/</guid>
-      <source url="https://www.jywglady.org/sdr/sdr/rss.xml">GNU Radio Basic</source>
-      <pubDate>Mon, 22 Mar 2021 07:03:06 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="gnu-radio-basic"> GNU Radio Basic</h1>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>第一個簡單的模擬</title>
-      <link>https://www.jywglady.org/sdr/sdr/contents/gnuradio/SignalFFT/</link>
-      <guid>https://www.jywglady.org/sdr/sdr/contents/gnuradio/SignalFFT/</guid>
-      <source url="https://www.jywglady.org/sdr/sdr/rss.xml">第一個簡單的模擬</source>
-      <pubDate>Sun, 28 Mar 2021 14:59:02 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="第一個簡單的模擬"> 第一個簡單的模擬</h1>
-<p>使用鍵盤視窗鍵，或點選左下角的「Show Applications」，搜尋「gnuradio-companion」程式，打開如下圖所示。
-<img src="./Fig/gnuradio.png" alt=""></p>
-<p>圖中有五個區域，分別為：</p>
-<ol>
-<li>選單列</li>
-<li>工作區</li>
-<li>編譯訊息</li>
-<li>變數資訊</li>
-<li>模組程式庫</li>
-</ol>
-<p><strong>模組程式庫</strong></p>
-<p>提供各種系統模組，可以直接拿來進行系統建構及模擬，使用者只要設定參數即可。另外，使用者也可以利用現有的元件，架構更高層次的模組元件；或者利用 C++ / Python 撰寫新的元件。</p>
-<p>模組程式庫基本上分成很多類別，有時候我們不太清楚要找的模組在哪一個類別，比較簡單的方式，是使用搜尋的方法。按下 Ctrl+F，就會出現搜尋框，這時只要打幾個關鍵字，就會出現相關名字的模組，非常方便。</p>
-<p>練習1：請找出訊號源 Signal Source，按兩下或拖到中間的工作區。</p>
-<p>練習2：接著找出 Throttle 元件，一樣接到中間的工作區。</p>
-<p>練習3：接下來找 QT GUI Frequency Sink，拉到中間的工作區。</p>
-<p><strong>工作區</strong></p>
-<p>主要用來架構模擬系統，包括模組的連接，以及各種參數的設定等。要連接兩個模組，只要點選來源模組右方的輸出標示，然後再點選接收模組左方的輸入標示即可。現在依次將三個模組連接如下圖所示：</p>
-<p><img src="./Fig/signalfft.png" alt=""></p>
-<p>接著點選工作區左上方的 Options 方塊，在 id 欄位填入 basic01，Title 欄位改成 Basic 01。另外 Generate Options 確定出現的是 QT 的圖形選項。如下圖所示。完成後按下確定。</p>
-<p><img src="./Fig/options.png" alt=""></p>
-<p><strong>選單列</strong></p>
-<p>選單列及工具圖示提供各種系統常見的操作，例如檔案存取、工作區編輯、系統模擬、其他工具或說明等功能。</p>
-<p>現在使用 File =&gt; Save (或工具列的第三個圖示) 將檔案存檔。檔名盡量不要出現空白，並使用英文名稱，例如 basic01.grc。</p>
-<p>接下來按一下工具列中間三角形圖案左邊的圖示 (當滑鼠移到圖上的位置時，會出現 Generate the flow graph 的訊息)。這個圖示的意思，是要產生模擬系統的 (python) 程式碼。</p>
-<p><strong>編譯訊息</strong></p>
-<p>按下上面的圖示之後，會在這個區域看到編譯的訊息。這邊顯示的，是已經產生 basic01.py 的訊息，編譯過程沒有發生任何的錯誤。</p>
-<p><img src="./Fig/generate.png" alt=""></p>
-<p><strong>變數資訊</strong></p>
-<p>在上圖中，還可以看到右邊的變數資訊區域。這裡顯示的變數是 samp_rate，它的值是 32000，代表系統的模擬抽樣頻率是 32000 Hz。</p>
-<p><strong>系統模擬</strong></p>
-<p>上述的每個步驟都完成之後，按下選單工具列的三角形圖示，系統會開始進行模擬，並出現以下的結果。</p>
-<p><img src="./Fig/basic01sim.png" alt=""></p>
-<p>這個圖就是發送訊號的頻譜，從圖中可以看出來，訊號主要集中在 1K Hz，這也是發送訊號的預設參數。</p>
-]]></content:encoded>
-    </item>
-    <item>
       <title>前言</title>
       <link>https://www.jywglady.org/sdr/sdr/contents/preface/</link>
       <guid>https://www.jywglady.org/sdr/sdr/contents/preface/</guid>
@@ -926,6 +899,33 @@ be the parameters. All of them are required to have default values!
 <li>使用 GNU Radio 及 HackRF 的無線通訊</li>
 <li>Github 相關專案介紹與測試</li>
 </ol>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>GNU Radio 簡介</title>
+      <link>https://www.jywglady.org/sdr/sdr/contents/gnuradio/</link>
+      <guid>https://www.jywglady.org/sdr/sdr/contents/gnuradio/</guid>
+      <source url="https://www.jywglady.org/sdr/sdr/rss.xml">GNU Radio 簡介</source>
+      <pubDate>Mon, 15 Mar 2021 04:56:04 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="gnu-radio-簡介"> GNU Radio 簡介</h1>
+<p>GNU Radio 是一個開源的軟體，提供了許多各種通訊所需要的模組功能，可以讓使用者依據通訊系統的需用來進行系統的設計。例如下圖，便是一個簡單的 GMSK 的通訊設計範例：</p>
+<div>
+<p><img src="./Fig/Example_flowgraph.png" alt="example_flowgraph.png"></p>
+<p>圖片來源：<a href="https://wiki.gnuradio.org/index.php/Guided_Tutorial_Introduction" target="_blank" rel="noopener noreferrer">GNU Radio 官網</a></p>
+</div>
+<p>在上圖中，我們用到了許多模組方塊，這些模組全部都是 GNU Radio 所提供的，使用者只要調整其中的參數，以及適當將這些模組連接起來，就可以進行系統的模擬，所以非常的便利。</p>
+<p>GNU Radio 所提供的通訊模組類別很多，以下簡列一些經常使用到的類別：</p>
+<ul>
+<li>Waveform Generators: 產生各種訊號源</li>
+<li>Modulators: 實現各種不同的調變技術</li>
+<li>Instrumentation: 模擬各種視覺量測儀器，例如示波器</li>
+<li>Math Operators: 各種數學運算</li>
+<li>Channel Models: 模擬各種通道模型</li>
+<li>Filters: 各種濾波器功能</li>
+<li>Fourier Analysis: 各種傅立葉分析相關的運算</li>
+</ul>
+<p>上述的每一個類別都提供了很多模組，使用者可以利用其中的各種模組，用流程圖的方式把各種模組連接在一起，來建構一個模擬系統，並設定適當的參數，接著便可使用 GNU Radio 產出相關的應用程式來進行模擬，而過程中所產生的各種數據，也可以使用一些視覺化的模組元件來進行觀察，可以說是非常方便好用的工具。</p>
+<p>GNU Radio 大多是在 Unix-based 的環境中使用，以 Linux 最常見的 Ubuntu 發行版來說，其中已經包括 GNU Radio 的套件，安裝上非常方便和容易。在官網中，也有說明如何在 Windows 或 MacOS 的系統上進行安裝，但一般來說，安裝較為麻煩。另外，使用上可能也沒有 Ubuntu 中來得穩定便利，因此以下將說明如何在 Ubuntu 中進行安裝。</p>
 ]]></content:encoded>
     </item>
     <item>
@@ -1143,77 +1143,6 @@ grid on<span>;</span>
 ]]></content:encoded>
     </item>
     <item>
-      <title>信號還原</title>
-      <link>https://www.jywglady.org/sdr/sdr/contents/sampling/Recovery/</link>
-      <guid>https://www.jywglady.org/sdr/sdr/contents/sampling/Recovery/</guid>
-      <source url="https://www.jywglady.org/sdr/sdr/rss.xml">信號還原</source>
-      <pubDate>Mon, 15 Mar 2021 04:56:04 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="信號還原"> 信號還原</h1>
-<p>抽樣之後的信號，其頻譜會不斷重覆，如果抽樣夠快，使用一個低通濾波器便可以把信號還原回來。在頻率乘上一個低通濾波器，等於在時域上和 sinc 函數做摺積，其還原信號公式如下:</p>
-<p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>x</span><span>(</span><span>t</span><span>)</span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:2.959733em;vertical-align:-1.308336em;"></span><span><span><span><span style="height:1.6513970000000002em;"><span style="top:-1.8999949999999999em;margin-left:0em;"><span style="height:3.05em;"></span><span><span><span>n</span><span>=</span><span>−</span><span>∞</span></span></span></span><span style="top:-3.050005em;"><span style="height:3.05em;"></span><span><span>∑</span></span></span><span style="top:-4.3000050000000005em;margin-left:0em;"><span style="height:3.05em;"></span><span><span><span>∞</span></span></span></span></span><span>​</span></span><span><span style="height:1.308336em;"><span></span></span></span></span></span><span style="margin-right:0.16666666666666666em;"></span><span>x</span><span>(</span><span>n</span><span style="margin-right:0.13889em;">T</span><span>)</span><span style="margin-right:0.16666666666666666em;"></span><span><span>sinc</span></span><span>(</span><span><span></span><span><span><span><span style="height:1.36033em;"><span style="top:-2.314em;"><span style="height:3em;"></span><span><span style="margin-right:0.13889em;">T</span></span></span><span style="top:-3.23em;"><span style="height:3em;"></span><span style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span style="height:3em;"></span><span><span>t</span><span style="margin-right:0.2222222222222222em;"></span><span>−</span><span style="margin-right:0.2222222222222222em;"></span><span>n</span><span style="margin-right:0.13889em;">T</span></span></span></span><span>​</span></span><span><span style="height:0.686em;"><span></span></span></span></span></span><span></span></span><span>)</span></span></span></span></span></p>
-<p>現在試著使用以下程式碼做信號的還原：</p>
-<div><pre><code>srate <span>=</span> <span>2</span><span>;</span>         <span>% 抽樣速度</span>
-st <span>=</span> <span>(</span><span>-</span><span>8</span><span>:</span><span>8</span><span>)</span><span>/</span>srate<span>;</span> <span>% 抽樣點</span>
-xn <span>=</span> <span>mys</span><span>(</span>st<span>)</span><span>;</span>      <span>% 信號值</span>
-
-N <span>=</span> <span>floor</span><span>(</span><span>length</span><span>(</span>xn<span>)</span><span>/</span><span>2</span><span>)</span><span>;</span>  <span>% 點數一半</span>
-t <span>=</span> <span>-</span><span>5</span><span>:</span><span>0.1</span><span>:</span><span>5</span><span>;</span>             <span>% 計算還原信號的時間點</span>
-rt <span>=</span> <span>zeros</span><span>(</span><span>size</span><span>(</span>t<span>)</span><span>)</span><span>;</span>
-<span>for</span> n<span>=</span><span>-</span>N<span>:</span>N
-  rt <span>=</span> rt <span>+</span> <span>xn</span><span>(</span>n<span>+</span>N<span>+</span><span>1</span><span>)</span><span>*</span><span>sinc</span><span>(</span><span>(</span>t<span>-</span>n<span>/</span>srate<span>)</span><span>*</span>srate<span>)</span><span>;</span>
-<span>end</span>
-<span>plot</span><span>(</span>t<span>,</span>rt<span>)</span><span>,</span> grid on<span>;</span>
-<span>xlabel</span><span>(</span><span>'t'</span><span>)</span><span>,</span> <span>ylabel</span><span>(</span><span>'s(t)'</span><span>)</span><span>;</span>
-<span>title</span><span>(</span><span>'Reconstructed Signal'</span><span>)</span><span>;</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br></div></div><p>得到的圖形如下。</p>
-<div>
-<p><img src="./Fig/rec01.png" alt="">
-還原的升餘弦脈衝信號, fs=2</p>
-</div>
-<p><exercise></exercise>
-試著調整不同的抽樣速度，例如大於或小於信號最高頻率的兩倍，計算還原的信號與原來信號的誤差。</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>抽樣模擬實驗</title>
-      <link>https://www.jywglady.org/sdr/sdr/contents/sampling/</link>
-      <guid>https://www.jywglady.org/sdr/sdr/contents/sampling/</guid>
-      <source url="https://www.jywglady.org/sdr/sdr/rss.xml">抽樣模擬實驗</source>
-      <pubDate>Mon, 15 Mar 2021 00:47:07 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="抽樣模擬實驗"> 抽樣模擬實驗</h1>
-<p>假設在單位圓上有一個訊號點 p 繞著圓周行進，其旋轉速率為固定值 r；另外假設以等間隔時間針對 p 的位置進行抽樣，假設抽樣速率每秒 f 次，則針對抽樣點的顯示狀況，我們以下圖來進行模擬。</p>
-<p>注意此處因螢幕的更新速度可能無法跟上實際的旋轉速度，另外人眼也無法分辨太快的轉速，所以為了方便觀察，我們針對抽樣速率來調整動畫的速率，以方便觀察系統運作的狀況。右圖下方，會顯示時間尺度縮放的倍率。例如當倍率為 10 的時候，如果每秒訊號點可以繞行一圈，表示實際上訊號點每秒可以繞行 10 圈。</p>
-<p align="center">
-<ClientOnly><Sampler/></ClientOnly>
-</p>
-<p>圖中左邊的控制面板，由上至下，其功能依次說明如下</p>
-<ul>
-<li>旋轉速率 r：設定訊號點每秒轉幾圈，須為整數，但可以為負值</li>
-<li>抽樣速率 f：設定每秒的抽樣個數，須為正整數</li>
-<li>顯示／隱藏原始訊號：設定是否顯示訊號點 p 的軌跡</li>
-<li>顯示／隱藏估測訊號：設定是否顯示由抽樣點所估測的訊號點軌跡</li>
-<li>動畫速率：設定動畫速率，從左至右，由慢變快</li>
-</ul>
-<p>注意其中由抽樣點所猜測的訊號點軌跡，基本上是依人眼覺得最為基本和直觀的猜測，不一定是原來訊號點的軌跡。</p>
-<font color="blue">
-<div><p>模擬實驗</p>
-<br>
-<p>試著利用上圖的模擬器回答以下問題：</p>
-<ol>
-<li>旋轉速率和抽樣速率同時乘上一個倍數，模擬會產生什麼變化？</li>
-<li>訊號點的轉速 r 增加 f 的整數倍，對於訊號點的軌跡和抽樣有何影響？</li>
-<li>改變訊號點轉速的正負號，對於訊號點的軌跡和抽樣有何影響？</li>
-<li>假設 f=10，當 r 分別為 1 和 9 時，訊號點的軌跡和抽樣有什麼異同？</li>
-<li>假設 f=10，且 r&lt;10，可否透過抽樣點所猜測的訊號點軌跡來確定 r 值？</li>
-<li>假設 r 值不超過 30，如果要透過抽樣點來估測訊號點的實際轉速，那麼 f 值有何限制？</li>
-<li>這個模擬和抽樣定理有沒有什麼相似的地方？</li>
-</ol>
-</div>
-</font>
-]]></content:encoded>
-    </item>
-    <item>
       <title>抽樣頻譜</title>
       <link>https://www.jywglady.org/sdr/sdr/contents/sampling/SampleFreq/</link>
       <guid>https://www.jywglady.org/sdr/sdr/contents/sampling/SampleFreq/</guid>
@@ -1357,6 +1286,77 @@ an <span>=</span> <span>int</span><span>(</span>f<span>*</span><span>cos</span><
 ]]></content:encoded>
     </item>
     <item>
+      <title>信號還原</title>
+      <link>https://www.jywglady.org/sdr/sdr/contents/sampling/Recovery/</link>
+      <guid>https://www.jywglady.org/sdr/sdr/contents/sampling/Recovery/</guid>
+      <source url="https://www.jywglady.org/sdr/sdr/rss.xml">信號還原</source>
+      <pubDate>Mon, 15 Mar 2021 04:56:04 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="信號還原"> 信號還原</h1>
+<p>抽樣之後的信號，其頻譜會不斷重覆，如果抽樣夠快，使用一個低通濾波器便可以把信號還原回來。在頻率乘上一個低通濾波器，等於在時域上和 sinc 函數做摺積，其還原信號公式如下:</p>
+<p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>x</span><span>(</span><span>t</span><span>)</span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:2.959733em;vertical-align:-1.308336em;"></span><span><span><span><span style="height:1.6513970000000002em;"><span style="top:-1.8999949999999999em;margin-left:0em;"><span style="height:3.05em;"></span><span><span><span>n</span><span>=</span><span>−</span><span>∞</span></span></span></span><span style="top:-3.050005em;"><span style="height:3.05em;"></span><span><span>∑</span></span></span><span style="top:-4.3000050000000005em;margin-left:0em;"><span style="height:3.05em;"></span><span><span><span>∞</span></span></span></span></span><span>​</span></span><span><span style="height:1.308336em;"><span></span></span></span></span></span><span style="margin-right:0.16666666666666666em;"></span><span>x</span><span>(</span><span>n</span><span style="margin-right:0.13889em;">T</span><span>)</span><span style="margin-right:0.16666666666666666em;"></span><span><span>sinc</span></span><span>(</span><span><span></span><span><span><span><span style="height:1.36033em;"><span style="top:-2.314em;"><span style="height:3em;"></span><span><span style="margin-right:0.13889em;">T</span></span></span><span style="top:-3.23em;"><span style="height:3em;"></span><span style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span style="height:3em;"></span><span><span>t</span><span style="margin-right:0.2222222222222222em;"></span><span>−</span><span style="margin-right:0.2222222222222222em;"></span><span>n</span><span style="margin-right:0.13889em;">T</span></span></span></span><span>​</span></span><span><span style="height:0.686em;"><span></span></span></span></span></span><span></span></span><span>)</span></span></span></span></span></p>
+<p>現在試著使用以下程式碼做信號的還原：</p>
+<div><pre><code>srate <span>=</span> <span>2</span><span>;</span>         <span>% 抽樣速度</span>
+st <span>=</span> <span>(</span><span>-</span><span>8</span><span>:</span><span>8</span><span>)</span><span>/</span>srate<span>;</span> <span>% 抽樣點</span>
+xn <span>=</span> <span>mys</span><span>(</span>st<span>)</span><span>;</span>      <span>% 信號值</span>
+
+N <span>=</span> <span>floor</span><span>(</span><span>length</span><span>(</span>xn<span>)</span><span>/</span><span>2</span><span>)</span><span>;</span>  <span>% 點數一半</span>
+t <span>=</span> <span>-</span><span>5</span><span>:</span><span>0.1</span><span>:</span><span>5</span><span>;</span>             <span>% 計算還原信號的時間點</span>
+rt <span>=</span> <span>zeros</span><span>(</span><span>size</span><span>(</span>t<span>)</span><span>)</span><span>;</span>
+<span>for</span> n<span>=</span><span>-</span>N<span>:</span>N
+  rt <span>=</span> rt <span>+</span> <span>xn</span><span>(</span>n<span>+</span>N<span>+</span><span>1</span><span>)</span><span>*</span><span>sinc</span><span>(</span><span>(</span>t<span>-</span>n<span>/</span>srate<span>)</span><span>*</span>srate<span>)</span><span>;</span>
+<span>end</span>
+<span>plot</span><span>(</span>t<span>,</span>rt<span>)</span><span>,</span> grid on<span>;</span>
+<span>xlabel</span><span>(</span><span>'t'</span><span>)</span><span>,</span> <span>ylabel</span><span>(</span><span>'s(t)'</span><span>)</span><span>;</span>
+<span>title</span><span>(</span><span>'Reconstructed Signal'</span><span>)</span><span>;</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br></div></div><p>得到的圖形如下。</p>
+<div>
+<p><img src="./Fig/rec01.png" alt="">
+還原的升餘弦脈衝信號, fs=2</p>
+</div>
+<p><exercise></exercise>
+試著調整不同的抽樣速度，例如大於或小於信號最高頻率的兩倍，計算還原的信號與原來信號的誤差。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>抽樣模擬實驗</title>
+      <link>https://www.jywglady.org/sdr/sdr/contents/sampling/</link>
+      <guid>https://www.jywglady.org/sdr/sdr/contents/sampling/</guid>
+      <source url="https://www.jywglady.org/sdr/sdr/rss.xml">抽樣模擬實驗</source>
+      <pubDate>Mon, 15 Mar 2021 00:47:07 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="抽樣模擬實驗"> 抽樣模擬實驗</h1>
+<p>假設在單位圓上有一個訊號點 p 繞著圓周行進，其旋轉速率為固定值 r；另外假設以等間隔時間針對 p 的位置進行抽樣，假設抽樣速率每秒 f 次，則針對抽樣點的顯示狀況，我們以下圖來進行模擬。</p>
+<p>注意此處因螢幕的更新速度可能無法跟上實際的旋轉速度，另外人眼也無法分辨太快的轉速，所以為了方便觀察，我們針對抽樣速率來調整動畫的速率，以方便觀察系統運作的狀況。右圖下方，會顯示時間尺度縮放的倍率。例如當倍率為 10 的時候，如果每秒訊號點可以繞行一圈，表示實際上訊號點每秒可以繞行 10 圈。</p>
+<p align="center">
+<ClientOnly><Sampler/></ClientOnly>
+</p>
+<p>圖中左邊的控制面板，由上至下，其功能依次說明如下</p>
+<ul>
+<li>旋轉速率 r：設定訊號點每秒轉幾圈，須為整數，但可以為負值</li>
+<li>抽樣速率 f：設定每秒的抽樣個數，須為正整數</li>
+<li>顯示／隱藏原始訊號：設定是否顯示訊號點 p 的軌跡</li>
+<li>顯示／隱藏估測訊號：設定是否顯示由抽樣點所估測的訊號點軌跡</li>
+<li>動畫速率：設定動畫速率，從左至右，由慢變快</li>
+</ul>
+<p>注意其中由抽樣點所猜測的訊號點軌跡，基本上是依人眼覺得最為基本和直觀的猜測，不一定是原來訊號點的軌跡。</p>
+<font color="blue">
+<div><p>模擬實驗</p>
+<br>
+<p>試著利用上圖的模擬器回答以下問題：</p>
+<ol>
+<li>旋轉速率和抽樣速率同時乘上一個倍數，模擬會產生什麼變化？</li>
+<li>訊號點的轉速 r 增加 f 的整數倍，對於訊號點的軌跡和抽樣有何影響？</li>
+<li>改變訊號點轉速的正負號，對於訊號點的軌跡和抽樣有何影響？</li>
+<li>假設 f=10，當 r 分別為 1 和 9 時，訊號點的軌跡和抽樣有什麼異同？</li>
+<li>假設 f=10，且 r&lt;10，可否透過抽樣點所猜測的訊號點軌跡來確定 r 值？</li>
+<li>假設 r 值不超過 30，如果要透過抽樣點來估測訊號點的實際轉速，那麼 f 值有何限制？</li>
+<li>這個模擬和抽樣定理有沒有什麼相似的地方？</li>
+</ol>
+</div>
+</font>
+]]></content:encoded>
+    </item>
+    <item>
       <title>抽樣定理</title>
       <link>https://www.jywglady.org/sdr/sdr/contents/sampling/Theory/</link>
       <guid>https://www.jywglady.org/sdr/sdr/contents/sampling/Theory/</guid>
@@ -1467,53 +1467,6 @@ an <span>=</span> <span>int</span><span>(</span>f<span>*</span><span>cos</span><
 ]]></content:encoded>
     </item>
     <item>
-      <title>SDR 簡介</title>
-      <link>https://www.jywglady.org/sdr/sdr/contents/sdrintro/</link>
-      <guid>https://www.jywglady.org/sdr/sdr/contents/sdrintro/</guid>
-      <source url="https://www.jywglady.org/sdr/sdr/rss.xml">SDR 簡介</source>
-      <pubDate>Sun, 07 Mar 2021 15:30:03 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="sdr-簡介"> SDR 簡介</h1>
-<p>軟體無線電 (Software Defined Radio, SDR) 主要是將無輸傳輸中，除了發送和接收的天線端，必須使用射頻的類比電路之外，其餘的功能模組全部使用軟體來加以實現的一種技術。因為要使用軟體來進行處理，因此信號必須先轉換成數位的形式。對於原本就是數位形式的訊號，例如由電腦所發送的訊息，本來就是數位的形式，我們可以直接進行處理；但如果原本是類比的訊號，例如人講話的聲音，那麼我們必須先將此類比訊號轉換成數位的訊號，然後才能交由軟體來進行處理。經由軟體處理完之後，最後仍然必須轉換成類比訊號，透由發送端的天線發送出電磁波，所送出的電磁波可以看成是屬於類比的訊號，不過裡面所藏的卻是數位的訊息。另一方面，接收端的天線收到電磁波之後，先將其轉換成數位的形式，之後一樣交由一連串的軟體來進行解碼，最後解出其中所蘊藏的訊息。這個類比轉數位，以及數位轉類比的過程，也是目前大部份通訊系統所慣用的方式。</p>
-<p>為了對這一連串的訊號處理有所認識，以下先介紹一些常見的專有名詞。</p>
-<h3 id="什麼是類比訊號"> 什麼是類比訊號</h3>
-<p>以電壓為例，連續的電壓變化就是類比的訊號。例如，我們可以將聲音透由振動的量測轉換成電壓的訊號，由於音量的變化是連續的，透過一些電路所轉換出來的電壓，基本上也是連續的，這種連續的訊號值，在時間上是連續的，在訊號的大小上面也是連續的，稱為類比訊號。</p>
-<div>
-<p><img src="./Fig/P_to_u.png" alt="p_to_u.png"></p>
-<p>圖片來源：<a href="https://wiki.gnuradio.org/index.php/Guided_Tutorial_Introduction" target="_blank" rel="noopener noreferrer">GNU Radio 官網</a></p>
-</div>
-<h3 id="什麼是數位訊號"> 什麼是數位訊號</h3>
-<p>數位訊號基本上可以看成是由一連串 0 和 1 的位元所構成的訊號，這種訊號可以很容易地透過軟體來加以儲存和處理。舉例來說，我們常聽到的 MP3 音樂檔，內容就是由一連串的 0 和 1 的位元所構成，因此是屬於一種數位訊號。這種訊號值，在時間和訊號的大小上面，都是離散可數的，以 MP3 的格式檔為例，我們可以設定聲音每秒的取樣值個數，以及每個取樣值是由多少位元構成。</p>
-<h3 id="如何將類比訊號轉成數位訊號"> 如何將類比訊號轉成數位訊號</h3>
-<p>由類比訊號轉成數位訊號，基本上會經過兩個主要的步驟，第一個步驟是取樣，第二個步驟是量化。有些人覺得量化之後，還要經過訊號表示方法的編碼過程，不過基本上這已經算是在數位化之後的處理範疇了。從類比訊號轉成數位訊號稱為 Analog-to-Digital Converter (ADC)；反過來，從數位訊號轉成類比訊號，稱為 Digital-to-Analog Converter (DAC)。而執行 ADC 及 DAC 的單元，我們常將其稱為<strong>編碼/解碼器</strong>，英文叫 Coder/Decoder，簡稱為 Codec。</p>
-<h3 id="什麼是取樣"> 什麼是取樣？</h3>
-<p>以錄音為例，聲波的強度變化是隨著時間而改變的，因此在時間軸上，可以看成是連續的，也就是說，聲波的強度是時間的函式，可以寫成 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span style="margin-right:0.03588em;">v</span><span>(</span><span>t</span><span>)</span></span></span></span>。取樣的意思，就是在時間上，只保留特定時間點的值，一般來說，我們大都是做等間隔的取樣。例如取樣的間隔時間為 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.68333em;vertical-align:0em;"></span><span style="margin-right:0.13889em;">T</span></span></span></span>，那麼我們就只保留 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span style="margin-right:0.03588em;">v</span><span>(</span><span>t</span><span>)</span></span></span></span> 在 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.61508em;vertical-align:0em;"></span><span>t</span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span>n</span><span style="margin-right:0.13889em;">T</span><span>,</span><span style="margin-right:0.16666666666666666em;"></span><span>n</span><span style="margin-right:0.2777777777777778em;"></span><span>∈</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:0.68333em;vertical-align:0em;"></span><span style="margin-right:0.10903em;">N</span></span></span></span> 時間點的值。訊號將會由 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span style="margin-right:0.03588em;">v</span><span>(</span><span>t</span><span>)</span></span></span></span> 變成 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span style="margin-right:0.03588em;">v</span><span>(</span><span>n</span><span style="margin-right:0.13889em;">T</span><span>)</span></span></span></span>，或者也可以寫成 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.58056em;vertical-align:-0.15em;"></span><span><span style="margin-right:0.03588em;">v</span><span><span><span><span style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>n</span></span></span></span><span>​</span></span><span><span style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>。這樣的訊號就是取樣後的訊號，在時間軸上變成是離散可數的；然而在振幅上，理論上還是連續的，這樣的訊號我們也稱其為離散訊號 (discrete signal)。</p>
-<h3 id="什麼是量化"> 什麼是量化？</h3>
-<p>經過取樣之後的離散訊號，在時間上已經是離散的了，然而其振幅仍然是連續的，例如振幅的值可能是從 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1.04em;vertical-align:-0.13278em;"></span><span>−</span><span><span><span><span style="height:0.90722em;"><span style="top:-3em;"><span style="height:3em;"></span><span style="padding-left:0.833em;"><span>2</span></span></span><span style="top:-2.86722em;"><span style="height:3em;"></span><span style="min-width:0.853em;height:1.08em;"><svg width='400em' height='1.08em' viewBox='0 0 400000 1080' preserveAspectRatio='xMinYMin slice'><path d='M95,702
-c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,-10,-9.5,-14
-c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54
-c44.2,-33.3,65.8,-50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10
-s173,378,173,378c0.7,0,35.3,-71,104,-213c68.7,-142,137.5,-285,206.5,-429
-c69,-144,104.5,-217.7,106.5,-221
-l0 -0
-c5.3,-9.3,12,-14,20,-14
-H400000v40H845.2724
-s-225.272,467,-225.272,467s-235,486,-235,486c-2.7,4.7,-9,7,-19,7
-c-6,0,-10,-1,-12,-3s-194,-422,-194,-422s-65,47,-65,47z
-M834 80h400000v40h-400000z'/></svg></span></span></span><span>​</span></span><span><span style="height:0.13278em;"><span></span></span></span></span></span></span></span></span>  到 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.43056em;vertical-align:0em;"></span><span style="margin-right:0.03588em;">π</span></span></span></span> 這樣的值，它的變化空間還是連續的，其小數位數也可能是無限多個，實際上還是無法精準地儲存在電腦裡面。為了方便儲存在電腦或相關的數位設備，必須把值的可能性設定在一個可數的離散值的集合裡面，這也就是量化的概念。以聲音的大小為例，我們可以把聲音的振幅大小分成 65536 個水平，這樣就可以使用 16 個位元來加以儲存 (<span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.8141079999999999em;vertical-align:0em;"></span><span><span>2</span><span><span><span><span style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>16</span></span></span></span></span></span></span></span></span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:0.64444em;vertical-align:0em;"></span><span>65536</span></span></span></span>)，這也就是量化的概念。平常我們講一個人的體重的時候，通常都只講到整數，例如實際量測到的體重可能是 56.2312 公斤，但我們都只講 56 公斤，這也是一種量化。量化之後的訊號值跟實際的訊號值會有一些差異，可以把它看成是一種量化所產生的誤差。</p>
-<div>
-<p><img src="./Fig/Cont_to_digital.png" alt="cont_to_digital.png"><br>
-圖片來源：<a href="https://wiki.gnuradio.org/index.php/Guided_Tutorial_Introduction" target="_blank" rel="noopener noreferrer">GNU Radio 官網</a></p>
-</div>
-<h3 id="無線傳輸"> 無線傳輸</h3>
-<p>基本上通訊的目的，簡單說，就是把訊息從一個地方傳送到另一個地方。而為了達成這樣的目的所設計的系統，就稱為通訊系統。目前常用的通訊系統，可以分為有線傳輸和無線傳輸。有線傳輸，例如透過 USB 連接線進行數據傳輸，或者家裡電話的語音傳輸，都是屬於有線傳輸。至於無線傳輸，常見的如藍牙、WiFi 的數據傳輸，都是無線傳輸。無線傳輸，通常必須將數據資料轉換成類比的電磁波訊號，然後透過天線來進行發送和接收。如下圖所示：</p>
-<div>
-<p><img src="./Fig/Antenna.png" alt="antenna.png"><br>
-圖片來源：<a href="https://wiki.gnuradio.org/index.php/Guided_Tutorial_Introduction" target="_blank" rel="noopener noreferrer">GNU Radio 官網</a></p>
-</div>
-<p>目前的通訊系統，除了發送和接收端的模組，必須處理類比訊號之外，其餘的通訊模組，大都是採用數位化的處理方式。換句話說，在發送端，我們會把處理過的數位訊息，利用 DAC 轉成類比訊號，然後透過天線傳送出去。而接收端，則先利用天線把類比訊號接收下來，然後透過 ADC 轉成數位訊號，再使用數位訊號處理的方式把傳送的訊息還原回來。</p>
-]]></content:encoded>
-    </item>
-    <item>
       <title>時域與頻域</title>
       <link>https://www.jywglady.org/sdr/sdr/contents/sampling/TimeAndFreq/</link>
       <guid>https://www.jywglady.org/sdr/sdr/contents/sampling/TimeAndFreq/</guid>
@@ -1599,6 +1552,53 @@ grid on<span>;</span>
 ]]></content:encoded>
     </item>
     <item>
+      <title>SDR 簡介</title>
+      <link>https://www.jywglady.org/sdr/sdr/contents/sdrintro/</link>
+      <guid>https://www.jywglady.org/sdr/sdr/contents/sdrintro/</guid>
+      <source url="https://www.jywglady.org/sdr/sdr/rss.xml">SDR 簡介</source>
+      <pubDate>Sun, 07 Mar 2021 15:30:03 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="sdr-簡介"> SDR 簡介</h1>
+<p>軟體無線電 (Software Defined Radio, SDR) 主要是將無輸傳輸中，除了發送和接收的天線端，必須使用射頻的類比電路之外，其餘的功能模組全部使用軟體來加以實現的一種技術。因為要使用軟體來進行處理，因此信號必須先轉換成數位的形式。對於原本就是數位形式的訊號，例如由電腦所發送的訊息，本來就是數位的形式，我們可以直接進行處理；但如果原本是類比的訊號，例如人講話的聲音，那麼我們必須先將此類比訊號轉換成數位的訊號，然後才能交由軟體來進行處理。經由軟體處理完之後，最後仍然必須轉換成類比訊號，透由發送端的天線發送出電磁波，所送出的電磁波可以看成是屬於類比的訊號，不過裡面所藏的卻是數位的訊息。另一方面，接收端的天線收到電磁波之後，先將其轉換成數位的形式，之後一樣交由一連串的軟體來進行解碼，最後解出其中所蘊藏的訊息。這個類比轉數位，以及數位轉類比的過程，也是目前大部份通訊系統所慣用的方式。</p>
+<p>為了對這一連串的訊號處理有所認識，以下先介紹一些常見的專有名詞。</p>
+<h3 id="什麼是類比訊號"> 什麼是類比訊號</h3>
+<p>以電壓為例，連續的電壓變化就是類比的訊號。例如，我們可以將聲音透由振動的量測轉換成電壓的訊號，由於音量的變化是連續的，透過一些電路所轉換出來的電壓，基本上也是連續的，這種連續的訊號值，在時間上是連續的，在訊號的大小上面也是連續的，稱為類比訊號。</p>
+<div>
+<p><img src="./Fig/P_to_u.png" alt="p_to_u.png"></p>
+<p>圖片來源：<a href="https://wiki.gnuradio.org/index.php/Guided_Tutorial_Introduction" target="_blank" rel="noopener noreferrer">GNU Radio 官網</a></p>
+</div>
+<h3 id="什麼是數位訊號"> 什麼是數位訊號</h3>
+<p>數位訊號基本上可以看成是由一連串 0 和 1 的位元所構成的訊號，這種訊號可以很容易地透過軟體來加以儲存和處理。舉例來說，我們常聽到的 MP3 音樂檔，內容就是由一連串的 0 和 1 的位元所構成，因此是屬於一種數位訊號。這種訊號值，在時間和訊號的大小上面，都是離散可數的，以 MP3 的格式檔為例，我們可以設定聲音每秒的取樣值個數，以及每個取樣值是由多少位元構成。</p>
+<h3 id="如何將類比訊號轉成數位訊號"> 如何將類比訊號轉成數位訊號</h3>
+<p>由類比訊號轉成數位訊號，基本上會經過兩個主要的步驟，第一個步驟是取樣，第二個步驟是量化。有些人覺得量化之後，還要經過訊號表示方法的編碼過程，不過基本上這已經算是在數位化之後的處理範疇了。從類比訊號轉成數位訊號稱為 Analog-to-Digital Converter (ADC)；反過來，從數位訊號轉成類比訊號，稱為 Digital-to-Analog Converter (DAC)。而執行 ADC 及 DAC 的單元，我們常將其稱為<strong>編碼/解碼器</strong>，英文叫 Coder/Decoder，簡稱為 Codec。</p>
+<h3 id="什麼是取樣"> 什麼是取樣？</h3>
+<p>以錄音為例，聲波的強度變化是隨著時間而改變的，因此在時間軸上，可以看成是連續的，也就是說，聲波的強度是時間的函式，可以寫成 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span style="margin-right:0.03588em;">v</span><span>(</span><span>t</span><span>)</span></span></span></span>。取樣的意思，就是在時間上，只保留特定時間點的值，一般來說，我們大都是做等間隔的取樣。例如取樣的間隔時間為 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.68333em;vertical-align:0em;"></span><span style="margin-right:0.13889em;">T</span></span></span></span>，那麼我們就只保留 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span style="margin-right:0.03588em;">v</span><span>(</span><span>t</span><span>)</span></span></span></span> 在 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.61508em;vertical-align:0em;"></span><span>t</span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span>n</span><span style="margin-right:0.13889em;">T</span><span>,</span><span style="margin-right:0.16666666666666666em;"></span><span>n</span><span style="margin-right:0.2777777777777778em;"></span><span>∈</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:0.68333em;vertical-align:0em;"></span><span style="margin-right:0.10903em;">N</span></span></span></span> 時間點的值。訊號將會由 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span style="margin-right:0.03588em;">v</span><span>(</span><span>t</span><span>)</span></span></span></span> 變成 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span style="margin-right:0.03588em;">v</span><span>(</span><span>n</span><span style="margin-right:0.13889em;">T</span><span>)</span></span></span></span>，或者也可以寫成 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.58056em;vertical-align:-0.15em;"></span><span><span style="margin-right:0.03588em;">v</span><span><span><span><span style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>n</span></span></span></span><span>​</span></span><span><span style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>。這樣的訊號就是取樣後的訊號，在時間軸上變成是離散可數的；然而在振幅上，理論上還是連續的，這樣的訊號我們也稱其為離散訊號 (discrete signal)。</p>
+<h3 id="什麼是量化"> 什麼是量化？</h3>
+<p>經過取樣之後的離散訊號，在時間上已經是離散的了，然而其振幅仍然是連續的，例如振幅的值可能是從 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1.04em;vertical-align:-0.13278em;"></span><span>−</span><span><span><span><span style="height:0.90722em;"><span style="top:-3em;"><span style="height:3em;"></span><span style="padding-left:0.833em;"><span>2</span></span></span><span style="top:-2.86722em;"><span style="height:3em;"></span><span style="min-width:0.853em;height:1.08em;"><svg width='400em' height='1.08em' viewBox='0 0 400000 1080' preserveAspectRatio='xMinYMin slice'><path d='M95,702
+c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,-10,-9.5,-14
+c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54
+c44.2,-33.3,65.8,-50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10
+s173,378,173,378c0.7,0,35.3,-71,104,-213c68.7,-142,137.5,-285,206.5,-429
+c69,-144,104.5,-217.7,106.5,-221
+l0 -0
+c5.3,-9.3,12,-14,20,-14
+H400000v40H845.2724
+s-225.272,467,-225.272,467s-235,486,-235,486c-2.7,4.7,-9,7,-19,7
+c-6,0,-10,-1,-12,-3s-194,-422,-194,-422s-65,47,-65,47z
+M834 80h400000v40h-400000z'/></svg></span></span></span><span>​</span></span><span><span style="height:0.13278em;"><span></span></span></span></span></span></span></span></span>  到 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.43056em;vertical-align:0em;"></span><span style="margin-right:0.03588em;">π</span></span></span></span> 這樣的值，它的變化空間還是連續的，其小數位數也可能是無限多個，實際上還是無法精準地儲存在電腦裡面。為了方便儲存在電腦或相關的數位設備，必須把值的可能性設定在一個可數的離散值的集合裡面，這也就是量化的概念。以聲音的大小為例，我們可以把聲音的振幅大小分成 65536 個水平，這樣就可以使用 16 個位元來加以儲存 (<span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.8141079999999999em;vertical-align:0em;"></span><span><span>2</span><span><span><span><span style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span>16</span></span></span></span></span></span></span></span></span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:0.64444em;vertical-align:0em;"></span><span>65536</span></span></span></span>)，這也就是量化的概念。平常我們講一個人的體重的時候，通常都只講到整數，例如實際量測到的體重可能是 56.2312 公斤，但我們都只講 56 公斤，這也是一種量化。量化之後的訊號值跟實際的訊號值會有一些差異，可以把它看成是一種量化所產生的誤差。</p>
+<div>
+<p><img src="./Fig/Cont_to_digital.png" alt="cont_to_digital.png"><br>
+圖片來源：<a href="https://wiki.gnuradio.org/index.php/Guided_Tutorial_Introduction" target="_blank" rel="noopener noreferrer">GNU Radio 官網</a></p>
+</div>
+<h3 id="無線傳輸"> 無線傳輸</h3>
+<p>基本上通訊的目的，簡單說，就是把訊息從一個地方傳送到另一個地方。而為了達成這樣的目的所設計的系統，就稱為通訊系統。目前常用的通訊系統，可以分為有線傳輸和無線傳輸。有線傳輸，例如透過 USB 連接線進行數據傳輸，或者家裡電話的語音傳輸，都是屬於有線傳輸。至於無線傳輸，常見的如藍牙、WiFi 的數據傳輸，都是無線傳輸。無線傳輸，通常必須將數據資料轉換成類比的電磁波訊號，然後透過天線來進行發送和接收。如下圖所示：</p>
+<div>
+<p><img src="./Fig/Antenna.png" alt="antenna.png"><br>
+圖片來源：<a href="https://wiki.gnuradio.org/index.php/Guided_Tutorial_Introduction" target="_blank" rel="noopener noreferrer">GNU Radio 官網</a></p>
+</div>
+<p>目前的通訊系統，除了發送和接收端的模組，必須處理類比訊號之外，其餘的通訊模組，大都是採用數位化的處理方式。換句話說，在發送端，我們會把處理過的數位訊息，利用 DAC 轉成類比訊號，然後透過天線傳送出去。而接收端，則先利用天線把類比訊號接收下來，然後透過 ADC 轉成數位訊號，再使用數位訊號處理的方式把傳送的訊息還原回來。</p>
+]]></content:encoded>
+    </item>
+    <item>
       <title>傅立葉變換</title>
       <link>https://www.jywglady.org/sdr/sdr/contents/sampling/Transform/</link>
       <guid>https://www.jywglady.org/sdr/sdr/contents/sampling/Transform/</guid>
@@ -1622,36 +1622,6 @@ grid on<span>;</span>
 <li>傅立葉變換可以用來找出時間訊號中每一個不同頻率的訊號成份；反過來說，如果已知每一個不同頻率的訊號成份，那麼也可以合成原來的時間訊號。請結合這個概念，以及前面所提到的內容，重新說明取樣定理的限制條件。</li>
 </ol>
 </div>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>單頻訊號的儲存與播放</title>
-      <link>https://www.jywglady.org/sdr/sdr/contents/tonetrans/</link>
-      <guid>https://www.jywglady.org/sdr/sdr/contents/tonetrans/</guid>
-      <source url="https://www.jywglady.org/sdr/sdr/rss.xml">單頻訊號的儲存與播放</source>
-      <pubDate>Fri, 23 Apr 2021 15:18:46 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="單頻訊號的儲存與播放"> 單頻訊號的儲存與播放</h1>
-<p>這個單元以單頻訊號的傳送和接收為例，來說明 GNU Radio 的基本使用方法，以及訊號的傳送和接收的基本概念。</p>
-<h2 id="要傳送的單頻訊號"> 要傳送的單頻訊號</h2>
-<p>首先，我們先建立一個實數的 Cos 訊號源，然後把訊號傳送到喇叭 (Audio Sink)，系統架構如下：</p>
-<p><img src="./Fig/2021-04-23-19-15-47.png" alt=""></p>
-<p>注意訊號源的部份，要將輸出型態設定成 float，否則無法和喇叭連接。另外，因為訊號輸出到喇叭時，喇叭會限制訊號的傳送速度，所以系統中不需要添加 Throttle 元件。</p>
-<p>建立好之後，試著存檔，產出模型並執行，如果沒有問題的話，應該會跳出一個小小的空白視窗，同時系統會播放一個音頻訊號。</p>
-<h2 id="將訊號存到檔案"> 將訊號存到檔案</h2>
-<p>接著，在系統中新增一個 Wav File Sink，將訊號源一併連接到新增的檔案模組，系統架構如下：</p>
-<p><img src="./Fig/2021-04-23-19-29-27.png" alt=""></p>
-<p>在 Wav File Sink 模組上快按兩下，將其中的 File 參數填入一個適當的路徑和檔名，記得檔名最後要以 .wav 結尾，表示檔案為 wav 的音源格式檔。範例如下（請修改路徑和檔名）：</p>
-<p><img src="./Fig/2021-04-23-19-35-04.png" alt=""></p>
-<p>完成設定之後，重新產生及執行，會聽到跟之前一樣的聲音，大概三秒左右將程式結束掉。</p>
-<p>執行完之後，打開檔案總管，在原先填入的路徑中檢查，應該會看到所設定的檔案。直接快按檔案兩下，系統會啟動預設的媒體播放程式，播放音檔的內容，基本上應該是一樣的聲音。</p>
-<h2 id="用-gnu-radio-播放音檔"> 用 GNU Radio 播放音檔</h2>
-<p>GNU Radio 中，也有一個 Wav File Source 模組，主要是用來讀取音檔的訊號內容。現在在 GNU Radio 中開啟一個新檔，放入 Wav File Source 模組及喇叭，連結系統架構如下：</p>
-<p><img src="./Fig/2021-04-23-19-48-58.png" alt=""></p>
-<p>把 Wav File Source 模組中的 File 參數填入剛才產生出來的音頻檔案。完成之後，存檔、產出模型及執行，沒有問題的話，應該會聽到同樣的聲音。</p>
-<p>以上主要是透過 GNU Radio 模擬音頻訊號的產生、儲存以及讀取。</p>
-<br>
-<exercise></exercise>
-<p>試著將上面 Wav File Source 中的 File 參數替換成其他的 wav 檔案，試著執行看看，是否可以聽到該 wav 檔案的音樂或聲音。</p>
 ]]></content:encoded>
     </item>
     <item>
@@ -1805,59 +1775,6 @@ grid on<span>;</span>
 ]]></content:encoded>
     </item>
     <item>
-      <title>使用 SDR 掃描頻譜</title>
-      <link>https://www.jywglady.org/sdr/sdr/contents/tonetrans/byHackRF/</link>
-      <guid>https://www.jywglady.org/sdr/sdr/contents/tonetrans/byHackRF/</guid>
-      <source url="https://www.jywglady.org/sdr/sdr/rss.xml">使用 SDR 掃描頻譜</source>
-      <pubDate>Fri, 23 Apr 2021 15:18:46 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="使用-sdr-掃描頻譜"> 使用 SDR 掃描頻譜</h1>
-<p>這個小單元要利用 HackRF SDR 來傳送和接收音頻資料。HackRF 可以用來發射訊號，或者可以用來接收訊號，如果既要發射又要接收，那就必須用到兩台 HackRF。另外 HackRF 的發射功率較小，雖然是無線傳輸，兩台 HackRF 之間距離也不能太長，一般在實驗室中，空間的距離大概是數公尺之間，這樣的傳輸長度應該沒有問題，不過這個距離也會受到環境配置的影響。以下為了方便實驗，我們先使用一個現成的 FM 發射器，用來發射單頻的訊號，然後使用 HackRF 來接收這個單頻訊號，這樣就可以先行驗證接收的部份是否正常。之後我們再增加一台 HackRF 來發射同樣的單頻訊號，然後看是否依然能夠正確接收。如果都沒有問題的話，那麼可以進一步嘗試調整各種不同的參數並了解其與傳輸距離之間的關係。此處應特別注意一點：各國政府對於無線電頻道的使用，都會有不同的法令規範，因此在發射訊號之前，應特別注意是否符合法令規範，特別要注意是否干擾到其他已在運作中的頻道，以免觸範相關的法令。</p>
-<h2 id="fm-發射器"> FM 發射器</h2>
-<p>市面上可以買到一些車用的 FM 發射器，主要就是將音頻訊號轉換成 FM 的發射訊號，發射之後就可以使用車上的 FM 接收器來收聽，一般大約台幣幾百元就可以買到。本實驗使用以下的發射器：</p>
-<p><img src="./Fig/2021-05-02-20-16-46.png" alt=""></p>
-<p>這個發射器，可以直接插在手機的音頻孔，由手機來播放聲音或音樂，然後將其轉成 FM 訊號。FM 的訊號部份，其中心頻率可以有幾個不同的選擇，可在操作時即時切換。一般要將其切換到不受干擾的頻道，以得到較好的收音品質。</p>
-<p>應該要特別注意的是，發射器所設定的頻率，其實不一定是很精確的值，通常都可能會存在一些誤差，這個誤差可能和發射器的機型，使用的時間以及設定的頻率等都有一些連帶的關係。在接收的時候，如果可以將中心頻率調整得更加精確，則可以得到更好的收音品質。</p>
-<h2 id="掃描發射頻率"> 掃描發射頻率</h2>
-<p>我們利用這個發送器發送頻率為 1Hz 的單頻訊號，可以從 <a href="https://drive.google.com/file/d/1zvN-8rO9lWwYhw8LOQeHA1k8y4DMp_ER/view?usp=sharing" target="_blank" rel="noopener noreferrer">這個連結</a> 下載。</p>
-<p>目前用來發射 FM 訊號的發送器，其設定的中心頻率為 173.1 MHz，但實際上發射的真實頻率，可能會有誤差。因此最好在接收前，先掃描一下訊號的頻譜。從程式庫中尋找 osmocom Source, QT GUI Range, QT GUI Frequency Sink 三個模組，將其連接如下：</p>
-<p><img src="./Fig/2021-05-03-11-02-03.png" alt=""></p>
-<p>各模組的參數依次如下：</p>
-<ul>
-<li>Sample Rate: 系統的 Sample Rate 設定為 8 MHz。以 HackRF One SDR 來說，建議的抽樣速度至少 8 MHz，但應小於 20 MHz。</li>
-<li>QT GUI Range: 用來調整中心頻率
-<ul>
-<li>Default Value: 173e6</li>
-<li>Start: 172e6</li>
-<li>Stop: 174e6</li>
-<li>Step: 10e3</li>
-</ul>
-</li>
-<li>osomocomm Source: 用來接收 HackRF One 的訊號
-<ul>
-<li>Device Arguments: hackrf=0</li>
-<li>Ch0: Frequency (Hz): fc</li>
-<li>Ch0: RF Gain (dB): 14</li>
-<li>Ch0: IF Gain (dB): 32</li>
-<li>Ch0: BB Gain (dB): 30</li>
-</ul>
-</li>
-<li>QT GUI Frequency Sink: 用來觀察頻譜訊號
-<ul>
-<li>FFT Size: 256</li>
-<li>Grid: Yes</li>
-<li>Autoscale: Yes</li>
-<li>Average: Medium</li>
-</ul>
-</li>
-</ul>
-<p>將檔案存檔，產生模型並執行之後，會看到訊號的頻譜。拉動滑桿，讓最高點大約出現在中心 0 的位置，如下圖所示：</p>
-<p><img src="./Fig/2021-05-03-11-00-48.png" alt=""></p>
-<p>根據目前掃描的結果，實際上收到的 FM 訊號，其中心頻率大約是 172.41 MHz，這個值和設定的 173.1 MHz 有些許誤差，可能是因為發射器設定的頻率較高，另外也可能因為使用很久而產生的偏差。</p>
-<br>
-<exercise></exercise>
-使用上面提到的 FM 發射器發射訊號，並完成頻譜的掃描，找出實際的傳送頻率。]]></content:encoded>
-    </item>
-    <item>
       <title>使用 SDR 接收音頻</title>
       <link>https://www.jywglady.org/sdr/sdr/contents/tonetrans/byHackRFRec/</link>
       <guid>https://www.jywglady.org/sdr/sdr/contents/tonetrans/byHackRFRec/</guid>
@@ -1935,6 +1852,89 @@ RF Gain 實際上只有 0 dB 和 14 dB 兩種選擇，其他設定值會依照�
 <li>建立如上所述的 FM 訊號接收器，並實際接收所發送的單頻訊號。</li>
 <li>適當調整接收頻率，是否可以收得到 FM 電台的訊號？</li>
 </ol>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>使用 SDR 掃描頻譜</title>
+      <link>https://www.jywglady.org/sdr/sdr/contents/tonetrans/byHackRF/</link>
+      <guid>https://www.jywglady.org/sdr/sdr/contents/tonetrans/byHackRF/</guid>
+      <source url="https://www.jywglady.org/sdr/sdr/rss.xml">使用 SDR 掃描頻譜</source>
+      <pubDate>Fri, 23 Apr 2021 15:18:46 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="使用-sdr-掃描頻譜"> 使用 SDR 掃描頻譜</h1>
+<p>這個小單元要利用 HackRF SDR 來傳送和接收音頻資料。HackRF 可以用來發射訊號，或者可以用來接收訊號，如果既要發射又要接收，那就必須用到兩台 HackRF。另外 HackRF 的發射功率較小，雖然是無線傳輸，兩台 HackRF 之間距離也不能太長，一般在實驗室中，空間的距離大概是數公尺之間，這樣的傳輸長度應該沒有問題，不過這個距離也會受到環境配置的影響。以下為了方便實驗，我們先使用一個現成的 FM 發射器，用來發射單頻的訊號，然後使用 HackRF 來接收這個單頻訊號，這樣就可以先行驗證接收的部份是否正常。之後我們再增加一台 HackRF 來發射同樣的單頻訊號，然後看是否依然能夠正確接收。如果都沒有問題的話，那麼可以進一步嘗試調整各種不同的參數並了解其與傳輸距離之間的關係。此處應特別注意一點：各國政府對於無線電頻道的使用，都會有不同的法令規範，因此在發射訊號之前，應特別注意是否符合法令規範，特別要注意是否干擾到其他已在運作中的頻道，以免觸範相關的法令。</p>
+<h2 id="fm-發射器"> FM 發射器</h2>
+<p>市面上可以買到一些車用的 FM 發射器，主要就是將音頻訊號轉換成 FM 的發射訊號，發射之後就可以使用車上的 FM 接收器來收聽，一般大約台幣幾百元就可以買到。本實驗使用以下的發射器：</p>
+<p><img src="./Fig/2021-05-02-20-16-46.png" alt=""></p>
+<p>這個發射器，可以直接插在手機的音頻孔，由手機來播放聲音或音樂，然後將其轉成 FM 訊號。FM 的訊號部份，其中心頻率可以有幾個不同的選擇，可在操作時即時切換。一般要將其切換到不受干擾的頻道，以得到較好的收音品質。</p>
+<p>應該要特別注意的是，發射器所設定的頻率，其實不一定是很精確的值，通常都可能會存在一些誤差，這個誤差可能和發射器的機型，使用的時間以及設定的頻率等都有一些連帶的關係。在接收的時候，如果可以將中心頻率調整得更加精確，則可以得到更好的收音品質。</p>
+<h2 id="掃描發射頻率"> 掃描發射頻率</h2>
+<p>我們利用這個發送器發送頻率為 1Hz 的單頻訊號，可以從 <a href="https://drive.google.com/file/d/1zvN-8rO9lWwYhw8LOQeHA1k8y4DMp_ER/view?usp=sharing" target="_blank" rel="noopener noreferrer">這個連結</a> 下載。</p>
+<p>目前用來發射 FM 訊號的發送器，其設定的中心頻率為 173.1 MHz，但實際上發射的真實頻率，可能會有誤差。因此最好在接收前，先掃描一下訊號的頻譜。從程式庫中尋找 osmocom Source, QT GUI Range, QT GUI Frequency Sink 三個模組，將其連接如下：</p>
+<p><img src="./Fig/2021-05-03-11-02-03.png" alt=""></p>
+<p>各模組的參數依次如下：</p>
+<ul>
+<li>Sample Rate: 系統的 Sample Rate 設定為 8 MHz。以 HackRF One SDR 來說，建議的抽樣速度至少 8 MHz，但應小於 20 MHz。</li>
+<li>QT GUI Range: 用來調整中心頻率
+<ul>
+<li>Default Value: 173e6</li>
+<li>Start: 172e6</li>
+<li>Stop: 174e6</li>
+<li>Step: 10e3</li>
+</ul>
+</li>
+<li>osomocomm Source: 用來接收 HackRF One 的訊號
+<ul>
+<li>Device Arguments: hackrf=0</li>
+<li>Ch0: Frequency (Hz): fc</li>
+<li>Ch0: RF Gain (dB): 14</li>
+<li>Ch0: IF Gain (dB): 32</li>
+<li>Ch0: BB Gain (dB): 30</li>
+</ul>
+</li>
+<li>QT GUI Frequency Sink: 用來觀察頻譜訊號
+<ul>
+<li>FFT Size: 256</li>
+<li>Grid: Yes</li>
+<li>Autoscale: Yes</li>
+<li>Average: Medium</li>
+</ul>
+</li>
+</ul>
+<p>將檔案存檔，產生模型並執行之後，會看到訊號的頻譜。拉動滑桿，讓最高點大約出現在中心 0 的位置，如下圖所示：</p>
+<p><img src="./Fig/2021-05-03-11-00-48.png" alt=""></p>
+<p>根據目前掃描的結果，實際上收到的 FM 訊號，其中心頻率大約是 172.41 MHz，這個值和設定的 173.1 MHz 有些許誤差，可能是因為發射器設定的頻率較高，另外也可能因為使用很久而產生的偏差。</p>
+<br>
+<exercise></exercise>
+使用上面提到的 FM 發射器發射訊號，並完成頻譜的掃描，找出實際的傳送頻率。]]></content:encoded>
+    </item>
+    <item>
+      <title>單頻訊號的儲存與播放</title>
+      <link>https://www.jywglady.org/sdr/sdr/contents/tonetrans/</link>
+      <guid>https://www.jywglady.org/sdr/sdr/contents/tonetrans/</guid>
+      <source url="https://www.jywglady.org/sdr/sdr/rss.xml">單頻訊號的儲存與播放</source>
+      <pubDate>Fri, 23 Apr 2021 15:18:46 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="單頻訊號的儲存與播放"> 單頻訊號的儲存與播放</h1>
+<p>這個單元以單頻訊號的傳送和接收為例，來說明 GNU Radio 的基本使用方法，以及訊號的傳送和接收的基本概念。</p>
+<h2 id="要傳送的單頻訊號"> 要傳送的單頻訊號</h2>
+<p>首先，我們先建立一個實數的 Cos 訊號源，然後把訊號傳送到喇叭 (Audio Sink)，系統架構如下：</p>
+<p><img src="./Fig/2021-04-23-19-15-47.png" alt=""></p>
+<p>注意訊號源的部份，要將輸出型態設定成 float，否則無法和喇叭連接。另外，因為訊號輸出到喇叭時，喇叭會限制訊號的傳送速度，所以系統中不需要添加 Throttle 元件。</p>
+<p>建立好之後，試著存檔，產出模型並執行，如果沒有問題的話，應該會跳出一個小小的空白視窗，同時系統會播放一個音頻訊號。</p>
+<h2 id="將訊號存到檔案"> 將訊號存到檔案</h2>
+<p>接著，在系統中新增一個 Wav File Sink，將訊號源一併連接到新增的檔案模組，系統架構如下：</p>
+<p><img src="./Fig/2021-04-23-19-29-27.png" alt=""></p>
+<p>在 Wav File Sink 模組上快按兩下，將其中的 File 參數填入一個適當的路徑和檔名，記得檔名最後要以 .wav 結尾，表示檔案為 wav 的音源格式檔。範例如下（請修改路徑和檔名）：</p>
+<p><img src="./Fig/2021-04-23-19-35-04.png" alt=""></p>
+<p>完成設定之後，重新產生及執行，會聽到跟之前一樣的聲音，大概三秒左右將程式結束掉。</p>
+<p>執行完之後，打開檔案總管，在原先填入的路徑中檢查，應該會看到所設定的檔案。直接快按檔案兩下，系統會啟動預設的媒體播放程式，播放音檔的內容，基本上應該是一樣的聲音。</p>
+<h2 id="用-gnu-radio-播放音檔"> 用 GNU Radio 播放音檔</h2>
+<p>GNU Radio 中，也有一個 Wav File Source 模組，主要是用來讀取音檔的訊號內容。現在在 GNU Radio 中開啟一個新檔，放入 Wav File Source 模組及喇叭，連結系統架構如下：</p>
+<p><img src="./Fig/2021-04-23-19-48-58.png" alt=""></p>
+<p>把 Wav File Source 模組中的 File 參數填入剛才產生出來的音頻檔案。完成之後，存檔、產出模型及執行，沒有問題的話，應該會聽到同樣的聲音。</p>
+<p>以上主要是透過 GNU Radio 模擬音頻訊號的產生、儲存以及讀取。</p>
+<br>
+<exercise></exercise>
+<p>試著將上面 Wav File Source 中的 File 參數替換成其他的 wav 檔案，試著執行看看，是否可以聽到該 wav 檔案的音樂或聲音。</p>
 ]]></content:encoded>
     </item>
   </channel>
