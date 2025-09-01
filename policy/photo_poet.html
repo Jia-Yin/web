@@ -32,14 +32,32 @@
             <section>
                 <h2 class="text-2xl font-semibold border-b pb-2 mb-4">1. 我們收集的資訊</h2>
                 <div class="space-y-4">
-                    <p>為了提供「以圖換詩」的核心功能，我們會收集以下類型的資訊：</p>
+                    <p>為了提供「以圖換詩」的核心功能與帳戶管理服務，我們會收集以下類型的資訊：</p>
+                    <div>
+                        <h3 class="font-semibold text-lg">帳戶與身份驗證資訊</h3>
+                        <p class="mt-1 text-gray-600">我們使用 Google Firebase Authentication 服務來管理使用者帳戶。當您註冊或登入時，我們可能會收集：</p>
+                        <ul class="mt-2 ml-4 space-y-1 text-gray-600 list-disc">
+                            <li>電子郵件地址</li>
+                            <li>使用者名稱或顯示名稱</li>
+                            <li>第三方登入提供者的基本資訊（如 Google 帳戶的公開資料）</li>
+                            <li>唯一的使用者識別碼 (UID)</li>
+                            <li>登入時間與頻率</li>
+                        </ul>
+                    </div>
                     <div>
                         <h3 class="font-semibold text-lg">您主動提供的圖片</h3>
                         <p class="mt-1 text-gray-600">當您使用本應用程式時，您會上傳圖片或照片。這是我們生成詩詞內容的唯一依據。我們需要取得您裝置的相簿存取權限，以便您能選擇並上傳圖片。</p>
                     </div>
                     <div>
-                        <h3 class="font-semibold text-lg">匿名的使用數據</h3>
-                        <p class="mt-1 text-gray-600">我們可能會收集匿名的技術資訊，例如裝置類型、作業系統版本、以及應用程式內的功能使用頻率。這些資訊無法識別您的個人身分，僅用於分析與改善應用程式的效能與使用者體驗。</p>
+                        <h3 class="font-semibold text-lg">使用數據與分析</h3>
+                        <p class="mt-1 text-gray-600">我們可能會收集匿名的技術資訊，例如：</p>
+                        <ul class="mt-2 ml-4 space-y-1 text-gray-600 list-disc">
+                            <li>裝置類型、作業系統版本</li>
+                            <li>應用程式內的功能使用頻率</li>
+                            <li>錯誤報告與當機記錄</li>
+                            <li>網路連線狀態</li>
+                        </ul>
+                        <p class="mt-2 text-gray-600">這些資訊無法識別您的個人身分，僅用於分析與改善應用程式的效能與使用者體驗。</p>
                     </div>
                 </div>
             </section>
@@ -50,58 +68,118 @@
                 <div class="space-y-4">
                      <p>我們僅在以下目的範圍內，使用您所提供的資訊：</p>
                     <div>
+                        <h3 class="font-semibold text-lg">帳戶管理與身份驗證</h3>
+                        <p class="mt-1 text-gray-600">使用您的身份驗證資訊來：</p>
+                        <ul class="mt-2 ml-4 space-y-1 text-gray-600 list-disc">
+                            <li>建立與維護您的使用者帳戶</li>
+                            <li>提供安全的登入與登出功能</li>
+                            <li>防止未經授權的存取</li>
+                            <li>提供個人化的使用體驗</li>
+                        </ul>
+                    </div>
+                    <div>
                         <h3 class="font-semibold text-lg">提供核心服務</h3>
                         <p class="mt-1 text-gray-600">您上傳的圖片將被傳送至我們的 AI 運算服務，以進行分析並生成對應的中文與英文詩詞。這是本應用程式的主要功能。</p>
                     </div>
                     <div>
                         <h3 class="font-semibold text-lg">改善與維護</h3>
-                        <p class="mt-1 text-gray-600">匿名的使用數據將幫助我們了解使用者如何與本應用程式互動，以便我們修復錯誤、優化功能並提升服務品質。</p>
+                        <p class="mt-1 text-gray-600">使用數據將幫助我們了解使用者如何與本應用程式互動，以便我們修復錯誤、優化功能並提升服務品質。</p>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-lg">客戶服務與支援</h3>
+                        <p class="mt-1 text-gray-600">在您需要技術支援或客戶服務時，我們可能會使用您的聯絡資訊來回應您的查詢。</p>
                     </div>
                 </div>
             </section>
 
             <!-- Section 3 -->
             <section>
-                <h2 class="text-2xl font-semibold border-b pb-2 mb-4">3. 資訊的分享與儲存</h2>
+                <h2 class="text-2xl font-semibold border-b pb-2 mb-4">3. 第三方服務與資訊分享</h2>
                  <div class="space-y-4">
                     <div>
-                        <h3 class="font-semibold text-lg">第三方服務</h3>
-                        <p class="mt-1 text-gray-600">為了實現 AI 詩詞生成，您上傳的圖片會經由安全的加密連線，傳送給第三方 AI 服務供應商進行處理。該服務供應商僅會將圖片用於當次的詩詞生成，不會將您的圖片用於其他目的。</p>
+                        <h3 class="font-semibold text-lg">Google Firebase 服務</h3>
+                        <p class="mt-1 text-gray-600">我們使用 Google Firebase Authentication 及相關服務來管理使用者帳戶。您的帳戶資訊會依據 Google 的隱私權政策進行處理。Firebase 提供企業級的安全性與可靠性，確保您的資料安全。</p>
+                        <p class="mt-2 text-gray-600">請參閱 <a href="https://policies.google.com/privacy" class="text-blue-600 hover:underline" target="_blank">Google 隱私權政策</a> 與 <a href="https://firebase.google.com/support/privacy" class="text-blue-600 hover:underline" target="_blank">Firebase 隱私權與安全性</a> 了解更多資訊。</p>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-lg">AI 服務供應商</h3>
+                        <p class="mt-1 text-gray-600">為了實現 AI 詩詞生成，您上傳的圖片會經由安全的加密連線，傳送給第三方 AI 服務供應商進行處理。該服務供應商僅會將圖片用於當次的詩詞生成，不會將您的圖片用於其他目的或進行模型訓練。</p>
                     </div>
                     <div>
                         <h3 class="font-semibold text-lg">資料留存</h3>
-                        <p class="mt-1 text-gray-600"><strong>我們非常重視您的隱私，您上傳的圖片在詩詞生成完成後，將不會被永久儲存在我們的伺服器上。</strong> 圖片僅為單次處理所需，處理完畢後即會被刪除。</p>
+                        <p class="mt-1 text-gray-600"><strong>我們非常重視您的隱私：</strong></p>
+                        <ul class="mt-2 ml-4 space-y-1 text-gray-600 list-disc">
+                            <li><strong>圖片資料：</strong>您上傳的圖片在詩詞生成完成後，將不會被永久儲存在我們的伺服器上。圖片僅為單次處理所需，處理完畢後即會被刪除。</li>
+                            <li><strong>帳戶資料：</strong>您的帳戶資訊會保存在 Firebase 中，直到您刪除帳戶為止。</li>
+                            <li><strong>使用記錄：</strong>匿名的使用統計資料可能會保留更長時間以用於服務改善。</li>
+                        </ul>
                     </div>
                     <div>
                         <h3 class="font-semibold text-lg">資訊安全</h3>
-                        <p class="mt-1 text-gray-600">我們承諾不會將您的圖片或任何個人資訊出售、交換或出租給任何其他第三方。我們採取合理的技術與管理措施，保護您的資訊在傳輸與處理過程中的安全。</p>
+                        <p class="mt-1 text-gray-600">我們承諾不會將您的圖片、帳戶資訊或任何個人資訊出售、交換或出租給任何其他第三方。我們採取合理的技術與管理措施，包括資料加密、存取控制和定期安全性評估，保護您的資訊在傳輸與處理過程中的安全。</p>
                     </div>
                 </div>
             </section>
 
             <!-- Section 4 -->
             <section>
-                <h2 class="text-2xl font-semibold border-b pb-2 mb-4">4. 兒童隱私</h2>
-                <p>本應用程式並非為兒童設計。我們不會刻意收集 13 歲以下（或您所在地區法律規定的相應年齡）兒童的個人資訊。</p>
+                <h2 class="text-2xl font-semibold border-b pb-2 mb-4">4. 您的權利與選擇</h2>
+                <div class="space-y-4">
+                    <div>
+                        <h3 class="font-semibold text-lg">帳戶控制</h3>
+                        <p class="mt-1 text-gray-600">您可以隨時：</p>
+                        <ul class="mt-2 ml-4 space-y-1 text-gray-600 list-disc">
+                            <li>更新您的帳戶資訊</li>
+                            <li>變更密碼或登入方式</li>
+                            <li>刪除您的帳戶</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-lg">資料請求</h3>
+                        <p class="mt-1 text-gray-600">您有權請求查看、更正或刪除我們持有的您的個人資料。請透過本政策末尾的聯絡方式與我們聯繫。</p>
+                    </div>
+                </div>
             </section>
 
             <!-- Section 5 -->
             <section>
-                <h2 class="text-2xl font-semibold border-b pb-2 mb-4">5. 隱私權政策的變更</h2>
-                <p>我們可能會不時修訂本隱私權政策。若有任何重大變更，我們將會在本應用程式內發布通知。建議您定期查看本政策，以了解最新的隱私權作法。</p>
+                <h2 class="text-2xl font-semibold border-b pb-2 mb-4">5. 兒童隱私</h2>
+                <p>本應用程式並非為兒童設計。我們不會刻意收集 13 歲以下（或您所在地區法律規定的相應年齡）兒童的個人資訊。如果我們發現無意中收集了兒童的個人資訊，我們將立即採取措施刪除相關資料。</p>
             </section>
 
             <!-- Section 6 -->
             <section>
-                <h2 class="text-2xl font-semibold border-b pb-2 mb-4">6. 聯絡我們</h2>
-                <p>如果您對本隱私權政策有任何疑問或建議，歡迎隨時透過以下電子郵件與我們聯繫：<br>
-                <a href="mailto:jywglady@gmail.com" class="text-blue-600 hover:underline">jywglady@gmail.com</a>
-                </p>
+                <h2 class="text-2xl font-semibold border-b pb-2 mb-4">6. 跨境資料傳輸</h2>
+                <p>由於我們使用的某些服務（如 Firebase 和 AI 服務）可能位於不同國家或地區，您的資料可能會被傳輸到您所在司法管轄區以外的地方進行處理。我們會確保這些傳輸符合適用的資料保護法律要求。</p>
+            </section>
+
+            <!-- Section 7 -->
+            <section>
+                <h2 class="text-2xl font-semibold border-b pb-2 mb-4">7. 隱私權政策的變更</h2>
+                <p>我們可能會不時修訂本隱私權政策。若有任何重大變更，我們將會在本應用程式內發布通知，或透過電子郵件通知您（如果您已提供電子郵件地址）。建議您定期查看本政策，以了解最新的隱私權作法。</p>
+                <p class="mt-2 text-gray-600">繼續使用本應用程式即表示您同意修訂後的隱私權政策。</p>
+            </section>
+
+            <!-- Section 8 -->
+            <section>
+                <h2 class="text-2xl font-semibold border-b pb-2 mb-4">8. 聯絡我們</h2>
+                <p>如果您對本隱私權政策有任何疑問、建議，或需要行使您的資料權利，歡迎隨時透過以下電子郵件與我們聯繫：</p>
+                <div class="mt-4 p-4 bg-gray-50 rounded-lg">
+                    <p><strong>電子郵件：</strong> <a href="mailto:jywglady@gmail.com" class="text-blue-600 hover:underline">jywglady@gmail.com</a></p>
+                    <p class="mt-2 text-sm text-gray-600">我們將在收到您的查詢後 30 天內回覆。</p>
+                </div>
+            </section>
+
+            <!-- Section 9 -->
+            <section>
+                <h2 class="text-2xl font-semibold border-b pb-2 mb-4">9. 適用法律</h2>
+                <p>本隱私權政策受中華民國相關法律管轄，包括但不限於個人資料保護法。如有爭議，雙方同意以台灣桃園地方法院為第一審管轄法院。</p>
             </section>
         </main>
 
         <footer class="text-center mt-10 text-sm text-gray-400">
             <p>&copy; 2025 以圖換詩. All Rights Reserved.</p>
+            <p class="mt-1">本隱私權政策適用於「以圖換詩」應用程式的所有版本</p>
         </footer>
 
     </div>
